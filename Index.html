@@ -3,71 +3,107 @@
 
 <style>
 
-    nav ul{
-       list-style-type: none;
+    nav ul {
+        list-style-type: none;
+        padding-left: 17px;  
+        margin: 0;
+        background-color: dimgray;
+        overflow: hidden;
     }
-    
-     nav li{
-       float: left; 
-    
+     nav li {
+        float: left;
+        height: 40px;         
     }
-    nav li a{
-        margin:15px;
-        padding:10px;
-        
+    nav li a {
+        padding: 13px 20px;
+        text-decoration: none;
+        color: white;
+        display: block; 
+        font-family: sans-serif;
+        font-size: 13px;
+        font-weight: 150;
     }
-    nav li input{
-        
-        margin:5px;
+    nav li a:hover:not(.home) {
+        background-color: gray;
     }
-    
+    .home{
+        background-color: #f35300;
+    }
+    nav input[type="submit"]
+    {
+        border: 1px solid #262626;
+        border-radius: 0;
+        margin: 10px 15px;
+        margin-left: 10px;
+        padding: 2px 10px;
+        font-size: 12px;
+        background: #f35300;
+        font-weight: 500;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;    
+    }
+    nav input[type="text"]{
+        border: 1px solid #262626;
+        padding: 3px 0px 3px 3px;
+        margin-top: 10px;
+        font-size: 11px;
+    }
 </style>
+    
 
 <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>Echo School</title>
-    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
     <header>
-        <pre> <a href="#">Libero</a> | <a href="#">Maecenas</a> | <a href="#">Mauris</a> | <a href="#">Suspendise</a>                                                                                                                                   <a href="#">Libero</a> | <a href="#">Maecenas</a> | <a href="#">Mauris</a> | <a href="#">Suspendise</a></pre>
+        <p style="float:left"> <a href="#">Libero</a> | <a href="#">Maecenas</a> | <a href="#">Mauris</a> | <a href="#">Suspendise</a></p>
+        <p style="float: right"><a href="#">Libero</a> | <a href="#">Maecenas</a> | <a href="#">Mauris</a> | <a href="#">Suspendise</a></p>
+        <br><br><br>
         <hr>
-        <pre>   Education <img src="" width="468" height="60" alt="Llogo" >
-   Free PSD Website Template</pre>
-    </header>
+        <pre style="float: left "> <span style="font-size: 34px">Education</span>
+ Free PSD Website Template</pre><img src="C:\Users\TECHCOM\Desktop\GitHub\INT18_19_Gr32\Images\eco_schools_logo.jpg" width="468px" height="60px" alt="Llogo" style="float: right">
+        <br><br>
 
-
-
-
-
-
-    <nav>
+        <nav>
+            <br><br><br>
         <ul>
-            <li><a href="#Home">Home</a></li>
+            <li><a class="home" href="#Home">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Page">Page</a></li>
             <li><a href="#DropDown">DropDown</a></li>
             <li><a href="#Gallery">Gallery</a></li>
-            <li style="float:right"><input type="submit" value="Search"></li>
-            <li style="float:right; "><input type="text" placeholder="Search Term Here..."></li>
+            <li style="float:right;"><input type="submit" value="Search"></li>
+            <li style="float:right;"><input type="text" placeholder="Search Term Here..."></li>
         </ul>
+            <br><br>
     </nav>
+    </header>
 
 
-
-    <nav></nav>
 
     <img src="Images/eco.jpg" alt="Eco School" style="width:600px; height:300px;">
 
+    <div>
+        <img src="Images/flag.jpg" alt="Informacion" style="width:135px; height:120px;">
+        <img src="Images/flag.jpg" alt="Informacion" style="width:135px; height:120px;">
+        <img src="Images/flag.jpg" alt="Informacion" style="width:135px; height:120px;">
+        <img src="Images/flag.jpg" alt="Informacion" style="width:135px; height:120px;">
+    </div>
+
     <article>
-    <h2>Giving children & teenagers an environmental voice…</h2>
-    <p>The Eco-Schools programme is an ideal way for schools to embark on a meaningful path towards improving the environment in both the school and the local community while at the same time having a life-long positive impact on the lives of young people and their families.</p>
-    <br>
-    <p>The Eco-Schools programme provides a unique opportunity that empowers pupils to lead change within their school and have a positive impact in their wider community. The programme encourages pupils of all ages and abilities to work together to develop their knowledge and environmental awareness. Independent research into the Eco-Schools programme in England found evidence of the positive impacts on pupils, including increased confidence, development of leaderships skills, improved pupil well-being and behaviour and greater motivation at school.</p>
-    <br>
-    <p>While the Seven Steps are the most important aspect of the Eco-Schools programme, schools also work on topics to help give the programme even more structure;<b> marine, biodiversity, energy, litter, global citizenship, healthy living, school grounds, transport, waste and water</b>.</p>
-</article>
+        <h2>Giving children & teenagers an environmental voice…</h2>
+        <hr />
+        <p>The Eco-Schools programme is an ideal way for schools to embark on a meaningful path towards improving the environment in both the school and the local community while at the same time having a life-long positive impact on the lives of young people and their families.</p>
+        <br>
+        <p>The Eco-Schools programme provides a unique opportunity that empowers pupils to lead change within their school and have a positive impact in their wider community. The programme encourages pupils of all ages and abilities to work together to develop their knowledge and environmental awareness. Independent research into the Eco-Schools programme in England found evidence of the positive impacts on pupils, including increased confidence, development of leaderships skills, improved pupil well-being and behaviour and greater motivation at school.</p>
+        <br>
+        <p>While the Seven Steps are the most important aspect of the Eco-Schools programme, schools also work on topics to help give the programme even more structure;<b> marine, biodiversity, energy, litter, global citizenship, healthy living, school grounds, transport, waste and water</b>.</p>
+    </article>
 
     <footer class="footer">
 
@@ -86,11 +122,21 @@
                 </tr>
             </tbody>
         </table>
-        
+
+
+        <p> se iis qui aliquip enim praesentibus comprehenderit quorum reprehenderit
+            proident</p>
+        <p>quamquam relinqueret possumus duis voluptatibus ullamco varias aut elit</p>
+        <p>praesentibus a consectetur incurreret quid e ipsum duis firmissimum a noster</p>
+
+
+
+
         <p align="right">Template by OS Templates</p>
         <p>Copyrights &copy; Eco School - All rights reserved.</p>
-        
+
     </footer>
+
 
 
 
