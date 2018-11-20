@@ -19,3 +19,10 @@
     display: table;
     clear: both;
 }
+
+
+div.gallery {
+    margin: 5px;
+    background-color: #f35300;
+    float: left; 
+}
