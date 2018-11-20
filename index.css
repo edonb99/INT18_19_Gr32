@@ -3,9 +3,36 @@
   width: 100%;
   background-color: dimgray;
   padding: 60px 0px;
+  display: block;
 }
 
-.footer {
-	display: block;
 
+* {
+    box-sizing: border-box;
 }
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+    }
+ .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+div.gallery {
+    margin: 5px;
+    background-color: #f35300;
+    float: left; 
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    text-align: bottom;
+}
+
