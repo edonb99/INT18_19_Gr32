@@ -26,3 +26,7 @@ div.gallery {
     background-color: #f35300;
     float: left; 
 }
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
