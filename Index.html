@@ -2,35 +2,38 @@
 <html>
 
 <style>
-
     nav ul {
         list-style-type: none;
-        padding-left: 17px;  
+        padding-left: 17px;
         margin: 0;
         background-color: dimgray;
         overflow: hidden;
     }
-     nav li {
+
+    nav li {
         float: left;
-        height: 40px;         
+        height: 40px;
     }
+
     nav li a {
         padding: 13px 20px;
         text-decoration: none;
         color: white;
-        display: block; 
+        display: block;
         font-family: sans-serif;
         font-size: 13px;
         font-weight: 150;
     }
+
     nav li a:hover:not(.home) {
         background-color: gray;
     }
-    .home{
+
+    .home {
         background-color: #f35300;
     }
-    nav input[type="submit"]
-    {
+
+    nav input[type="submit"] {
         border: 1px solid #262626;
         border-radius: 0;
         margin: 10px 15px;
@@ -41,16 +44,18 @@
         font-weight: 500;
         color: white;
         text-transform: uppercase;
-        cursor: pointer;    
+        cursor: pointer;
     }
-    nav input[type="text"]{
+
+    nav input[type="text"] {
         border: 1px solid #262626;
         padding: 3px 0px 3px 3px;
         margin-top: 10px;
         font-size: 11px;
     }
+
 </style>
-    
+
 
 <head>
     <meta charset="UTF-8">
@@ -61,72 +66,70 @@
 <body>
 
     <header>
-        <p style="float:left"> <a href="#">Libero</a> | <a href="#">Maecenas</a> | <a href="#">Mauris</a> | <a href="#">Suspendise</a></p>
-        <p style="float: right"><a href="#">Libero</a> | <a href="#">Maecenas</a> | <a href="#">Mauris</a> | <a href="#">Suspendise</a></p>
+        <div style="clear:both;margin-bottom: 0" class="a">
+
+            <p style="float: left"><a class="a" href="#">Libero</a> | <a class="a" href="#">Maecenas</a> | <a class="a" href="#">Mauris</a> | <a class="a" href="#">Suspendise</a></p>
+
+            <p style="float: right"><a class="a" href="#">Libero</a> | <a class="a" href="#">Maecenas</a> | <a class="a" href="#">Mauris</a> | <a class="a" href="#">Suspendise</a></p>
+        </div>
         <br><br><br>
         <hr>
-        <pre style="float: left "> <span style="font-size: 34px">Education</span>
- Free PSD Website Template</pre><img src="Images/eco_schools_logo.jpg" width="468px" height="60px" alt="Llogo" style="float: right">
-        <br><br>
+        <div style="height: 60px">
+            <h1 style="float: left;margin: 0;padding: 0">Education</h1>
+            Free PSD Website Template<img src="Images/eco_schools_logo.jpg" width="468px" height="60px" alt="Llogo" style="float: right;overflow: auto">
+        </div>
         <nav>
-            <br><br><br>
-        <ul>
-            <li><a class="home" href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Page">Page</a></li>
-            <li><a href="#DropDown">DropDown</a></li>
-            <li><a href="#Gallery">Gallery</a></li>
-            <li style="float:right;"><input type="submit" value="Search"></li>
-            <li style="float:right;"><input type="text" placeholder="Search Term Here..."></li>
-        </ul>
+            <br>
+            <ul>
+                <li><a class="home" href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Page">Page</a></li>
+                <li><a href="#DropDown">DropDown</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li style="float:right;"><input type="submit" value="Search"></li>
+                <li style="float:right;"><input type="text" placeholder="Search Term Here..."></li>
+            </ul>
             <br><br>
-    </nav>
+        </nav>
     </header>
 
-<div class="row">
-    <div class="column" style="background-image:Images/eco.jpg;">
-        <h2>Column 1</h2>
-        <p>Some text..</p>
-        </div>
-    <div class="column" style="background-color:#f35300;">
-             <h2>Column 2</h2>
-             <p>Some text..</p>
+    <div style="height: 300px;background-color: #f35300">
+        <img src="Images/eco.jpg" style="width: 600px;height: 300px;float: left;overflow: auto">
     </div>
-</div>
 
-    <img src="Images/eco.jpg" alt="Eco School" style="width:600px; height:300px;">
+
 
     <div class="gallery">
- <a target="_blank" href=" ">
-    <img src="Images/flag.jpg" alt="Informacion" style="width:135px; height:120px;">
+        <a target="_blank" href=" ">
+            <img src="Images/flag.jpg" alt="Informacion" style="width:135px; height:120px;">
 
-  </a>
-   <div class="desc">Add text</div>
-</div>
+        </a>
+        <div class="desc">Add text</div>
+    </div>
 
-<div class="gallery">
-  <a target="_blank" href=" ">
-    <img src="Images/flag.jpg" alt="Informacion" style="width:135px; height:120px;">
+    <div class="gallery">
+        <a target="_blank" href=" ">
+            <img src="Images/flag.jpg" alt="Informacion" style="width:135px; height:120px;">
 
-  </a>
-  <div class="desc">Add text</div>
-</div>
+        </a>
+        <div class="desc">Add text</div>
+    </div>
 
-<div class="gallery">
-  <a target="_blank" href=" ">
-      <img src="Images/flag.jpg" alt="Informacion" style="width:135px; height:120px;">
+    <div class="gallery">
+        <a target="_blank" href=" ">
+            <img src="Images/flag.jpg" alt="Informacion" style="width:135px; height:120px;">
 
-  </a>
-  <div class="desc">Add text</div>
-</div>
+        </a>
+        <div class="desc">Add text</div>
+    </div>
 
-<div class="gallery">
-  <a target="_blank" href=" ">
-       <img src="Images/flag.jpg" alt="Informacion" style="width:135px; height:120px;">
+    <div class="gallery">
+        <a target="_blank" href=" ">
+            <img src="Images/flag.jpg" alt="Informacion" style="width:135px; height:120px;">
 
-  </a>
-  <div class="desc">Add text</div>
-</div>
+        </a>
+        <div class="desc">Add text</div>
+    </div>
 
 
 
@@ -143,42 +146,42 @@
     </article>
 
     <footer class="footer">
-      
-        
-		<div>
-        <h3>Stay in the know!</h3>
-        <p>Please enter your E-Mail to join our mailing list</p>
-        
-        <p>To unsubscribe please click <a href="">here >></a></p>
-    	</div> 
-   
+
+
         <div>
-        <h3>Gallery</h3>
-        <p> se iis qui aliquip enim praesentibus comprehenderit quorum reprehenderit proident</p>
+            <h3>Stay in the know!</h3>
+            <p>Please enter your E-Mail to join our mailing list</p>
+
+            <p>To unsubscribe please click <a href="">here >></a></p>
         </div>
 
         <div>
-        <h3>Page</h3>
-        <p>quamquam relinqueret possumus duis voluptatibus ullamco varias aut elit</p>
+            <h3>Gallery</h3>
+            <p> se iis qui aliquip enim praesentibus comprehenderit quorum reprehenderit proident</p>
         </div>
 
         <div>
-        <h3>Drop Down</h3>
-        <p>praesentibus a consectetur incurreret quid e ipsum duis firmissimum a noster</p>
+            <h3>Page</h3>
+            <p>quamquam relinqueret possumus duis voluptatibus ullamco varias aut elit</p>
         </div>
 
         <div>
-        <h3>About</h3>
-        <p>incurreret quid e ipsum duis firmissimum a noster relinqueret possumus duis</p>
+            <h3>Drop Down</h3>
+            <p>praesentibus a consectetur incurreret quid e ipsum duis firmissimum a noster</p>
         </div>
-    
-      
+
+        <div>
+            <h3>About</h3>
+            <p>incurreret quid e ipsum duis firmissimum a noster relinqueret possumus duis</p>
+        </div>
+
+
         <p>Powered by <a href="" target="_blank"></a></p>
-      <div>
-          <p align="right">Template by OS Templates</p>
-          <p>Copyrights &copy; 2018 Eco School -All rights reserved</p>
-      </div>
-  </footer>
+        <div>
+            <p align="right">Template by OS Templates</p>
+            <p>Copyrights &copy; 2018 Eco School -All rights reserved</p>
+        </div>
+    </footer>
 
 
 
