@@ -38,7 +38,28 @@ div.desc {
 }
 
 
+/*Nrro b me a ,ama gjej zgjidhje*/
+b:link, b:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+ ;
+}
+b:hover, b:active{
+    background-color: #ddd;
+    color: black;  
 
+}
+.next {
+    background-color: black;
+    color:#f35300;
+    padding:8px; 
+    float:right
+
+}
 
 
 .section{
@@ -49,6 +70,7 @@ width:65%;
 height:50%; 
 font-family: "Hoefler Text", Cambria, "Times New Roman", serif; 
 word-spacing: normal;
+clear: left;
 }
 
 
