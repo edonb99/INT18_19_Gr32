@@ -24,17 +24,30 @@
 }
 
 
+article {
+border: none;
+padding: 2px;
+margin: 40px 20px 20px 20px;
+width:60%;
+height:50%;
+    display: flex;
+    justify-content:space-between;
+  
+}
 div.gallery {
     margin: 5px;
     background-color: #f35300;
     float: left; 
+   
 }
 div.gallery img {
     width: 100%;
     height: auto;
+   
 }
 div.desc {
     text-align: bottom;
+
 }
 
 
@@ -65,8 +78,8 @@ b:hover, b:active{
 .section{
 border: none;
 padding: 5px;
-margin: 90px 20px;
-width:65%;
+margin:40px 20px 40px 20px;
+width:60%;
 height:50%; 
 font-family: "Hoefler Text", Cambria, "Times New Roman", serif; 
 word-spacing: normal;
