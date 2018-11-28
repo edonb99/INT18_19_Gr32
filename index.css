@@ -7,7 +7,7 @@
 }
 
 
-
+/* Pano te body*/
 * {
     box-sizing: border-box;
 }
@@ -24,34 +24,9 @@
 }
 
 
-article {
-border: none;
-padding: 2px;
-margin: 40px 20px 20px 20px;
-width:60%;
-height:50%;
-    display: flex;
-    justify-content:space-between;
-  
-}
-div.gallery {
-    margin: 5px;
-    background-color: #f35300;
-    float: left; 
-   
-}
-div.gallery img {
-    width: 100%;
-    height: auto;
-   
-}
-div.desc {
-    text-align: bottom;
-
-}
-
 
 /*Nrro b me a ,ama gjej zgjidhje*/
+
 b:link, b:visited {
     background-color: #f44336;
     color: white;
@@ -75,6 +50,34 @@ b:hover, b:active{
 }
 
 
+/* 4 fotot te body*/
+article {
+border: none;
+padding: 2px;
+margin: 40px 20px 20px 20px;
+width:60%;
+height:50%;
+ display: flex;
+ justify-content:space-between;
+  
+}
+div.gallery {
+    margin: 5px;
+    background-color: #f35300;
+    float: left; 
+   
+}
+div.gallery img {
+    width: 100%;
+    height: auto;  
+
+}
+div.desc {
+    text-align: bottom;
+    
+}
+
+/*texti ne body */
 .section{
 border: none;
 padding: 5px;
