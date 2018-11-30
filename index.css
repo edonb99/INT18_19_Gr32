@@ -1,23 +1,27 @@
-.footer
-{
-  width: 100%;
-  background-color: dimgray;
-  padding: 60px 0px;
-  display: block;
+.footer {
+    width: 100%;
+    background-color: dimgray;
+    padding: 60px 0px;
+    display: block;
 }
+
+
 
 
 /* Pano te body*/
+
 * {
     box-sizing: border-box;
 }
+
 .column {
     float: left;
     width: 50%;
     padding: 10px;
     height: 300px;
-    }
- .row:after {
+}
+
+.row:after {
     content: "";
     display: table;
     clear: both;
@@ -64,14 +68,20 @@ height:50%;
 div.gallery {
     margin: 5px;
     background-color: #f35300;
+
+    float: left;
+
     float: left; 
    
+
 }
+
 div.gallery img {
     width: 100%;
     height: auto;  
 
 }
+
 div.desc {
     text-align: bottom;
     
@@ -89,6 +99,52 @@ word-spacing: normal;
 clear: left;
 }
 
+
+.a {
+    text-decoration: none;
+    color: #f35300;
+
+}
+
+.header ul {
+    display: flex;
+    text-decoration: none;
+    color: #f35300;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.header {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.header li {
+    padding-left: 2px;
+}
+
+#container {
+    width 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 60px;
+
+}
+
+.box1 {
+    box-sizing: border-box;
+    float: left;
+    padding-left: 5px;
+    width: 500px;
+}
+
+.box2 {
+    float: right;
+    width: 468;
+    box-sizing: border-box;
+}
 
 
 

@@ -2,35 +2,38 @@
 <html>
 
 <style>
-
     nav ul {
         list-style-type: none;
-        padding-left: 17px;  
+        padding-left: 17px;
         margin: 0;
         background-color: dimgray;
         overflow: hidden;
     }
-     nav li {
+
+    nav li {
         float: left;
-        height: 40px;         
+        height: 40px;
     }
+
     nav li a {
         padding: 13px 20px;
         text-decoration: none;
         color: white;
-        display: block; 
+        display: block;
         font-family: sans-serif;
         font-size: 13px;
         font-weight: 150;
     }
+
     nav li a:hover:not(.home) {
         background-color: gray;
     }
-    .home{
+
+    .home {
         background-color: #f35300;
     }
-    nav input[type="submit"]
-    {
+
+    nav input[type="submit"] {
         border: 1px solid #262626;
         border-radius: 0;
         margin: 10px 15px;
@@ -41,16 +44,18 @@
         font-weight: 500;
         color: white;
         text-transform: uppercase;
-        cursor: pointer;    
+        cursor: pointer;
     }
-    nav input[type="text"]{
+
+    nav input[type="text"] {
         border: 1px solid #262626;
         padding: 3px 0px 3px 3px;
         margin-top: 10px;
         font-size: 11px;
     }
+
 </style>
-    
+
 
 <head>
     <meta charset="UTF-8">
@@ -58,30 +63,101 @@
     <title>Echo School</title>
 </head>
 
-<body>
-
+<body style="width: 1024px;margin: auto">
+    <!--**************************************************HEADER****************************************************-->
     <header>
-        <p style="float:left"> <a href="#">Libero</a> | <a href="#">Maecenas</a> | <a href="#">Mauris</a> | <a href="#">Suspendise</a></p>
-        <p style="float: right"><a href="#">Libero</a> | <a href="#">Maecenas</a> | <a href="#">Mauris</a> | <a href="#">Suspendise</a></p>
-        <br><br><br>
+        <div class="header">
+            <ul style="float: left">
+                <li><a class="a" href="#"> Libero</a> | </li>
+                <li><a class="a" href="#"> Maecenas</a> | </li>
+                <li><a class="a" href="#"> Mauris</a> | </li>
+                <li><a class="a" href="#"> Suspendise</a></li>
+            </ul>
+            <ul style="float: right">
+                <li><a class="a" href="#"> Libero</a> | </li>
+                <li><a class="a" href="#"> Maecenas</a> | </li>
+                <li><a class="a" href="#"> Mauris</a> | </li>
+                <li><a class="a" href="#"> Suspendise</a></li>
+            </ul>
+        </div>
+        <br>
+
         <hr>
-        <pre style="float: left "> <span style="font-size: 34px">Education</span>
- Free PSD Website Template</pre><img src="Images/eco_schools_logo.jpg" width="468px" height="60px" alt="Llogo" style="float: right">
-        <br><br>
+
+        <div id="container">
+            <div class="box1">
+                <span style="font-size: 32px;margin: 0px;padding: 0px">
+                    Education
+                </span>
+                <br>
+                <span style="font-size: 12px;margin: 0px;padding: 0px">
+                    Free PSD Website Template
+                </span>
+            </div>
+            <div class="box2">
+                <img src="Images/eco_schools_logo.jpg" width="468px" height="60px" alt="Llogo" style="float: right;overflow: auto">
+            </div>
+        </div>
+
+        <!--******************************************NAV_BAR*************************************-->
         <nav>
-            <br><br><br>
-        <ul>
-            <li><a class="home" href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Page">Page</a></li>
-            <li><a href="#DropDown">DropDown</a></li>
-            <li><a href="#Gallery">Gallery</a></li>
-            <li style="float:right;"><input type="submit" value="Search"></li>
-            <li style="float:right;"><input type="text" placeholder="Search Term Here..."></li>
-        </ul>
+            <br>
+            <ul>
+                <li><a class="home" href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Page">Page</a></li>
+                <li><a href="#DropDown">DropDown</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li style="float:right;"><input type="submit" value="Search"></li>
+                <li style="float:right;"><input type="text" placeholder="Search Term Here..."></li>
+            </ul>
             <br><br>
-    </nav>
+        </nav>
+        <!--******************************************NAV_BAR_END*************************************-->
+
+
     </header>
+    <!--***********************************************HEADER_END****************************************************-->
+
+
+    <div style="margin-left: 20px;margin-right: 20px">
+        <div style="height: 300px;background-color: #f35300">
+            <img src="Images/eco.jpg" style="width: 600px;height: 300px;float: left;overflow: auto">
+        </div>
+
+
+
+        <div class="gallery">
+            <a target="_blank" href=" ">
+                <img src="Images/flag.jpg" alt="Informacion" style="width:135px; height:120px;">
+
+            </a>
+            <div class="desc">Add text</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href=" ">
+                <img src="Images/flag.jpg" alt="Informacion" style="width:135px; height:120px;">
+
+            </a>
+            <div class="desc">Add text</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href=" ">
+                <img src="Images/flag.jpg" alt="Informacion" style="width:135px; height:120px;">
+
+            </a>
+            <div class="desc">Add text</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href=" ">
+                <img src="Images/flag.jpg" alt="Informacion" style="width:135px; height:120px;">
+
+            </a>
+            <div class="desc">Add text</div>
+        </div>
 
 
 
@@ -143,8 +219,23 @@ We offer schools a building that is a breath of fresh air. They will not only in
 </article>
 
 
+
 <!-- texti ne body -->
     <section class="section">
+
+
+
+
+        <article>
+            <h2>Giving children & teenagers an environmental voice…</h2>
+            <hr />
+            <p>The Eco-Schools programme is an ideal way for schools to embark on a meaningful path towards improving the environment in both the school and the local community while at the same time having a life-long positive impact on the lives of young people and their families.</p>
+            <br>
+            <p>The Eco-Schools programme provides a unique opportunity that empowers pupils to lead change within their school and have a positive impact in their wider community. The programme encourages pupils of all ages and abilities to work together to develop their knowledge and environmental awareness. Independent research into the Eco-Schools programme in England found evidence of the positive impacts on pupils, including increased confidence, development of leaderships skills, improved pupil well-being and behaviour and greater motivation at school.</p>
+            <br>
+            <p>While the Seven Steps are the most important aspect of the Eco-Schools programme, schools also work on topics to help give the programme even more structure;<b> marine, biodiversity, energy, litter, global citizenship, healthy living, school grounds, transport, waste and water</b>.</p>
+        </article>
+    </div>
 
         <h2 style="">Giving children & teenagers an environmental voice…</h2>
         <hr />
@@ -159,48 +250,44 @@ We offer schools a building that is a breath of fresh air. They will not only in
 
 
 <!-- FOOTER -->
+
     <footer class="footer">
-      
-        
-		<div>
-        <h3>Stay in the know!</h3>
-        <p>Please enter your E-Mail to join our mailing list</p>
-        
-        <p>To unsubscribe please click <a href="">here >></a></p>
-    	</div> 
-   
+
+
         <div>
-        <h3>Gallery</h3>
-        <p> se iis qui aliquip enim praesentibus comprehenderit quorum reprehenderit proident</p>
+            <h3>Stay in the know!</h3>
+            <p>Please enter your E-Mail to join our mailing list</p>
+
+            <p>To unsubscribe please click <a href="">here >></a></p>
         </div>
 
         <div>
-        <h3>Page</h3>
-        <p>quamquam relinqueret possumus duis voluptatibus ullamco varias aut elit</p>
+            <h3>Gallery</h3>
+            <p> se iis qui aliquip enim praesentibus comprehenderit quorum reprehenderit proident</p>
         </div>
 
         <div>
-        <h3>Drop Down</h3>
-        <p>praesentibus a consectetur incurreret quid e ipsum duis firmissimum a noster</p>
+            <h3>Page</h3>
+            <p>quamquam relinqueret possumus duis voluptatibus ullamco varias aut elit</p>
         </div>
 
         <div>
-        <h3>About</h3>
-        <p>incurreret quid e ipsum duis firmissimum a noster relinqueret possumus duis</p>
+            <h3>Drop Down</h3>
+            <p>praesentibus a consectetur incurreret quid e ipsum duis firmissimum a noster</p>
         </div>
-    
-      
+
+        <div>
+            <h3>About</h3>
+            <p>incurreret quid e ipsum duis firmissimum a noster relinqueret possumus duis</p>
+        </div>
+
+
         <p>Powered by <a href="" target="_blank"></a></p>
-      <div>
-          <p align="right">Template by OS Templates</p>
-          <p>Copyrights &copy; 2018 Eco School -All rights reserved</p>
-      </div>
-  </footer>
-
-
-
-
-
+        <div>
+            <p align="right">Template by OS Templates</p>
+            <p>Copyrights &copy; 2018 Eco School -All rights reserved</p>
+        </div>
+    </footer>
 
 
 
