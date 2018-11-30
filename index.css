@@ -7,28 +7,6 @@
 
 
 
-
-/* Pano te body*/
-
-* {
-    box-sizing: border-box;
-}
-
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-
 /*Nrro b me a ,ama gjej zgjidhje*/
 
 b:link, b:visited {
@@ -38,7 +16,7 @@ b:link, b:visited {
     text-align: center;
     text-decoration: none;
     display: inline-block;
- ;
+
 }
 b:hover, b:active{
     background-color: #ddd;
@@ -46,11 +24,13 @@ b:hover, b:active{
 
 }
 .next {
+    box-sizing: content-box;
     background-color: black;
     color:#f35300;
     padding:8px; 
-    float:right
-
+    float:right;
+     margin: 10px;
+box-sizing: border-box;
 }
 
 
@@ -68,20 +48,14 @@ height:50%;
 div.gallery {
     margin: 5px;
     background-color: #f35300;
-
     float: left;
 
-    float: left; 
-   
-
 }
-
 div.gallery img {
     width: 100%;
     height: auto;  
 
 }
-
 div.desc {
     text-align: bottom;
     
@@ -100,6 +74,7 @@ clear: left;
 }
 
 
+/**************************************** Header***************************** */
 .a {
     text-decoration: none;
     color: #f35300;
