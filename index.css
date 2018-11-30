@@ -5,6 +5,11 @@
     display: block;
 }
 
+
+
+
+/* Pano te body*/
+
 * {
     box-sizing: border-box;
 }
@@ -23,20 +28,77 @@
 }
 
 
+
+/*Nrro b me a ,ama gjej zgjidhje*/
+
+b:link, b:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+ ;
+}
+b:hover, b:active{
+    background-color: #ddd;
+    color: black;  
+
+}
+.next {
+    background-color: black;
+    color:#f35300;
+    padding:8px; 
+    float:right
+
+}
+
+
+/* 4 fotot te body*/
+article {
+border: none;
+padding: 2px;
+margin: 40px 20px 20px 20px;
+width:60%;
+height:50%;
+ display: flex;
+ justify-content:space-between;
+  
+}
 div.gallery {
     margin: 5px;
     background-color: #f35300;
+
     float: left;
+
+    float: left; 
+   
+
 }
 
 div.gallery img {
     width: 100%;
-    height: auto;
+    height: auto;  
+
 }
 
 div.desc {
     text-align: bottom;
+    
 }
+
+/*texti ne body */
+.section{
+border: none;
+padding: 5px;
+margin:40px 20px 40px 20px;
+width:60%;
+height:50%; 
+font-family: "Hoefler Text", Cambria, "Times New Roman", serif; 
+word-spacing: normal;
+clear: left;
+}
+
 
 .a {
     text-decoration: none;
@@ -83,3 +145,6 @@ div.desc {
     width: 468;
     box-sizing: border-box;
 }
+
+
+
