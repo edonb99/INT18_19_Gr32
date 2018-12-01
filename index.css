@@ -7,7 +7,7 @@
 
 
 
-/*Nrro b me a ,ama gjej zgjidhje*/
+/* ****************************Nrro b me a ,ama gjej zgjidhje******************* */
 
 b:link, b:visited {
     background-color: #f44336;
@@ -34,7 +34,7 @@ box-sizing: border-box;
 }
 
 
-/* 4 fotot te body*/
+/*  **********************************4 fotot te body********************* */
 article {
 border: none;
 padding: 2px;
@@ -74,7 +74,7 @@ clear: left;
 }
 
 
-/**************************************** Header***************************** */
+/**************************************** Header******************** */
 .a {
     text-decoration: none;
     color: #f35300;
