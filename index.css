@@ -8,7 +8,6 @@
 
 /* ****************************Pano te body****************************************** */
 
-
 .pano {
 width: 100%;
 height: 100%;
@@ -16,7 +15,8 @@ margin: none;
 
 }
 
-/* ---Nrro b me a ,ama gjej zgjidhje----  */
+
+/* ****************************Nrro b me a ,ama gjej zgjidhje******************* */
 
 b:link, b:visited {
     background-color: #f44336;
@@ -25,7 +25,7 @@ b:link, b:visited {
     text-align: center;
     text-decoration: none;
     display: inline-block;
- ;
+
 }
 b:hover, b:active{
     background-color: #ddd;
@@ -40,12 +40,12 @@ background-color: black;
     float:right;
     margin: 10px;
 box-sizing: border-box;
-
 }
 
 
 
 /* *******************************4 fotot te body************************************************ */
+
 article {
 border: none;
 padding: 10px;
@@ -59,8 +59,8 @@ height:50%;
 div.gallery {
     margin: 5px;
     background-color: #f35300;
-    float: left; 
-   
+    float: left;
+
 }
 div.gallery img {
     width: 100%;
@@ -114,6 +114,53 @@ word-spacing: normal;
 clear: left;
 }
 
+
+/**************************************** Header******************** */
+.a {
+    text-decoration: none;
+    color: #f35300;
+
+}
+
+.header ul {
+    display: flex;
+    text-decoration: none;
+    color: #f35300;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.header {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.header li {
+    padding-left: 2px;
+}
+
+#container {
+    width 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 60px;
+
+}
+
+.box1 {
+    box-sizing: border-box;
+    float: left;
+    padding-left: 5px;
+    width: 500px;
+}
+
+.box2 {
+    float: right;
+    width: 468;
+    box-sizing: border-box;
+}
 
 
 
