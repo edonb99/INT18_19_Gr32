@@ -1,10 +1,19 @@
-.footer {
-    width: 100%;
-    background-color: dimgray;
-    padding: 60px 0px;
-    display: block;
+.footer
+{
+  width: 100%;
+  background-color: dimgray;
+  padding: 60px 0px;
+  display: block;
 }
 
+/* ****************************Pano te body****************************************** */
+
+.pano {
+width: 100%;
+height: 100%;
+margin: none;
+
+}
 
 
 /* ****************************Nrro b me a ,ama gjej zgjidhje******************* */
@@ -24,21 +33,23 @@ b:hover, b:active{
 
 }
 .next {
-    box-sizing: content-box;
-    background-color: black;
+box-sizing: content-box;
+background-color: black;
     color:#f35300;
     padding:8px; 
     float:right;
-     margin: 10px;
+    margin: 10px;
 box-sizing: border-box;
 }
 
 
-/*  **********************************4 fotot te body********************* */
+
+/* *******************************4 fotot te body************************************************ */
+
 article {
 border: none;
-padding: 2px;
-margin: 40px 20px 20px 20px;
+padding: 10px;
+margin: 40px 40px 20px 20px;
 width:60%;
 height:50%;
  display: flex;
@@ -61,7 +72,37 @@ div.desc {
     
 }
 
-/*texti ne body */
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  max-width: 500px;
+  margin: 10px;
+  font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
+
+}
+
+.container img {vertical-align: middle;}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 5px;
+}
+
+
+/* *************************************************texti ne body************************************** */
+
 .section{
 border: none;
 padding: 5px;
@@ -120,6 +161,7 @@ clear: left;
     width: 468;
     box-sizing: border-box;
 }
+
 
 
 
