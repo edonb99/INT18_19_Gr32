@@ -101,7 +101,8 @@ div.desc {
 }
 
 
-/*texti ne body */
+/* *************************************************texti ne body************************************** */
+
 .section{
 border: none;
 padding: 5px;
@@ -112,6 +113,7 @@ font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
 word-spacing: normal;
 clear: left;
 }
+
 
 
 
