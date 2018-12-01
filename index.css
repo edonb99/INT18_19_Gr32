@@ -6,7 +6,7 @@
   display: block;
 }
 
-/* ******************Pano te body************************* */
+/* ****************************Pano te body****************************************** */
 
 
 .pano {
@@ -16,7 +16,7 @@ margin: none;
 
 }
 
-/*Nrro b me a ,ama gjej zgjidhje*/
+/* ---Nrro b me a ,ama gjej zgjidhje----  */
 
 b:link, b:visited {
     background-color: #f44336;
@@ -33,7 +33,7 @@ b:hover, b:active{
 
 }
 .next {
-    box-sizing: content-box;
+box-sizing: content-box;
 background-color: black;
     color:#f35300;
     padding:8px; 
@@ -41,8 +41,8 @@ background-color: black;
     margin: 10px;
 box-sizing: border-box;
 
-
 }
+
 
 
 /* 4 fotot te body*/
