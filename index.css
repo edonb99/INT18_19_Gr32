@@ -5,7 +5,7 @@
   margin: auto;
   background-color: lightgrey;
   padding: 10px 0px;
-  display: block;
+  display: flex;
   font-color: white; 
 }
 
