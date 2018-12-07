@@ -84,7 +84,7 @@ box-sizing: border-box;
 article {
 border: none;
 padding: 10px;
-margin: 40px 40px 20px 20px;
+margin: 40px 40px 20px 0px;
 width:60%;
 height:50%;
  display: flex;
@@ -122,11 +122,37 @@ div.desc {
   max-width: 500px;
   margin: 10px;
   font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
+  color:#f35300;
+  text-align: center;
+}
+
+
+/* qito per 4 fotot, rishikoji */
+  .container a:link {
+  text-decoration: none;
+  color: #f35300;
+}
+
+.container a:visited {
+  text-decoration: none;
+  color: #f35300;
+}
+
+.container a:hover {
+  text-decoration: underline;
+  color: green;
+}
+
+.container a:active {
+  text-decoration: underline;
+  color:white; 
 
 }
 
-.container img {vertical-align: middle;}
+/* ----- */
 
+.container img {vertical-align: middle;}
+ 
 .content {
   position: absolute;
   bottom: 0;
