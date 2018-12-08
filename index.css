@@ -53,18 +53,22 @@ margin: none;
 
 /* ****************************Nrro b me a ,ama gjej zgjidhje******************* */
 
+
+.button {
+  background-color: black;
+  border: none;
+  color: #f35300;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float:right;
+}
   
 
-}
-.next {
-box-sizing: content-box;
-background-color: black;
-    color:#f35300;
-    padding:8px; 
-    float:right;
-    margin: 10px;
-box-sizing: border-box;
-}
 
 
 
