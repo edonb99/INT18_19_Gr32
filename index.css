@@ -1,9 +1,43 @@
 .footer
 {
   width: 100%;
-  background-color: dimgray;
-  padding: 60px 0px;
+  height: auto;
+  margin: auto;
+  background-color: lightgrey;
+  padding: 10px 0px;
   display: block;
+  font-color: white; 
+}
+
+
+.footer-social-icons {
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+
+.footer-social-icons ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.footer-social-icons ul li {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0px 10px;
+	border-radius: 100%;
+	background: lightgreen;
+}
+
+.footer-social-icons ul li a {
+	color: lightgreen;
+	font-size: 25px;
+}
+
+.footer-social-icons ul li a i {
+	line-height: 40px;
 }
 
 /* ****************************Pano te body****************************************** */
@@ -13,34 +47,50 @@ width: 100%;
 height: 100%;
 margin: none;
 
+
 }
 
 
 /* ****************************Nrro b me a ,ama gjej zgjidhje******************* */
 
-b:link, b:visited {
-    background-color: #f44336;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
+
+.button {
+  background-color: black;
+  border: none;
+  color: #f35300;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float:right;
+}
+  
+a.button:link{
+    background-color: black;
     text-decoration: none;
-    display: inline-block;
+    color: white;
 
 }
-b:hover, b:active{
-    background-color: #ddd;
+  a.button:visited {
+    background-color: black;
+      text-decoration: none;
+    color: #f35300;
+
+}
+ a.button:hover{
+    background-color:black ;
+    color: #f35300;  
+      padding: 14px;
+    text-align: center;
+}
+ a.button:active{
+    background-color:#ddd ;
     color: black;  
+}
 
-}
-.next {
-box-sizing: content-box;
-background-color: black;
-    color:#f35300;
-    padding:8px; 
-    float:right;
-    margin: 10px;
-box-sizing: border-box;
-}
 
 
 
@@ -49,7 +99,7 @@ box-sizing: border-box;
 article {
 border: none;
 padding: 10px;
-margin: 40px 40px 20px 20px;
+margin:40px 5px;
 width:60%;
 height:50%;
  display: flex;
@@ -69,8 +119,10 @@ div.gallery img {
 }
 div.desc {
     text-align: bottom;
-    
+
 }
+
+    
 
 
 
@@ -82,14 +134,41 @@ div.desc {
 
 .container {
   position: relative;
-  max-width: 500px;
-  margin: 10px;
+  max-width:135px;
+  max-height: 120px;
+  margin: 5px;
   font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
+  color:#f35300;
+  text-align: center;
+}
+
+
+/* qito per 4 fotot, rishikoji */
+  .container a:link {
+  text-decoration: none;
+  color: #f35300;
+}
+
+.container a:visited {
+  text-decoration: none;
+  color: #f35300;
+}
+
+.container a:hover {
+  text-decoration: underline;
+  color: green;
+}
+
+.container a:active {
+  text-decoration: underline;
+  color:white; 
 
 }
 
-.container img {vertical-align: middle;}
+/* ----- */
 
+.container img {vertical-align: middle;}
+ 
 .content {
   position: absolute;
   bottom: 0;
@@ -161,6 +240,7 @@ clear: left;
     width: 468;
     box-sizing: border-box;
 }
+
 
 
 
