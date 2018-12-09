@@ -3,7 +3,7 @@
   width: 100%;
   height: auto;
   margin: auto;
-  background-color: lightgray;
+  background-color: dimgray;
   padding: 10px 0px;
   display: flex;
   font-color: white; 
@@ -21,7 +21,7 @@
 
 .details  a:visited {
     text-decoration: none;
-    color: blueviolet;
+    color: aliceblue;
 
 }
 
@@ -36,6 +36,12 @@
 }
 
 /* */ 
+
+.template {
+    background: lightgrey;
+    padding: inherit;
+}
+
 
 
 .footer-social-icons {
