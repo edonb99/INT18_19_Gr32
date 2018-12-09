@@ -10,23 +10,29 @@
 }
 
 /* */
+.details {
+    padding: inherit;
+}
 .details a:link{
     text-decoration: none;
     color: white;
-
+    padding-left: 5px;
 }
+
 .details  a:visited {
     text-decoration: none;
-    color: white;
+    color: blueviolet;
 
 }
- .details a:hover{;
+
+.details a:hover{;
     color: #f35300;  
-      padding: 14px;
+    padding: 5px;
     text-align: center;
 }
- .details a:active{
-    color: deepskyblue;  
+
+.details a:active{
+    color: gold;  
 }
 
 /* */ 
