@@ -1,9 +1,11 @@
+
+
 .footer
 {
   width: 100%;
   height: auto;
   margin: auto;
-  background-color: lightgrey;
+  background-color: black;
   padding: 10px 0px;
   display: flex;
 }
@@ -35,7 +37,6 @@
     height: auto;
     padding: 10px;
     background: #FFEBCD;
-
 }
 
 
