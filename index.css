@@ -179,9 +179,10 @@ div.desc {
 /* *************************************************texti ne body************************************** */
 
 .section{
+color:#778899;
 border: none;
 padding: 5px;
-margin:40px 20px 40px 20px;
+margin:40px 20px 40px 0px;
 width:60%;
 height:50%; 
 font-family: "Hoefler Text", Cambria, "Times New Roman", serif; 
