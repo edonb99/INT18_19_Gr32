@@ -3,7 +3,7 @@
   width: 100%;
   height: auto;
   margin: auto;
-  background-color: lightgrey;
+  background-color: lightgray;
   padding: 10px 0px;
   display: flex;
   font-color: white; 
@@ -25,8 +25,8 @@
       padding: 14px;
     text-align: center;
 }
- .detailsa:active{
-    color: black;  
+ .details a:active{
+    color: deepskyblue;  
 }
 
 /* */ 
