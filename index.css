@@ -49,6 +49,7 @@ margin: none;
 }
 
 
+
 .button {
   background-color: black;
   border: none;
@@ -99,6 +100,8 @@ width:60%;
 height:50%;
  display: flex;
  justify-content:space-between;
+ align-items: stretch;
+ align-content: flex-start;
   
 }
 div.gallery {
@@ -131,10 +134,11 @@ div.desc {
   position: relative;
   max-width:135px;
   max-height: 120px;
-  margin: 5px;
+  margin: 40px 0px 10px 0px;
   font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
   color:#f35300;
   text-align: center;
+  align-content: flex-start;
 }
 
 
@@ -178,13 +182,15 @@ div.desc {
 /* *************************************************texti ne body************************************** */
 
 .section{
+color:#778899;
 border: none;
 padding: 5px;
-margin:40px 20px 40px 20px;
+margin:40px 20px 40px 0px;
 width:60%;
 height:50%; 
 font-family: "Hoefler Text", Cambria, "Times New Roman", serif; 
 word-spacing: normal;
+text-indent: 5px;
 clear: left;
 }
 
