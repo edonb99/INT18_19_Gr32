@@ -10,6 +10,12 @@
         overflow: hidden;
     }
 
+    .fix {
+        position: fixed;
+        top: 0px;
+        width: 80%;
+    }
+
     nav li {
         float: left;
         height: 40px;
@@ -25,11 +31,11 @@
         font-weight: 150;
     }
 
-    nav li a:hover:not(.home) {
+    nav li a:hover:not(.active) {
         background-color: gray;
     }
 
-    .home {
+    .active {
         background-color: #f35300;
     }
 
@@ -53,7 +59,6 @@
         margin-top: 10px;
         font-size: 11px;
     }
-
 </style>
 
 
@@ -106,8 +111,8 @@
             <!--******************************************NAV_BAR*************************************-->
             <nav>
                 <br>
-                <ul>
-                    <li><a class="home" href="#Home">Home</a></li>
+                <ul id="nav">
+                    <li><a class="active" href="#Home">Home</a></li>
                     <li><a href="#About">About</a></li>
                     <li><a href="Events.html">Events</a></li>
                     <li><a href="#DropDown">DropDown</a></li>
@@ -365,6 +370,25 @@
 
 
     </div>
+
+    <!--**************************************************Java Script****************************************************-->
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var nav = document.getElementById("nav");
+        var sticky = nav.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                nav.classList.add("fix")
+            } else {
+                nav.classList.remove("fix");
+            }
+        }
+    </script>
+    <!--**************************************************End-Java Script****************************************************-->
 
 </body>
 
