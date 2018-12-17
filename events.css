@@ -195,3 +195,89 @@
     height:300px;
     transform: rotate(360deg);
 }
+
+
+
+
+
+#permbajtja {
+
+    display: flex;
+
+}
+
+
+
+#permbajtja .permbajtja-section {
+
+    margin: 0px 20px;
+
+    width: 50%;
+
+}
+
+#permbajtja #about #about-image-permbajtja {
+
+    border: 1px solid #e2e2e2;
+
+    padding: 4px;
+
+    width: 270px;
+
+    height: 200px;
+
+    overflow: hidden;
+
+}
+
+
+
+
+
+
+
+
+#permbj .permbj-section .permbj-section-header {
+
+
+    width: 280px;
+
+    height: 44px;
+
+    display: inline-table;
+
+}
+
+
+
+#permbj .permbj-section .permbj-section-header h6 {
+
+    font-size: 16px;
+
+    line-height: 19px;
+
+    color: #989898;
+
+    margin: 0px;
+
+    display: table-cell;
+
+    vertical-align: middle;
+
+}
+
+
+
+#permbj .permbj-section p {
+
+    width: auto;
+
+    height: 105px;
+
+    font-size: 14px;
+
+    line-height: 19px;
+
+    color: #888888;
+
+}
