@@ -218,7 +218,7 @@
 
 #permbajtja #about #about-image-permbajtja {
 
-    border: 1px solid #e2e2e2;
+    border: 1px solid #6666ff;
 
     padding: 4px;
 
@@ -227,6 +227,8 @@
     height: 200px;
 
     overflow: hidden;
+
+    background-color: #e2e2e2;
 
 }
 
