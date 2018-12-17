@@ -141,8 +141,7 @@
     border: none;
     padding: 5px;
     margin: 40px;
-    width: 60%;
-    height: 50%;
+    
     font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
     word-spacing: normal;
     text-indent: 5px;
@@ -195,3 +194,115 @@
     height:300px;
     transform: rotate(360deg);
 }
+
+
+
+
+
+#permbajtja {
+
+    display: flex;
+
+}
+
+
+
+#permbajtja .permbajtja-section {
+
+    margin: 0px 20px;
+
+    width: 50%;
+
+}
+
+#permbajtja #about #about-image-permbajtja {
+
+    border: 1px solid #6666ff;
+
+    padding: 4px;
+
+    width: 270px;
+
+    height: 200px;
+
+    overflow: hidden;
+
+    background-color: #e2e2e2;
+
+}
+
+
+
+#permbj .permbj-section .permbj-section-header {
+
+
+    width: 280px;
+
+    height: 44px;
+
+    display: inline-table;
+
+}
+
+
+
+#permbj .permbj-section .permbj-section-header h6 {
+
+    font-size: 16px;
+
+    line-height: 19px;
+
+    color: #989898;
+
+    margin: 0px;
+
+    display: table-cell;
+
+    vertical-align: middle;
+
+}
+
+
+
+#permbj .permbj-section p {
+
+    width: auto;
+
+    height: 105px;
+
+    font-size: 14px;
+
+    line-height: 19px;
+
+    color: #888888;
+
+}
+
+
+
+/*fotoja */
+
+figcaption.popup {
+padding: 10px;
+background: #e1e1e1;
+position: absolute;
+/* add a drop shadow to the frame */
+-webkit-box-shadow: 0 0 15px #A9A9A9);
+-moz-box-shadow: 0 0 15px #A9A9A9;
+box-shadow: 0 0 15px #A9A9A9;
+/* hide it until there is a hover */
+visibility: hidden;
+}
+
+figure.thumbnail:hover figcaption.popup {
+position: absolute;
+top: 40px;
+right: 50%;
+/* display image upon hover */
+visibility: visible;
+}
+/* */
+
+
+
+
