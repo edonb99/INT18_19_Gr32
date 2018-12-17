@@ -63,6 +63,22 @@
     <title>Echo School</title>
 </head>
 
+<script>
+    var modal = document.getElementById('myModal');
+    var btn1 = document.getElementById("btnLogIn");
+    var span = document.getElementsByClassName("close")[0]; 
+    btn1.onclick = function() {
+        modal.style.display="block";
+    }
+    span.onclick function() {
+        modal.style.display="none";
+    }
+    window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    }
+    }
+</script>
 
 <body style="width:1024px; margin:auto; background-color: #5c5c5c">
 
@@ -70,18 +86,30 @@
     <div style="background-color: white">
         <!--**************************************************HEADER****************************************************-->
         <header>
+            <!--********************** MODAL ********************* -->
+
+            <div id="myModal" class="modal">
+                <!-- ************ MODAL CONTENT ************* -->
+
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    finvoisnv
+                </div>
+                <!-- ************** MODAL CONTENT END ************** -->
+            </div>
+            <!--********************** MODAL END ********************* -->
             <div class="header">
                 <ol style="float: left">
-                    <li><a class="a" href="#"> Libero</a> | </li>
-                    <li><a class="a" href="#"> Maecenas</a> | </li>
-                    <li><a class="a" href="#"> Mauris</a> | </li>
-                    <li><a class="a" href="#"> Suspendise</a></li>
+                    <li><button id="btnLogIn" class="btn logIn"> Log in</button> | </li>
+                    <li><button class="btn signUp"> Sign up</button> | </li>
+                    <li><a class="a" href=""> Footer</a> | </li>
+                    <li><a class="a" href=""> Suspendise</a></li>
                 </ol>
                 <ol style="float: right">
-                    <li><a class="a" href="#"> Libero</a> | </li>
-                    <li><a class="a" href="#"> Maecenas</a> | </li>
-                    <li><a class="a" href="#"> Mauris</a> | </li>
-                    <li><a class="a" href="#"> Suspendise</a></li>
+                    <li><button class="btn logIn"> Log in</button> | </li>
+                    <li><button class="btn signUp"> Sign up</button> | </li>
+                    <li><a class="a" href=""> Footer</a> | </li>
+                    <li><a class="a" href=""> Suspendise</a></li>
                 </ol>
             </div>
             <br>
