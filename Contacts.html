@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<style>
+    nav ul {
+        list-style-type: none;
+        padding-left: 17px;
+        margin: 0;
+        background-color: #5c5c5c;
+        overflow: hidden;
+    }
+
+    nav li {
+        float: left;
+        height: 40px;
+    }
+
+    nav li a {
+        padding: 13px 20px;
+        text-decoration: none;
+        color: white;
+        display: block;
+        font-family: sans-serif;
+        font-size: 13px;
+        font-weight: 150;
+    }
+
+    nav li a:hover:not(.home) {
+        background-color: gray;
+    }
+
+    .home {
+        background-color: #f35300;
+    }
+
+    nav input[type="submit"] {
+        border: 1px solid #262626;
+        border-radius: 0;
+        margin: 10px 15px;
+        margin-left: 10px;
+        padding: 2px 10px;
+        font-size: 12px;
+        background: #f35300;
+        font-weight: 500;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    nav input[type="text"] {
+        border: 1px solid #262626;
+        padding: 3px 0px 3px 3px;
+        margin-top: 10px;
+        font-size: 11px;
+    }
+
+</style>
+
+
+<head>
+   <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="contacts.css">
+
+    <title>Echo School</title>
+</head>
+
+
+<body style="width:1024px; margin:auto; background-color: #5c5c5c">
+
+
+    <div style="background-color: white">
+        <!--**************************************************HEADER****************************************************-->
+        <header>
+            <div class="header">
+                <ol style="float: left">
+                    <li><a class="a" href="#"> Libero</a> | </li>
+                    <li><a class="a" href="#"> Maecenas</a> | </li>
+                    <li><a class="a" href="#"> Mauris</a> | </li>
+                    <li><a class="a" href="#"> Suspendise</a></li>
+                </ol>
+                <ol style="float: right">
+                    <li><a class="a" href="#"> Libero</a> | </li>
+                    <li><a class="a" href="#"> Maecenas</a> | </li>
+                    <li><a class="a" href="#"> Mauris</a> | </li>
+                    <li><a class="a" href="#"> Suspendise</a></li>
+                </ol>
+            </div>
+            <br>
+
+            <hr>
+
+            <div id="container">
+                <div class="box1">
+                    <span style="font-size: 32px;margin: 0px;padding: 0px">
+                        Education
+                    </span>
+                    <br>
+                    <span style="font-size: 12px;margin: 0px;padding: 0px">
+                        Free PSD Website Template
+                    </span>
+                </div>
+                <div class="box2">
+                    <img src="Images/eco_schools_logo.jpg" width="468px" height="60px" alt="Llogo" style="float: right;overflow: auto">
+                </div>
+            </div>
+
+            <!--******************************************NAV_BAR*************************************-->
+            <nav>
+                <br>
+                <ul>
+                    <li><a class="home" href="Index.html">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contacts.html">Contact</a></li>
+                    
+                    <li style="float:right;"><input type="submit" value="Search"></li>
+                    <li style="float:right;"><input type="text" placeholder="Search Term Here..."></li>
+                </ul>
+                <br><br>
+            </nav>
+            <!--******************************************NAV_BAR_END*************************************-->
+
+
+        </header>
+        <!--***********************************************HEADER_END****************************************************-->
+
+
+
+
+
+<!--    ------------------------------------------CONTACTCS------------------------------------------- -->
+
+
+<div class="contacts">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="albania">Albania</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="kosovo">Kosovo</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div> 
+
+
+</body>
+</html>
