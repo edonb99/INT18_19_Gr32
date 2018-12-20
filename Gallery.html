@@ -9,6 +9,18 @@
         background-color: #5c5c5c;
         overflow: hidden;
     }
+    
+ .fix {
+        position: fixed;
+        top: 0px;
+        width: 80%;
+        z-index:2;
+    }
+
+    .fix1 {
+        position: fixed;
+        top: 40px;
+    }
 
     nav li {
         float: left;
@@ -29,7 +41,7 @@
         background-color: gray;
     }
 
-    .home {
+    .active {
         background-color: #f35300;
     }
 
@@ -53,12 +65,99 @@
         margin-top: 10px;
         font-size: 11px;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* CSS Gallery Style */
+    * {
+        box-sizing: border-box;
+      }
+    
+    body {
+        font-family: Verdana, sans-serif;
+    }
+    
+    .mySlides {
+        display: none;
+    }
+    
+    img {
+        vertical-align: middle;
+    }
 
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 2.5s;
+      animation-name: fade;
+      animation-duration: 2.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+
+    
+    
 </style>
 
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>Echo School</title>
 </head>
@@ -106,11 +205,11 @@
             <!--******************************************NAV_BAR*************************************-->
             <nav>
                 <br>
-                <ul>
+                <ul id="nav">
                     <li><a class="home" href="#Home">Home</a></li>
-                    <li><a href="#About">About</a></li>
+                    <li><a href="About.html">About</a></li>
                     <li><a href="Events.html">Events</a></li>
-                    <li><a href="#Gallery.html">Gallery</a></li>
+                    <li><a class="active" href="#Gallery.html">Gallery</a></li>
                     <li><a href="Contacts.html">Contact</a></li>
                     
                     <li style="float:right;"><input type="submit" value="Search"></li>
@@ -131,29 +230,88 @@
 
 <!-- --------------------------------------------------------GALLERY------------------------------------------------------ -->
 
-<div>
+        <br> <br> <br> <br>
+<div class="krasor">
 
+    <img src="Images/ecoblog-gallery.jpg" style="width: 300px; height: 200px">
 
+    <img src="Images/ecoschool5-gallery.jpg" style="width: 300px; height: 200px">
 
+    <img src="Images/flag2-gallery.jpg" style="width: 300px; height: 200px">
 
+    <img src="Images/houseeco-gallery.jpg" style="width: 300px; height: 200px">
 
+    <img src="Images/kids4-gallery.jpg" style="width: 300px; height: 200px">
 
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="slideshow-container">
 
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3
+            </div>
+            <img src="Images/flag2-gallery.jpg" style="width:100%">
+            <div class="text">Fotoja e pare
+            </div>
+        </div>
 
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3
+            </div>
+            <img src="Images/ecoschool5-gallery.jpg" style="width:100%">
+            <div class="text">Fotoja e dyte
+            </div>
+        </div>
 
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3
+            </div>
+            <img src="Images/ecoblog-gallery.jpg" style="width:100%">
+            <div class="text">Fotoja e trete
+            </div>
+        </div>
 
+    </div>
+    
+    <br>
 
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
 
+    <script>
+    var slideIndex = 0;
+    showSlides();
 
-
-
-
-
-
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+          slideIndex = 1
+      }    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); 
+    }
+    </script>
 
 </div>
 
-
+        <br> <br> <br> <br> <br> <br>
 
 <!-- -------------------------------------------------------GALLERY_END--------------------------------------------------------- -->
 
@@ -174,23 +332,24 @@
                 <input type="text" placeholder="e-mail...">
                 <input type="submit" value="Enter">
                 <p style="color: antiquewhite">To unsubscribe please<a href="#">click here</a></p>
-
+                <br>
+                <p><small><a href="#top">Go to Top of Document</a></small></p>
             </div>
-            
-            
-            
+
+
+
             <div class="details">
 
                 <h3 style="float: center"><a href="#">Services</a></h3>
                 <hr>
                 <p style="color: antiquewhite"><a href="#"><b>Apply</b></a> at our schools</p>
                 <p style="color: antiquewhite">Take Scholarship <a href="#"><b>Exam</b></a></p>
-                
+
                 <br>
-                
-                <p style="color: antiquewhite"><i>Follow us on social networks:</i></p>
-                
-                
+
+                <p style="color: antiquewhite"><i><small>Follow us on social networks:</small></i></p>
+
+
                 <a href="https://web.facebook.com/?_rdc=1&_rdr" target="blank" title="Facebook">
                     <img src="Images/facebook.png" alt="Facebook" style="width: 20px; height: 20px;"> </a>
 
@@ -213,10 +372,10 @@
             </div>
 
 
-        
+
             <div class="details">
 
-                <h3 style="float: center"><a target="_blank" href="Contacts.html">Contact</a></h3>
+                <h3 style="float: center"><a target="_blank" href="Contacts.html">Contacts</a></h3>
                 <hr>
                 <p style="color: lightskyblue; font-size: 14px"><b>E-Mail:</b></p>
                 <p style="color: antiquewhite; font-size: 14px">
@@ -228,25 +387,27 @@
 
             </div>
 
-            
-            
+
+
             <div class="details">
 
-                <h3 style="float: center"><a href="#">About</a></h3><hr>
+                <h3 style="float: center"><a href="#">About</a></h3>
+                <hr>
                 <p style="color: antiquewhite">Our <a href="#mission"><b>Mission</b></a></p>
-                <p style="color: antiquewhite"><u>Location:<u></p>
+                <p style="color: antiquewhite">Address:</p>
                 <ul>
                     <p style="color: antiquewhite; font-size: 12px">216 West 52nd Street</p>
                     <p style="color: antiquewhite; font-size: 12px">New York, 10019</p>
                     <p style="color: antiquewhite; font-size: 12px">United States of America</p>
                     <p style="color: antiquewhite; font-size: 12px"><a href="https://www.google.com/maps/place/216+W+52nd+St,+New+York,+NY+10019/@40.7627246,-73.9854276,685m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c25857ce8cfed5:0x682040e55f9746fc!8m2!3d40.7627246!4d-73.9832546">40.762940, -73.983213</a></p>
                 </ul>
-                    </div>
-            
+            </div>
 
-            
+
+
         </footer>
 
+        <!-- -------------------------------FOOTER-END ---------------------------------------------------- -->
 
 
         <div class="template" style="float:left">
@@ -256,6 +417,27 @@
 
 
     </div>
+
+
+<!-- -----------------------------NAV_JAVASCRIPT------------------------------------------- -->
+<script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var nav = document.getElementById("nav");
+        var sticky = nav.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                nav.classList.add("fix")
+            } else {
+                nav.classList.remove("fix");
+            }
+        }
+
+    </script>
+
 
 </body>
 

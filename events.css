@@ -1,4 +1,6 @@
 /* ********************Footer********************** */
+
+
 .footer {
     width: 100%;
     height: auto;
@@ -108,40 +110,13 @@
 
 /* ----------------------------------------------------Events---------------------------------------- */
 
-
-.gflag {
-    color: #778899;
-    border: none;
-    padding: 5px;
-    margin: 10px;
-    height: auto;
-    font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
-    word-spacing: normal;
-    text-indent: 5px;
-    clear: left;
-    background-color: #F0F8FF;
 }
 
-.ecowarrior{
+.cleanair{
 	color: #778899;
-    border: none;
-    padding: 5px;
-    margin: 10px;
-    height: auto;
-    font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
-    word-spacing: normal;
-    text-indent: 5px;
-    float: right;
-    background-color: #F0FFFF;
-
-}
-
-.cleanair {
-	color: #778899;
-    border: none;
+    border: 1pt;
     padding: 5px;
     margin: 40px;
-    
     font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
     word-spacing: normal;
     text-indent: 5px;
@@ -149,19 +124,7 @@
     background-color:#FFF5EE;
 }
 
-.ecoconf {
-	color: #778899;
-    border: none;
-    padding: 5px;
-    margin: 40px;
-    width: 60%;
-    height: 50%;
-    font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
-    word-spacing: normal;
-    text-indent: 5px;
-    clear: left;
-    background-color: #D3D3D3;
-}
+
 
 .futuresch
 {
@@ -169,8 +132,7 @@
     border: none;
     padding: 5px;
     margin: 40px;
-    width: 60%;
-    height: 50%;
+   
     font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
     word-spacing: normal;
     text-indent: 5px;
@@ -210,36 +172,36 @@
 #permbajtja .permbajtja-section {
 
     margin: 0px 20px;
-
     width: 50%;
 
 }
+figure{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} 
 
 #permbajtja #about #about-image-permbajtja {
 
     border: 1px solid #6666ff;
-
     padding: 4px;
-
     width: 270px;
-
-    height: 200px;
-
+    height: auto;
     overflow: hidden;
-
     background-color: #e2e2e2;
 
 }
-
-
+figcaption{
+    text-align: center;
+    font-size: 15;
+}
 
 #permbj .permbj-section .permbj-section-header {
 
 
     width: 280px;
-
     height: 44px;
-
     display: inline-table;
 
 }
@@ -249,15 +211,10 @@
 #permbj .permbj-section .permbj-section-header h6 {
 
     font-size: 16px;
-
     line-height: 19px;
-
     color: #989898;
-
     margin: 0px;
-
     display: table-cell;
-
     vertical-align: middle;
 
 }
@@ -269,11 +226,8 @@
     width: auto;
 
     height: 105px;
-
     font-size: 14px;
-
     line-height: 19px;
-
     color: #888888;
 
 }
@@ -281,7 +235,9 @@
 
 
 /*fotoja */
-
+.thumbnail {
+    cursor: help;
+}
 figcaption.popup {
 padding: 10px;
 background: #e1e1e1;
@@ -292,6 +248,7 @@ position: absolute;
 box-shadow: 0 0 15px #A9A9A9;
 /* hide it until there is a hover */
 visibility: hidden;
+cursor: help;
 }
 
 figure.thumbnail:hover figcaption.popup {
@@ -302,6 +259,167 @@ right: 50%;
 visibility: visible;
 }
 /* */
+
+figure.thumbnail2:hover figcaption.popup {
+position: absolute;
+top: 200px;
+right: 50%;
+/* display image upon hover */
+visibility: visible;
+}
+
+
+
+
+
+/* foto 7steps to eco school */
+.case {
+  position: relative;
+  width: 50%;
+  height:120; 
+  width: 200px;
+}
+
+.image {
+ 
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #00ba2e;
+}
+
+.case:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 23px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+/* */
+* {box-sizing: border-box;}
+.case2 {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image2 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay2 {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.case2:hover .overlay2 {
+  opacity: 1;
+}
+
+
+/*  section eco conference*/
+.ecoconf {
+    color: #778899;
+    border: none;
+    padding: 5px;
+    margin: 40px;
+  
+    font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
+    word-spacing: normal;
+    text-indent: 5px;
+    clear: left;
+    background-color: #D3D3D3;
+}
+/* */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 410px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+#column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+#row::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

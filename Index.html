@@ -10,6 +10,13 @@
         overflow: hidden;
     }
 
+    .fix {
+        position: fixed;
+        top: 0px;
+        width: 80%;
+        z-index:2;
+    }
+
     nav li {
         float: left;
         height: 40px;
@@ -25,11 +32,11 @@
         font-weight: 150;
     }
 
-    nav li a:hover:not(.home) {
+    nav li a:hover:not(.active) {
         background-color: gray;
     }
 
-    .home {
+    .active {
         background-color: #f35300;
     }
 
@@ -134,13 +141,13 @@
             <!--******************************************NAV_BAR*************************************-->
             <nav>
                 <br>
-                <ul>
-                    <li><a class="home" href="#Home">Home</a></li>
-                    <li><a href="#About">About</a></li>
+                <ul id="nav">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
                     <li><a href="Events.html">Events</a></li>
                     <li><a href="Gallery.html">Gallery</a></li>
                     <li><a href="Contacts.html">Contact</a></li>
-                    
+
                     <li style="float:right;"><input type="submit" value="Search"></li>
                     <li style="float:right;"><input type="text" placeholder="Search Term Here..."></li>
                 </ul>
@@ -182,7 +189,7 @@
                                 <span class="month"></span>
                                 <h1 class="day">28</h1>
                             </div>
-                            <p style="padding-left: 80px; border-style: none; height: 150px;"> sdkfkj dkf k fkdkjsfkjdkfj sdk fksdfksdjfkjsdfkjsdkfjdskfjd df sdkj sdkf kdjfksfsk sd kf k kj jkfjsdkfdsk jk jkf jsdkjfksjdf kjdkjskdjkd jskdksjdksj dkjsdkjdkjsaj jkdj ksdjd jk djksjdksj dksjdk j dkjds jddj skjdsdjadjd</p>
+                            <p class="text"> sdkfkj dkf k fkdkjsfkjdkfj sdk fksdfksdjfkjsdfkjsdkfjdskfjd df sdkj sdkf kdjfksfsk sd kf k kj jkfjsdkfdsk jk jkf jsdkjfksjdf kjdkjskdjkd jskdksjdksj dkjsdkjdkjsaj jkdj ksdjd jk djksjdksj dksjdk j dkjds jddj skjdsdjadjd</p>
                             <a href="" style=" color: #f35300; float: right; text-decoration: none">Continue Reading</a>
                         </li>
                         <hr>
@@ -192,7 +199,7 @@
                                 <span class="month"></span>
                                 <h1 class="day">28</h1>
                             </div>
-                            <p style="padding-left: 80px; border-style: none; height: 150px"> sdkfkj dkf k fkdkjsfkjdkfj sdk fksdfksdjfkjsdfkjsdkfjdskfjd df sdkj sdkf kdjfksfsk sd kf k kj jkfjsdkfdsk jk jkf jsdkjfksjdf kjdkjskdjkd jskdksjdksj dkjsdkjdkjsaj jkdj ksdjd jk djksjdksj dksjdk j dkjds jddj skjdsdjadjd</p>
+                            <p class="text"> sdkfkj dkf k fkdkjsfkjdkfj sdk fksdfksdjfkjsdfkjsdkfjdskfjd df sdkj sdkf kdjfksfsk sd kf k kj jkfjsdkfdsk jk jkf jsdkjfksjdf kjdkjskdjkd jskdksjdksj dkjsdkjdkjsaj jkdj ksdjd jk djksjdksj dksjdk j dkjds jddj skjdsdjadjd</p>
                             <a href="" style="color: #f35300; float: right; text-decoration: none">Continue Reading</a>
                         </li>
                         <hr>
@@ -202,7 +209,7 @@
                                 <span class="month"></span>
                                 <h1 class="day">28</h1>
                             </div>
-                            <p style="padding-left: 80px; border-style: none; height: 150px"> sdkfkj dkf k fkdkjsfkjdkfj sdk fksdfksdjfkjsdfkjsdkfjdskfjd df sdkj sdkf kdjfksfsk sd kf k kj jkfjsdkfdsk jk jkf jsdkjfksjdf kjdkjskdjkd jskdksjdksj dkjsdkjdkjsaj jkdj ksdjd jk djksjdksj dksjdk j dkjds jddj skjdsdjadjd</p>
+                            <p class="text"> sdkfkj dkf k fkdkjsfkjdkfj sdk fksdfksdjfkjsdfkjsdkfjdskfjd df sdkj sdkf kdjfksfsk sd kf k kj jkfjsdkfdsk jk jkf jsdkjfksjdf kjdkjskdjkd jskdksjdksj dkjsdkjdkjsaj jkdj ksdjd jk djksjdksj dksjdk j dkjds jddj skjdsdjadjd</p>
                             <a href="" style="color: #f35300; float: right; text-decoration: none">Continue Reading</a>
                         </li>
                         <hr>
@@ -211,7 +218,7 @@
             </aside>
 
 
-            <!-- ----------------------------------------------------4 fotot n'body ------------------------------------------------>
+<!-- ----------------------------------------------------4 fotot n'body ------------------------------------------------>
 
             <article class="article">
 
@@ -284,6 +291,8 @@
         </div>
 
 
+
+
         <!-- ------------------------------------ FOOTER ------------------------------------------------------------------------------- -->
 
 
@@ -299,23 +308,24 @@
                 <input type="text" placeholder="e-mail...">
                 <input type="submit" value="Enter">
                 <p style="color: antiquewhite">To unsubscribe please<a href="#">click here</a></p>
-
+                <br>
+                <p><small><a href="#top">Go to Top of Document</a></small></p>
             </div>
-            
-            
-            
+
+
+
             <div class="details">
 
                 <h3 style="float: center"><a href="#">Services</a></h3>
                 <hr>
                 <p style="color: antiquewhite"><a href="#"><b>Apply</b></a> at our schools</p>
                 <p style="color: antiquewhite">Take Scholarship <a href="#"><b>Exam</b></a></p>
-                
+
                 <br>
-                
-                <p style="color: antiquewhite"><i>Follow us on social networks:</i></p>
-                
-                
+
+                <p style="color: antiquewhite"><i><small>Follow us on social networks:</small></i></p>
+
+
                 <a href="https://web.facebook.com/?_rdc=1&_rdr" target="blank" title="Facebook">
                     <img src="Images/facebook.png" alt="Facebook" style="width: 20px; height: 20px;"> </a>
 
@@ -338,10 +348,10 @@
             </div>
 
 
-        
+
             <div class="details">
 
-                <h3 style="float: center"><a target="_blank" href="Contacts.html">Contact</a></h3>
+                <h3 style="float: center"><a target="_blank" href="Contacts.html">Contacts</a></h3>
                 <hr>
                 <p style="color: lightskyblue; font-size: 14px"><b>E-Mail:</b></p>
                 <p style="color: antiquewhite; font-size: 14px">
@@ -353,25 +363,27 @@
 
             </div>
 
-            
-            
+
+
             <div class="details">
 
-                <h3 style="float: center"><a href="#">About</a></h3><hr>
+                <h3 style="float: center"><a href="#">About</a></h3>
+                <hr>
                 <p style="color: antiquewhite">Our <a href="#mission"><b>Mission</b></a></p>
-                <p style="color: antiquewhite"><u>Location:<u></p>
+                <p style="color: antiquewhite">Address:</p>
                 <ul>
                     <p style="color: antiquewhite; font-size: 12px">216 West 52nd Street</p>
                     <p style="color: antiquewhite; font-size: 12px">New York, 10019</p>
                     <p style="color: antiquewhite; font-size: 12px">United States of America</p>
                     <p style="color: antiquewhite; font-size: 12px"><a href="https://www.google.com/maps/place/216+W+52nd+St,+New+York,+NY+10019/@40.7627246,-73.9854276,685m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c25857ce8cfed5:0x682040e55f9746fc!8m2!3d40.7627246!4d-73.9832546">40.762940, -73.983213</a></p>
                 </ul>
-                    </div>
-            
+            </div>
 
-            
+
+
         </footer>
 
+        <!-- -------------------------------FOOTER-END ---------------------------------------------------- -->
 
 
         <div class="template" style="float:left">
@@ -381,6 +393,26 @@
 
 
     </div>
+
+    <!--**************************************************Java Script****************************************************-->
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var nav = document.getElementById("nav");
+        var sticky = nav.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                nav.classList.add("fix")
+            } else {
+                nav.classList.remove("fix");
+            }
+        }
+
+    </script>
+    <!--**************************************************End-Java Script****************************************************-->
 
 </body>
 

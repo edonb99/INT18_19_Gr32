@@ -116,6 +116,7 @@ article {
     justify-content: space-between;
     align-items: stretch;
     align-content: flex-start;
+   
 
 }
 
@@ -361,9 +362,18 @@ aside li {
 }
 
 .date .day {
-    display: block;
     margin: 0;
     font-size: 30px;
     font-weight: 2;
     color: #b80f24;
+}
+
+.text {
+    font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
+    color: #778899;
+    word-spacing: normal;
+    text-indent: 5px;
+    padding-left: 80px;
+    border-style: none;
+    height: 150px;
 }
