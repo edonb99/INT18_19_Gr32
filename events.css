@@ -124,18 +124,7 @@
     background-color:#FFF5EE;
 }
 
-.ecoconf {
-	color: #778899;
-    border: none;
-    padding: 5px;
-    margin: 40px;
-  
-    font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
-    word-spacing: normal;
-    text-indent: 5px;
-    clear: left;
-    background-color: #D3D3D3;
-}
+
 
 .futuresch
 {
@@ -183,36 +172,36 @@
 #permbajtja .permbajtja-section {
 
     margin: 0px 20px;
-
     width: 50%;
 
 }
+figure{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} 
 
 #permbajtja #about #about-image-permbajtja {
 
     border: 1px solid #6666ff;
-
     padding: 4px;
-
     width: 270px;
-
-    height: 200px;
-
+    height: auto;
     overflow: hidden;
-
     background-color: #e2e2e2;
 
 }
-
-
+figcaption{
+    text-align: center;
+    font-size: 15;
+}
 
 #permbj .permbj-section .permbj-section-header {
 
 
     width: 280px;
-
     height: 44px;
-
     display: inline-table;
 
 }
@@ -222,15 +211,10 @@
 #permbj .permbj-section .permbj-section-header h6 {
 
     font-size: 16px;
-
     line-height: 19px;
-
     color: #989898;
-
     margin: 0px;
-
     display: table-cell;
-
     vertical-align: middle;
 
 }
@@ -242,11 +226,8 @@
     width: auto;
 
     height: 105px;
-
     font-size: 14px;
-
     line-height: 19px;
-
     color: #888888;
 
 }
@@ -254,7 +235,7 @@
 
 
 /*fotoja */
-.thumbnail{
+.thumbnail {
     cursor: help;
 }
 figcaption.popup {
@@ -279,7 +260,13 @@ visibility: visible;
 }
 /* */
 
-
+figure.thumbnail2:hover figcaption.popup {
+position: absolute;
+top: 200px;
+right: 50%;
+/* display image upon hover */
+visibility: visible;
+}
 
 
 
@@ -362,7 +349,19 @@ visibility: visible;
 }
 
 
-
+/*  section eco conference*/
+.ecoconf {
+    color: #778899;
+    border: none;
+    padding: 5px;
+    margin: 40px;
+  
+    font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
+    word-spacing: normal;
+    text-indent: 5px;
+    clear: left;
+    background-color: #D3D3D3;
+}
 /* */
 .dropdown {
   position: relative;
@@ -373,7 +372,7 @@ visibility: visible;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  width: 410px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -386,6 +385,39 @@ visibility: visible;
   padding: 15px;
   text-align: center;
 }
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+#column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+#row::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
