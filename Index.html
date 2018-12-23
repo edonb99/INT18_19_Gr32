@@ -14,7 +14,7 @@
         position: fixed;
         top: 0px;
         width: 80%;
-        z-index:2;
+        z-index: 2;
     }
 
     nav li {
@@ -71,20 +71,13 @@
 </head>
 
 <script>
-    var modal = document.getElementById('myModal');
-    var btn1 = document.getElementById("btnLogIn");
-    var span = document.getElementsByClassName("close")[0]; 
-    btn1.onclick = function() {
-        modal.style.display="block";
-    }
-    span.onclick function() {
-        modal.style.display="none";
-    }
-    window.onclick = function(event) {
+    var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
-    }
-    }
+  }
+}
 </script>
 
 <body style="width:1024px; margin:auto; background-color: #5c5c5c">
@@ -93,34 +86,57 @@
     <div style="background-color: white">
         <!--**************************************************HEADER****************************************************-->
         <header>
-            <!--********************** MODAL ********************* -->
 
-            <div id="myModal" class="modal">
-                <!-- ************ MODAL CONTENT ************* -->
-
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    finvoisnv
-                </div>
-                <!-- ************** MODAL CONTENT END ************** -->
-            </div>
-            <!--********************** MODAL END ********************* -->
             <div class="header">
                 <ol style="float: left">
-                    <li><button id="btnLogIn" class="btn logIn"> Log in</button> | </li>
-                    <li><button class="btn signUp"> Sign up</button> | </li>
-                    <li><a class="a" href=""> Footer</a> | </li>
+                    <li><button onclick="document.getElementById('id01').style.display='block'" class="btn "> Log in</button> | </li>
+                    <li><button class="btn "> Sign up</button> | </li>
+                    <li><a class="a" href="#bottom"> Bottom</a> | </li>
                     <li><a class="a" href=""> Suspendise</a></li>
                 </ol>
                 <ol style="float: right">
-                    <li><button class="btn logIn"> Log in</button> | </li>
+                    <li><button onclick="document.getElementById('id01').style.display='block'" class="btn"> Log in</button> | </li>
                     <li><button class="btn signUp"> Sign up</button> | </li>
-                    <li><a class="a" href=""> Footer</a> | </li>
+                    <li><a class="a" href="#bottom"> Bottom</a> | </li>
                     <li><a class="a" href=""> Suspendise</a></li>
                 </ol>
             </div>
             <br>
+            <!--********************** MODAL ********************* -->
+            <div id="id01" class="modal">
 
+
+                <!-- ************ MODAL CONTENT ************* -->
+                <form class="modal-content animate">
+                    <div style="padding: 0px; margin: 5%">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+
+                        </div>
+
+                        <div>
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <button id="logInButton" type="submit">Login</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>
+
+                        <div style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            <span style="float: right; padding-top: 16px"> <a href="#">Forgot password?</a></span>
+                        </div>
+                    </div>
+                </form>
+                <!-- ************** MODAL CONTENT END ************** -->
+            </div>
+            <!--********************** MODAL END ********************* -->
             <hr>
 
             <div id="container">
@@ -218,7 +234,7 @@
             </aside>
 
 
-<!-- ----------------------------------------------------4 fotot n'body ------------------------------------------------>
+            <!-- ----------------------------------------------------4 fotot n'body ------------------------------------------------>
 
             <article class="article">
 
@@ -300,7 +316,7 @@
 
 
 
-            <div class="details">
+            <div class="details" id="bottom">
 
                 <h3><a href="#">Stay In The Know!</a></h3>
                 <hr />
