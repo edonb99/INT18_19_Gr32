@@ -248,10 +248,24 @@ visibility: visible;
     border: 1pt;
     padding: 5px;
     margin: 40px;
-   
-    clear: left;
     background-color:#FFF5EE;
 }
+.fotocleanir {
+
+    float: left;
+    flex: 30%;
+    padding: 10px;
+}
+.teksticleanair {
+    flex: 70%;
+    padding: 10px;
+    font-family: 'Helvetica';
+    line-height: 1.5;
+    font-weight: 200;
+}
+
+
+
 
 
 /* foto 7steps to eco school */
@@ -302,7 +316,7 @@ visibility: visible;
 .case2 {
   position: relative;
   width: 50%;
-  max-width: 300px;
+  width: 300px;
   float:left;
 }
 
@@ -481,14 +495,16 @@ visibility: visible;
 }
 
 /* Caption text */
-.text {
-  color: black;
-  font-size: 15px;
+.teksti {
+  color: white;
+  font-size: 20px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
-  width: 100%;
+ 
+  
   text-align: center;
+  background-color: black;
+
 }
 
 /* Number text (1/3 etc) */
