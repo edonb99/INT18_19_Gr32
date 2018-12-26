@@ -252,18 +252,17 @@ visibility: visible;
 }
 .fotocleanir {
 
-    float: left;
+    float: right;
     flex: 30%;
     padding: 10px;
 }
 .teksticleanair {
-    flex: 70%;
+    flex: 60%;
     padding: 10px;
     font-family: 'Helvetica';
     line-height: 1.5;
     font-weight: 200;
 }
-
 
 
 
