@@ -328,3 +328,29 @@ aside li {
     line-height: 1.5;
     font-weight: 200;
 }
+
+#img1 {
+    display: none;
+}
+
+p.two:hover #img1 {
+    display: block;
+}
+
+table {
+    width: 964px;
+    border: 2px solid #ddd;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+th,
+td {
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #E0FDE0;
+}
