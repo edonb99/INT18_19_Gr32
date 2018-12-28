@@ -83,6 +83,8 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+    
 </script>
 
 <body style="width:1024px; margin:auto; background-color: #5c5c5c">
@@ -116,7 +118,7 @@ window.onclick = function(event) {
                     <div style="padding: 0px; margin: 5%">
                         <div class="imgcontainer">
                             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                            <br><br>
 
                         </div>
 
@@ -130,14 +132,37 @@ window.onclick = function(event) {
                             <button id="logInButton" type="submit">Login</button>
                             <label>
                                 <input type="checkbox" checked="checked" name="remember"> Remember me
-                                <span style="float: right; padding: 0; text-decoration: none"> <a href="#">Forgot password?</a></span>
+
                             </label>
 
                         </div>
-
+                        <br>
+                        <div class="bottom-container">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" style="color:white" class="btn-modal">Sign up</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" style="color:white" class="btn-modal">Forgot password?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="" style="clear: both">
+                            <a href="#" class="fb btn-modal">
+                                <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                            </a>
+                            <a href="#" class="twitter btn-modal">
+                                <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                            </a>
+                            <a href="#" class="google btn-modal"><i class="fa fa-google fa-fw">
+                                </i> Login with Google+
+                            </a>
+                        </div>
+                        <br><br>
                         <div style="background-color:white">
-                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                            <i class="fa fa-facebook-f"></i>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 4px">Cancel</button>
+
                         </div>
                     </div>
                 </form>
