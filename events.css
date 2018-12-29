@@ -249,6 +249,7 @@ visibility: visible;
     padding: 5px;
     margin: 40px;
     background-color:#FFF5EE;
+    outline-style: dotted;
 }
 .fotocleanir {
 
@@ -345,7 +346,9 @@ visibility: visible;
 }
 
 
-/*  section eco conference*/
+
+/*  ***********************************section eco conference*****************************  */
+
 .ecoconf {
     color: #778899;
     border: none;
@@ -356,8 +359,11 @@ visibility: visible;
     word-spacing: normal;
     text-indent: 5px;
     clear: left;
-    background-color: #D3D3D3;
+
+    background: url('Images/flag.gif') right bottom no-repeat, url(Immages/paper.gif) left top repeat;
+  padding: 15px;
 }
+
 /* */
 .dropdown {
   position: relative;
