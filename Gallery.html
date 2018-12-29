@@ -41,7 +41,7 @@
         background-color: gray;
     }
 
-    .active {
+    #active {
         background-color: #f35300;
     }
 
@@ -70,34 +70,37 @@
     
     
     
-    
-    
-    
+    /*<!------------------------------------ SLIDESHOW ------------------------------------->*/
     
     /* CSS Gallery Style */
     * {
         box-sizing: border-box;
       }
     
-    body {
+    body
+    {
         font-family: Verdana, sans-serif;
     }
     
-    .sllajdetefotove {
+    .sllajdetefotove
+    {
         display: none;
     }
     
-    img {
+    img
+    {
         vertical-align: middle;
     }
 
-    .mbajtesiSllajdeve {
+    .mbajtesiSllajdeve
+    {
       max-width: 1000px;
       position: relative;
       margin: auto;
     }
 
-    .text {
+    .text
+    {
       color: #f2f2f2;
       font-size: 15px;
       padding: 8px 12px;
@@ -107,7 +110,8 @@
       text-align: center;
     }
 
-    .numriTekstit {
+    .numriTekstit
+    {
       color: #f2f2f2;
       font-size: 12px;
       padding: 8px 12px;
@@ -115,7 +119,8 @@
       top: 0;
     }
 
-    .dot {
+    .dot
+    {
       height: 15px;
       width: 15px;
       margin: 0 2px;
@@ -125,32 +130,106 @@
       transition: background-color 0.6s ease;
     }
 
-    .active {
+    .active
+    {
       background-color: #717171;
     }
 
-    .fade {
+    .fade
+    {
       -webkit-animation-name: fade;
       -webkit-animation-duration: 2.5s;
       animation-name: fade;
       animation-duration: 2.5s;
     }
 
-    @-webkit-keyframes fade {
-      from {opacity: .4} 
-      to {opacity: 1}
+    @-webkit-keyframes fade
+    {
+      from
+        {
+            opacity: .4
+        } 
+      to
+        {
+            opacity: 1
+        }
     }
 
-    @keyframes fade {
-      from {opacity: .4} 
-      to {opacity: 1}
+    @keyframes fade
+    {
+      from
+        {
+            opacity: .4
+        } 
+      to
+        {
+            opacity: 1
+        }
     }
 
-    @media only screen and (max-width: 300px) {
-      .text {font-size: 11px}
+    @media only screen and (max-width: 300px)
+    {
+      .text
+        {
+          font-size: 11px
+        }
     }
 
+ /*<!----------------------------------------- THE END OF SLIDESHOW ----------------------------------------------->*/
     
+    
+    
+    
+    
+/*<!-------------------------------- PHOTO GRID ------------------------------------------------------------- -->*/
+
+    .row
+    {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column
+    {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+
+    .column img
+    {
+      margin-top: 8px;
+      vertical-align: middle;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px)
+    {
+      .column
+        {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px)
+    {
+      .column
+        {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        }
+    }
+    
+/*<!-------------------------------- END OF PHOTO GRID ------------------------------------------------------------- -->*/
     
 </style>
 
@@ -209,13 +288,13 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="About.html">About</a></li>
                     <li><a href="Events.html">Events</a></li>
-                    <li><a class="active" href="Gallery.html">Gallery</a></li>
+                    <li><a id="active" href="Gallery.html">Gallery</a></li>
                     <li><a href="Contacts.html">Contact</a></li>
                     
                     <li style="float:right;"><input type="submit" value="Search"></li>
                     <li style="float:right;"><input type="text" placeholder="Search Term Here..."></li>
                 </ul>
-                <br><br>
+                <br>
             </nav>
             <!--******************************************NAV_BAR_END*************************************-->
 
@@ -230,47 +309,102 @@
 
 <!-- --------------------------------------------------------GALLERY------------------------------------------------------ -->
 
-        <br> <br> 
+        
     <div id="row" style="display: block">
         <div class="krasor">
         
         <p style="display: flow-root">
             <div id="column">
-            <img src="Images/free.jpg" style="width: 300px; height: 200px; float: right">
+            <img src="Images/free.jpg" style="width: 400px; height: 300px; float: right; padding: 60px">
             </div>
             
             
             <div id="column">
-            <img src="Images/ecoblog-gallery.jpg" style="width: 300px; height: 200px;">
+            <img src="Images/ecoblog-gallery.jpg" style="width: 400px; height: 300px; padding: 60px">
             </div>
             
             
             <div id="column">
-                <img src="Images/ecoschool5-gallery.jpg" style="width: 300px; height: 200px; float: right">
+                <img src="Images/ecoschool5-gallery.jpg" style="width: 400px; height: 300px; float: right; padding: 60px">
             </div>
             
             
             <div id="column">
-                <img src="Images/flag2-gallery.jpg" style="width: 300px; height: 200px">
+                <img src="Images/flag2-gallery.jpg" style="width: 400px; height: 300px; padding: 60px">
             </div>
             
             
             <div id="column">
-                <img src="Images/houseeco-gallery.jpg" style="width: 300px; height: 200px; float: right">
+                <img src="Images/houseeco-gallery.jpg" style="width: 400px; height: 300px; float: right; padding: 60px">
             </div>
             
             
             <div id="column">
-                <img src="Images/kids4-gallery.jpg" style="width: 300px; height: 200px">
+                <img src="Images/kids4-gallery.jpg" style="width: 400px; height: 300px; padding: 60px">
             </div>
         </p>
             
         </div>
     </div>        
-            
+    <br>
+    <br>
+    <img src="Images/Green-Flag-Decade-Levana-gallery.jpg" alt="Flamuri i gjelbert(Levana)" width="500px" height="300px" style="float:inherit "> 
+    <br>
+    <br>
     
-    <br>
-    <br>
+    
+    
+    <br><br>
+    
+    
+             <!-------------------------------- PHOTO GRID ------------------------------------------------------------- -->
+    
+        <div class="row"> 
+          <div class="column">
+            <img src="Images/ecoschool5-gallery.jpg" style="width:100%">
+            <img src="Images/Green-Flag-Decade-Levana-gallery.jpg" style="width:100%">
+            <img src="Images/ecookids%20-%20Copy.jpg" style="width:100%">
+            <img src="Images/kids8-gallery.jpg" style="width:100%">
+            <img src="Images/ecoblog-gallery.jpg" style="width:100%">
+            <img src="Images/flag2-gallery.jpg" style="width:100%">
+            <img src="Images/clean.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="Images/clean.jpg" style="width:100%">
+            <img src="Images/ecoschool5-gallery.jpg" style="width:100%">
+            <img src="Images/Green-Flag-Decade-Levana-gallery.jpg" style="width:100%">
+            <img src="Images/ecookids%20-%20Copy.jpg" style="width:100%">
+            <img src="Images/kids8-gallery.jpg" style="width:100%">
+            <img src="Images/ecoblog-gallery.jpg" style="width:100%">
+            <img src="Images/flag2-gallery.jpg" style="width:100%">
+          </div>  
+          <div class="column">
+            <img src="Images/ecoschool5-gallery.jpg" style="width:100%">
+            <img src="Images/Green-Flag-Decade-Levana-gallery.jpg" style="width:100%">
+            <img src="Images/ecookids%20-%20Copy.jpg" style="width:100%">
+            <img src="Images/kids8-gallery.jpg" style="width:100%">
+            <img src="Images/ecoblog-gallery.jpg" style="width:100%">
+            <img src="Images/flag2-gallery.jpg" style="width:100%">
+            <img src="Images/clean.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="Images/ecoschool5-gallery.jpg" style="width:100%">
+            <img src="Images/Green-Flag-Decade-Levana-gallery.jpg" style="width:100%">
+            <img src="Images/ecookids%20-%20Copy.jpg" style="width:100%">
+            <img src="Images/kids8-gallery.jpg" style="width:100%">
+            <img src="Images/ecoblog-gallery.jpg" style="width:100%">
+            <img src="Images/flag2-gallery.jpg" style="width:100%">
+            <img src="Images/clean.jpg" style="width:100%">
+          </div>
+        </div>
+
+        <!-------------------------------- END OF PHOTO GRID ------------------------------------------------------------- -->
+    
+    
+    
+    <br><br>
+    
+    
     <br>
     <br>
     
@@ -281,7 +415,7 @@
         <div class="sllajdetefotove fade">
             <div class="numriTekstit">1 / 3
             </div>
-            <img src="Images/flag2-gallery.jpg" style="width:100%">
+            <img src="Images/kids8-gallery.jpg" style="width:100%">
             <div class="text">Fotoja e pare
             </div>
         </div>
@@ -415,20 +549,29 @@
 
             </div>
 
-
-
+            
+            
             <div class="details">
 
                 <h3 style="float: center"><a href="#">About</a></h3>
                 <hr>
                 <p style="color: antiquewhite">Our <a href="#mission"><b>Mission</b></a></p>
                 <p style="color: antiquewhite">Address:</p>
-                <ul>
+                
+                <address style="display: block; font-style: italic; text-align: center;">
                     <p style="color: antiquewhite; font-size: 12px">216 West 52nd Street</p>
                     <p style="color: antiquewhite; font-size: 12px">New York, 10019</p>
                     <p style="color: antiquewhite; font-size: 12px">United States of America</p>
                     <p style="color: antiquewhite; font-size: 12px"><a href="https://www.google.com/maps/place/216+W+52nd+St,+New+York,+NY+10019/@40.7627246,-73.9854276,685m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c25857ce8cfed5:0x682040e55f9746fc!8m2!3d40.7627246!4d-73.9832546">40.762940, -73.983213</a></p>
-                </ul>
+                </address>
+                
+                
+           <!---<ul>
+                    <p style="color: antiquewhite; font-size: 12px">216 West 52nd Street</p>
+                    <p style="color: antiquewhite; font-size: 12px">New York, 10019</p>
+                    <p style="color: antiquewhite; font-size: 12px">United States of America</p>
+                    <p style="color: antiquewhite; font-size: 12px"><a href="https://www.google.com/maps/place/216+W+52nd+St,+New+York,+NY+10019/@40.7627246,-73.9854276,685m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c25857ce8cfed5:0x682040e55f9746fc!8m2!3d40.7627246!4d-73.9832546">40.762940, -73.983213</a></p>
+                </ul>-->
             </div>
 
 
