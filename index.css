@@ -221,7 +221,10 @@ div.desc {
 .a {
     text-decoration: none;
     color: #f35300;
+}
 
+.a:hover {
+    color: #5c5c5c;
 }
 
 .header ol {
@@ -282,7 +285,7 @@ div.desc {
     color: #5c5c5c;
 }
 
-/* ************************ MODAL ****************** */
+/* ************************ LOGIN MODAL ****************** */
 
 .modal {
     display: none;
@@ -299,7 +302,7 @@ div.desc {
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto 15% auto;
+    margin: 0.5% auto 0.5% auto;
     border: 1px solid #888;
     width: 500px;
     padding: 0px;
@@ -436,21 +439,54 @@ input[type=password] {
 .fb {
     background-color: #3B5998;
     color: white;
+
+}
+
+.fb:hover {
+    opacity: 1;
 }
 
 .twitter {
     background-color: #55ACEE;
     color: white;
+
+}
+
+.twitter:hover {
+    opacity: 1;
 }
 
 .google {
     background-color: #dd4b39;
     color: white;
+
+}
+
+.google:hover {
+    opacity: 1;
+}
+
+.vl {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #ddd;
+    width: 450px;
+}
+
+.vl-innertext {
+    position: absolute;
+    top: 50%;
+    transform: translate(120px, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 8px 10px;
 }
 
 /* ********************** SOCIAL MEDIA END ***************** */
 
-/* *********************** MODAL END ***************** */
+/* *********************** LOGIN MODAL END ***************** */
 
 
 
