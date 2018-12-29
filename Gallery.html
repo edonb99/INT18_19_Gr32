@@ -70,34 +70,37 @@
     
     
     
-    
-    
-    
+    /*<!------------------------------------ SLIDESHOW ------------------------------------->*/
     
     /* CSS Gallery Style */
     * {
         box-sizing: border-box;
       }
     
-    body {
+    body
+    {
         font-family: Verdana, sans-serif;
     }
     
-    .sllajdetefotove {
+    .sllajdetefotove
+    {
         display: none;
     }
     
-    img {
+    img
+    {
         vertical-align: middle;
     }
 
-    .mbajtesiSllajdeve {
+    .mbajtesiSllajdeve
+    {
       max-width: 1000px;
       position: relative;
       margin: auto;
     }
 
-    .text {
+    .text
+    {
       color: #f2f2f2;
       font-size: 15px;
       padding: 8px 12px;
@@ -107,7 +110,8 @@
       text-align: center;
     }
 
-    .numriTekstit {
+    .numriTekstit
+    {
       color: #f2f2f2;
       font-size: 12px;
       padding: 8px 12px;
@@ -115,7 +119,8 @@
       top: 0;
     }
 
-    .dot {
+    .dot
+    {
       height: 15px;
       width: 15px;
       margin: 0 2px;
@@ -125,32 +130,106 @@
       transition: background-color 0.6s ease;
     }
 
-    .active {
+    .active
+    {
       background-color: #717171;
     }
 
-    .fade {
+    .fade
+    {
       -webkit-animation-name: fade;
       -webkit-animation-duration: 2.5s;
       animation-name: fade;
       animation-duration: 2.5s;
     }
 
-    @-webkit-keyframes fade {
-      from {opacity: .4} 
-      to {opacity: 1}
+    @-webkit-keyframes fade
+    {
+      from
+        {
+            opacity: .4
+        } 
+      to
+        {
+            opacity: 1
+        }
     }
 
-    @keyframes fade {
-      from {opacity: .4} 
-      to {opacity: 1}
+    @keyframes fade
+    {
+      from
+        {
+            opacity: .4
+        } 
+      to
+        {
+            opacity: 1
+        }
     }
 
-    @media only screen and (max-width: 300px) {
-      .text {font-size: 11px}
+    @media only screen and (max-width: 300px)
+    {
+      .text
+        {
+          font-size: 11px
+        }
     }
 
+ /*<!----------------------------------------- THE END OF SLIDESHOW ----------------------------------------------->*/
     
+    
+    
+    
+    
+/*<!-------------------------------- PHOTO GRID ------------------------------------------------------------- -->*/
+
+    .row
+    {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column
+    {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+
+    .column img
+    {
+      margin-top: 8px;
+      vertical-align: middle;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px)
+    {
+      .column
+        {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px)
+    {
+      .column
+        {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        }
+    }
+    
+/*<!-------------------------------- END OF PHOTO GRID ------------------------------------------------------------- -->*/
     
 </style>
 
@@ -272,6 +351,60 @@
     <img src="Images/Green-Flag-Decade-Levana-gallery.jpg" alt="Flamuri i gjelbert(Levana)" width="500px" height="300px" style="float:inherit "> 
     <br>
     <br>
+    
+    
+    
+    <br><br>
+    
+    
+             <!-------------------------------- PHOTO GRID ------------------------------------------------------------- -->
+    
+        <div class="row"> 
+          <div class="column">
+            <img src="Images/ecoschool5-gallery.jpg" style="width:100%">
+            <img src="Images/Green-Flag-Decade-Levana-gallery.jpg" style="width:100%">
+            <img src="Images/ecookids%20-%20Copy.jpg" style="width:100%">
+            <img src="Images/eco-building.jpg" style="width:100%">
+            <img src="Images/ecoblog-gallery.jpg" style="width:100%">
+            <img src="Images/flag2-gallery.jpg" style="width:100%">
+            <img src="Images/eco_schools_logo%20-%20Copy.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="Images/eco_schools_logo%20-%20Copy.jpg" style="width:100%">
+            <img src="Images/ecoschool5-gallery.jpg" style="width:100%">
+            <img src="Images/Green-Flag-Decade-Levana-gallery.jpg" style="width:100%">
+            <img src="Images/ecookids%20-%20Copy.jpg" style="width:100%">
+            <img src="Images/eco-building.jpg" style="width:100%">
+            <img src="Images/ecoblog-gallery.jpg" style="width:100%">
+            <img src="Images/flag2-gallery.jpg" style="width:100%">
+          </div>  
+          <div class="column">
+            <img src="Images/ecoschool5-gallery.jpg" style="width:100%">
+            <img src="Images/Green-Flag-Decade-Levana-gallery.jpg" style="width:100%">
+            <img src="Images/ecookids%20-%20Copy.jpg" style="width:100%">
+            <img src="Images/eco-building.jpg" style="width:100%">
+            <img src="Images/ecoblog-gallery.jpg" style="width:100%">
+            <img src="Images/flag2-gallery.jpg" style="width:100%">
+            <img src="Images/eco_schools_logo%20-%20Copy.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="Images/ecoschool5-gallery.jpg" style="width:100%">
+            <img src="Images/Green-Flag-Decade-Levana-gallery.jpg" style="width:100%">
+            <img src="Images/ecookids%20-%20Copy.jpg" style="width:100%">
+            <img src="Images/eco-building.jpg" style="width:100%">
+            <img src="Images/ecoblog-gallery.jpg" style="width:100%">
+            <img src="Images/flag2-gallery.jpg" style="width:100%">
+            <img src="Images/eco_schools_logo%20-%20Copy.jpg" style="width:100%">
+          </div>
+        </div>
+
+        <!-------------------------------- END OF PHOTO GRID ------------------------------------------------------------- -->
+    
+    
+    
+    <br><br>
+    
+    
     <br>
     <br>
     
