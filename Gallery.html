@@ -9,12 +9,12 @@
         background-color: #5c5c5c;
         overflow: hidden;
     }
-    
- .fix {
+
+    .fix {
         position: fixed;
         top: 0px;
         width: 1024px;
-        z-index:2;
+        z-index: 2;
     }
 
     .fix1 {
@@ -65,172 +65,151 @@
         margin-top: 10px;
         font-size: 11px;
     }
-    
-    
-    
-    
-    
+
+
+
+
+
     /*<!------------------------------------ SLIDESHOW ------------------------------------->*/
-    
+
     /* CSS Gallery Style */
     * {
         box-sizing: border-box;
-      }
-    
-    body
-    {
-        font-family: Verdana, sans-serif;
     }
-    
-    .sllajdetefotove
-    {
+
+
+
+    .sllajdetefotove {
         display: none;
     }
-    
-    img
-    {
+
+    img {
         vertical-align: middle;
     }
 
-    .mbajtesiSllajdeve
-    {
-      max-width: 1000px;
-      position: relative;
-      margin: auto;
+    .mbajtesiSllajdeve {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
     }
 
-    .text
-    {
-      color: #f2f2f2;
-      font-size: 15px;
-      padding: 8px 12px;
-      position: absolute;
-      bottom: 8px;
-      width: 100%;
-      text-align: center;
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
     }
 
-    .numriTekstit
-    {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
+    .numriTekstit {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
     }
 
-    .dot
-    {
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
     }
 
-    .active
-    {
-      background-color: #717171;
+    .active {
+        background-color: #717171;
     }
 
-    .fade
-    {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 2.5s;
-      animation-name: fade;
-      animation-duration: 2.5s;
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 2.5s;
+        animation-name: fade;
+        animation-duration: 2.5s;
     }
 
-    @-webkit-keyframes fade
-    {
-      from
-        {
+    @-webkit-keyframes fade {
+        from {
             opacity: .4
-        } 
-      to
-        {
+        }
+
+        to {
             opacity: 1
         }
     }
 
-    @keyframes fade
-    {
-      from
-        {
+    @keyframes fade {
+        from {
             opacity: .4
-        } 
-      to
-        {
+        }
+
+        to {
             opacity: 1
         }
     }
 
-    @media only screen and (max-width: 300px)
-    {
-      .text
-        {
-          font-size: 11px
+    @media only screen and (max-width: 300px) {
+        .text {
+            font-size: 11px
         }
     }
 
- /*<!----------------------------------------- THE END OF SLIDESHOW ----------------------------------------------->*/
-    
-    
-    
-    
-    
-/*<!-------------------------------- PHOTO GRID ------------------------------------------------------------- -->*/
+    /*<!----------------------------------------- THE END OF SLIDESHOW ----------------------------------------------->*/
 
-    .row
-    {
-      display: -ms-flexbox; /* IE10 */
-      display: flex;
-      -ms-flex-wrap: wrap; /* IE10 */
-      flex-wrap: wrap;
-      padding: 0 4px;
+
+
+
+
+    /*<!-------------------------------- PHOTO GRID ------------------------------------------------------------- -->*/
+
+    .row {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
     }
 
     /* Create four equal columns that sits next to each other */
-    .column
-    {
-      -ms-flex: 25%; /* IE10 */
-      flex: 25%;
-      max-width: 25%;
-      padding: 0 4px;
+    .column {
+        -ms-flex: 25%;
+        /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
     }
 
-    .column img
-    {
-      margin-top: 8px;
-      vertical-align: middle;
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
     }
 
     /* Responsive layout - makes a two column-layout instead of four columns */
-    @media screen and (max-width: 800px)
-    {
-      .column
-        {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
+    @media screen and (max-width: 800px) {
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
         }
     }
 
     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px)
-    {
-      .column
-        {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
+    @media screen and (max-width: 600px) {
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
         }
     }
-    
-/*<!-------------------------------- END OF PHOTO GRID ------------------------------------------------------------- -->*/
-    
+
+    /*<!-------------------------------- END OF PHOTO GRID ------------------------------------------------------------- -->*/
+
 </style>
 
 
@@ -248,23 +227,134 @@
     <div style="background-color: white">
         <!--**************************************************HEADER****************************************************-->
         <header>
+
             <div class="header">
                 <ol style="float: left">
-                    <li><a class="a" href="#"> Libero</a> | </li>
-                    <li><a class="a" href="#"> Maecenas</a> | </li>
-                    <li><a class="a" href="#"> Mauris</a> | </li>
-                    <li><a class="a" href="#"> Suspendise</a></li>
+                    <li><button onclick="document.getElementById('id01').style.display='block'" class="btn "> Login</button> | </li>
+                    <li><button onclick="document.getElementById('id02').style.display='block'" class="btn "> Sign up</button> | </li>
+                    <li><a class="a" href="#bottom"> Bottom</a> | </li>
+                    <li><a class="a" href=""> Suspendise</a></li>
                 </ol>
                 <ol style="float: right">
-                    <li><a class="a" href="#"> Libero</a> | </li>
-                    <li><a class="a" href="#"> Maecenas</a> | </li>
-                    <li><a class="a" href="#"> Mauris</a> | </li>
-                    <li><a class="a" href="#"> Suspendise</a></li>
+                    <li><button onclick="document.getElementById('id01').style.display='block'" class="btn"> Login</button> | </li>
+                    <li><button onclick="document.getElementById('id02').style.display='block'" class="btn signUp"> Sign up</button> | </li>
+                    <li><a class="a" href="#bottom"> Bottom</a> | </li>
+                    <li><a class="a" href=""> Suspendise</a></li>
                 </ol>
             </div>
             <br>
+            <!--********************** LOGIN MODAL ********************* -->
+            <div id="id01" class="modal">
+
+                <!-- ************ MODAL CONTENT ************* -->
+                <form class="modal-content animate">
+                    <div style="padding: 0px; margin: 5%">
+                        <p style="font-size: 30px;float: left;margin: 0px;padding: 0px"><b>Login</b></p>
+
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <br><br>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="uname" style="font-family: 'Helvetica', sans-serif"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label for="psw" style="font-family: 'Helvetica', sans-serif"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <button id="logInButton" type="submit">Login</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>
+                        <br>
+                        <div class="bottom-container">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'" style="color:white" class="btn-modal">Sign up</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" style="color:white" class="btn-modal">Forgot password?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="vl">
+                            <span class="vl-innertext">Login with Social Media</span>
+                        </div>
+                        <br><br>
+                        <div class="" style="clear: both">
+                            <a href="https://web.facebook.com/login" class="fb btn-modal" target="_blank">
+                                <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                            </a>
+                            <a href="https://twitter.com/login" class="twitter btn-modal" target="_blank">
+                                <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                            </a>
+                            <a href="https://accounts.google.com/signin" class="google btn-modal" target="_blank"><i class="fa fa-google fa-fw">
+                                </i> Login with Google+
+                            </a>
+                        </div>
+                        <br>
+                        <div style="background-color:white">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 4px">Cancel</button>
+
+                        </div>
+                    </div>
+                </form>
+                <!-- ************** MODAL CONTENT END ************** -->
+            </div>
+            <!--********************** LOGIN MODAL END ********************* -->
 
             <hr>
+
+            <!-- ********************** SIGNUP MODAL ********************** -->
+            <div id="id02" class="modal">
+                <!-- ********************* MODAL CONTENT ******************** -->
+
+                <form class="modal-content1 animate">
+                    <div style="padding: 0px; margin: 5%">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        </div>
+
+                        <p style="font-size: 30px;float: left;margin: 0px;padding: 0px"><b>Sign Up</b></p>
+                        <br><br>
+                        <p>Please fill this form to create an account.</p>
+
+                        <hr>
+                        <input style="width: 220px;float: left" type="text" placeholder="First Name" name="name" required>
+                        <input style="width: 220px;float: right" type="text" placeholder="Last Name" name="surname" required>
+                        <input type="email" placeholder="Email" name="email" required>
+                        <br>
+                        <input type="password" placeholder="Password" name="psw" required>
+                        <br>
+                        <input type="password" placeholder="Repeat Password" name="rpsw" required>
+                        <div style="display: flex">
+                            <p style="padding: 0px;margin: 0px"><b>Gender: </b></p>
+                            <input type="radio" name="gender" value="male"> Male<br>
+                            <input type="radio" name="gender" value="female"> Female<br>
+                            <input type="radio" name="gender" value="other"> Other<br>
+                        </div>
+                        <br>
+                        <div style="display: flex">
+                            <label for="bday" style="font-family: 'Helvetica', sans-serif;float: left"><b>Birthday: </b></label>
+                            <input style="margin-left: 20px" type="date" name="bday" required>
+                        </div>
+
+                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                        <p>Already have an account?<a onclick="document.getElementById('id02').style.display='none';document.getElementById('id01').style.display='block'" href="#" style="color:dodgerblue">Sign In</a> </p>
+
+                        <div style="height: 55px">
+                            <button onclick="document.getElementById('id02').style.display='none'" id="signUpCancel" type="button">Cancel</button>
+                            <button id="signUpButton" type="submit">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- ********************* MODAL CONTENT END *********************** -->
+            </div>
+            <!-- ********************** SIGNUP MODAL END ************************ -->
 
             <div id="container">
                 <div class="box1">
@@ -290,7 +380,7 @@
                     <li><a href="Events.html">Events</a></li>
                     <li><a id="active" href="Gallery.html">Gallery</a></li>
                     <li><a href="Contacts.html">Contact</a></li>
-                    
+
                     <li style="float:right;"><input type="submit" value="Search"></li>
                     <li style="float:right;"><input type="text" placeholder="Search Term Here..."></li>
                 </ul>
@@ -307,10 +397,10 @@
 
 
 
-<!-- --------------------------------------------------------GALLERY------------------------------------------------------ -->
+        <!-- --------------------------------------------------------GALLERY------------------------------------------------------ -->
 
-        
-    <!--
+
+        <!--
         <div id="row" style="display: block">
         <div class="krasor">
         
@@ -353,100 +443,100 @@
     <br>
     <br>
     -->
-    
-    
-    <br><br>
-    
-    
-             <!-------------------------------- PHOTO GRID ------------------------------------------------------------- -->
-    <br><br>
-        <div class="row"> 
-          <div class="column">
-            <img src="Images/ecoschool5-gallery.jpg" style="width:100%">
-            <img src="Images/Green-Flag-Decade-Levana-gallery.jpg" style="width:100%">
-            <img src="Images/ecookids%20-%20Copy.jpg" style="width:100%">
-            <img src="Images/ecogreen2.PNG" style="width:100%">              
-            <img src="Images/presentation2-gallery.jpg" style="width:100%">
-          </div>
-          <div class="column">
-            <img src="Images/eco1.jpg" style="width:100%">
-            <img src="Images/studentsclean.jpg" style="width:100%">
-            <img src="Images/eco03.jpg" style="width:100%">
-            <img src="Images/ecoconf2.PNG" style="width:100%">  
-            <img src="Images/ecogreen.PNG" style="width:100%">
-            <img src="Images/ecoconf1.PNG" style="width:100%">
-            <img src="Images/kids8-gallery.jpg" style="width:100%">
-          </div>  
-          <div class="column">
-            <img src="Images/flag.jpg" style="width:100%">
-            <img src="Images/graduation.jpg" style="width:100%">              
-            <img src="Images/kids4-gallery.jpg" style="width:100%">
-            <img src="Images/kids7-gallery.JPG" style="width:100%">
-            <img src="Images/eco2.jpg" style="width:100%">              
-            <img src="Images/treeprotection.jpg" style="width:100%">
-            <img src="Images/clean.jpg" style="width:100%">              
-          </div>
-          <div class="column">
-            <img src="Images/kids3.jpg" style="width:100%">              
-            <img src="Images/atthepark.jpg" style="width:100%">
-            <img src="Images/flagpole.jpg" style="width:100%">
-            <img src="Images/planting.jpg" style="width:100%">
-            <img src="Images/award.jpg" style="width:100%">
-            <img src="Images/kindergarten.jpg" style="width:100%">
-          </div>
+
+
+        <br><br>
+
+
+        <!-------------------------------- PHOTO GRID ------------------------------------------------------------- -->
+        <br><br>
+        <div class="row">
+            <div class="column">
+                <img src="Images/ecoschool5-gallery.jpg" style="width:100%">
+                <img src="Images/Green-Flag-Decade-Levana-gallery.jpg" style="width:100%">
+                <img src="Images/ecookids%20-%20Copy.jpg" style="width:100%">
+                <img src="Images/ecogreen2.PNG" style="width:100%">
+                <img src="Images/presentation2-gallery.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="Images/eco1.jpg" style="width:100%">
+                <img src="Images/studentsclean.jpg" style="width:100%">
+                <img src="Images/eco03.jpg" style="width:100%">
+                <img src="Images/ecoconf2.PNG" style="width:100%">
+                <img src="Images/ecogreen.PNG" style="width:100%">
+                <img src="Images/ecoconf1.PNG" style="width:100%">
+                <img src="Images/kids8-gallery.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="Images/flag.jpg" style="width:100%">
+                <img src="Images/graduation.jpg" style="width:100%">
+                <img src="Images/kids4-gallery.jpg" style="width:100%">
+                <img src="Images/kids7-gallery.JPG" style="width:100%">
+                <img src="Images/eco2.jpg" style="width:100%">
+                <img src="Images/treeprotection.jpg" style="width:100%">
+                <img src="Images/clean.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="Images/kids3.jpg" style="width:100%">
+                <img src="Images/atthepark.jpg" style="width:100%">
+                <img src="Images/flagpole.jpg" style="width:100%">
+                <img src="Images/planting.jpg" style="width:100%">
+                <img src="Images/award.jpg" style="width:100%">
+                <img src="Images/kindergarten.jpg" style="width:100%">
+            </div>
         </div>
 
         <!-------------------------------- END OF PHOTO GRID ------------------------------------------------------------- -->
-    
-    
-    
-    <br><br>
-    
-    
-    <br>
-    <br>
-    
-    <h2>Slideshow permbledhes</h2>
-    
-    <div class="mbajtesiSllajdeve">
 
-        <div class="sllajdetefotove fade">
-            <div class="numriTekstit">1 / 3
+
+
+        <br><br>
+
+
+        <br>
+        <br>
+
+        <h2>Slideshow permbledhes</h2>
+
+        <div class="mbajtesiSllajdeve">
+
+            <div class="sllajdetefotove fade">
+                <div class="numriTekstit">1 / 3
+                </div>
+                <img src="Images/ecoblog-gallery.jpg" style="width:100%">
+                <div class="text">Fotoja e pare
+                </div>
             </div>
-            <img src="Images/ecoblog-gallery.jpg" style="width:100%">
-            <div class="text">Fotoja e pare
+
+            <div class="sllajdetefotove fade">
+                <div class="numriTekstit">2 / 3
+                </div>
+                <img src="Images/ecoschool5-gallery.jpg" style="width:100%">
+                <div class="text">Fotoja e dyte
+                </div>
             </div>
+
+            <div class="sllajdetefotove fade">
+                <div class="numriTekstit">3 / 3
+                </div>
+                <img src="Images/kids8-gallery.jpg" style="width:100%">
+                <div class="text">Fotoja e trete
+                </div>
+            </div>
+
         </div>
 
-        <div class="sllajdetefotove fade">
-            <div class="numriTekstit">2 / 3
-            </div>
-            <img src="Images/ecoschool5-gallery.jpg" style="width:100%">
-            <div class="text">Fotoja e dyte
-            </div>
+        <br>
+
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
 
-        <div class="sllajdetefotove fade">
-            <div class="numriTekstit">3 / 3
-            </div>
-            <img src="Images/kids8-gallery.jpg" style="width:100%">            
-            <div class="text">Fotoja e trete
-            </div>
-        </div>
-
-    </div>
-    
-    <br>
-
-    
-    <div style="text-align:center">
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-    </div>
-
-    <script>
-    var slideIndex = 0;
+        <script>
+            var slideIndex = 0;
     showSlides();
 
     function showSlides() {
@@ -469,126 +559,126 @@
     }
     </script>
         <br> <br>
-</div>
+    </div>
 
-        <br> <br> <br> <br> 
-<!-- -------------------------------------------------------GALLERY_END--------------------------------------------------------- -->
-
-
-
-        <!-- ------------------------------------ FOOTER ------------------------------------------------------------------------------- -->
-
-
-        <footer class="footer">
+    <br> <br> <br> <br>
+    <!-- -------------------------------------------------------GALLERY_END--------------------------------------------------------- -->
 
 
 
-            <div class="details">
+    <!-- ------------------------------------ FOOTER ------------------------------------------------------------------------------- -->
 
-                <h3><a href="#">Stay In The Know!</a></h3>
-                <hr />
-                <p style="color: antiquewhite">Please enter your E-Mail to join our mailing list</p>
-                <input type="text" placeholder="e-mail...">
-                <input type="submit" value="Enter">
-                <p style="color: antiquewhite">To unsubscribe please<a href="#">click here</a></p>
-                <br>
-                <p><small><a href="#top">Go to Top of Document</a></small></p>
-            </div>
+
+    <footer class="footer">
 
 
 
-            <div class="details">
+        <div class="details" id="bottom">
 
-                <h3 style="float: center"><a href="#">Services</a></h3>
-                <hr>
-                <p style="color: antiquewhite"><a href="#"><b>Apply</b></a> at our schools</p>
-                <p style="color: antiquewhite">Take Scholarship <a href="#"><b>Exam</b></a></p>
-
-                <br>
-
-                <p style="color: antiquewhite"><i><small>Follow us on social networks:</small></i></p>
-
-
-                <a href="https://web.facebook.com/?_rdc=1&_rdr" target="blank" title="Facebook">
-                    <img src="Images/facebook.png" alt="Facebook" style="width: 20px; height: 20px;"> </a>
-
-                <a href="https://www.instagram.com/" target="blank" title="Instagram">
-                    <img src="Images/instagram.png" alt="Instagram" style="width: 20px; height: 20px;"> </a>
-
-                <a href="https://www.pinterest.com/" target="blank" title="Pinterest">
-                    <img src="Images/pinterest.png" alt="Pintesrest" style="width: 20px; height: 20px;"></a>
-
-                <a href="https://twitter.com/" target="blank" title="Twitter">
-                    <img src="Images/twitter.png" alt="Twitter" style="width: 20px; height: 20px;"></a>
-
-                <a href="https://www.youtube.com/" target="blank" title="Youtube">
-                    <img src="Images/youtube.png" alt="Youtube" style="width: 20px; height: 20px;"></a>
-
-                <a href="https://plus.google.com/discover" target="blank" title="Google+" ;>
-                    <img src="Images/google-plus.png" alt="Google+" style="width: 20px; height: 20px;"></a>
-
-
-            </div>
+            <h3><a href="#">Stay In The Know!</a></h3>
+            <hr />
+            <p style="color: antiquewhite">Please enter your E-Mail to join our mailing list</p>
+            <input type="text" placeholder="e-mail...">
+            <input type="submit" value="Enter">
+            <p style="color: antiquewhite">To unsubscribe please<a href="#">click here</a></p>
+            <br>
+            <p><small><a href="#top">Go to Top of Document</a></small></p>
+        </div>
 
 
 
-            <div class="details">
+        <div class="details">
 
-                <h3 style="float: center"><a target="_blank" href="Contacts.html">Contacts</a></h3>
-                <hr>
-                <p style="color: lightskyblue; font-size: 14px"><b>E-Mail:</b></p>
-                <p style="color: antiquewhite; font-size: 14px">
-                    <i>info@ecoschools.com</i></p>
-                <p style="color: lightskyblue; font-size: 14px;"><b>Tel:</b></p>
-                <p style="color: antiquewhite; font-size: 14px"><i>+1-555-7954-89</i></p>
-                <p style="color: lightskyblue; font-size: 14px;"><b>Website:</b></p>
-                <p style="color: antiquewhite; font-size: 14px"><u><i><a href="#">www.ecoschools.com</a></i></u></p>
+            <h3 style="float: center"><a href="#">Services</a></h3>
+            <hr>
+            <p style="color: antiquewhite"><a href="#"><b>Apply</b></a> at our schools</p>
+            <p style="color: antiquewhite">Take Scholarship <a href="#"><b>Exam</b></a></p>
 
-            </div>
+            <br>
 
-            
-            
-            <div class="details">
+            <p style="color: antiquewhite"><i><small>Follow us on social networks:</small></i></p>
 
-                <h3 style="float: center"><a href="#">About</a></h3>
-                <hr>
-                <p style="color: antiquewhite">Our <a href="#mission"><b>Mission</b></a></p>
-                <p style="color: antiquewhite">Address:</p>
-                
-                <address style="display: block; font-style: italic; text-align: center;">
-                    <p style="color: antiquewhite; font-size: 12px">216 West 52nd Street</p>
-                    <p style="color: antiquewhite; font-size: 12px">New York, 10019</p>
-                    <p style="color: antiquewhite; font-size: 12px">United States of America</p>
-                    <p style="color: antiquewhite; font-size: 12px"><a href="https://www.google.com/maps/place/216+W+52nd+St,+New+York,+NY+10019/@40.7627246,-73.9854276,685m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c25857ce8cfed5:0x682040e55f9746fc!8m2!3d40.7627246!4d-73.9832546">40.762940, -73.983213</a></p>
-                </address>
-                
-                
-           <!---<ul>
+
+            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="blank" title="Facebook">
+                <img src="Images/facebook.png" alt="Facebook" style="width: 20px; height: 20px;"> </a>
+
+            <a href="https://www.instagram.com/" target="blank" title="Instagram">
+                <img src="Images/instagram.png" alt="Instagram" style="width: 20px; height: 20px;"> </a>
+
+            <a href="https://www.pinterest.com/" target="blank" title="Pinterest">
+                <img src="Images/pinterest.png" alt="Pintesrest" style="width: 20px; height: 20px;"></a>
+
+            <a href="https://twitter.com/" target="blank" title="Twitter">
+                <img src="Images/twitter.png" alt="Twitter" style="width: 20px; height: 20px;"></a>
+
+            <a href="https://www.youtube.com/" target="blank" title="Youtube">
+                <img src="Images/youtube.png" alt="Youtube" style="width: 20px; height: 20px;"></a>
+
+            <a href="https://plus.google.com/discover" target="blank" title="Google+" ;>
+                <img src="Images/google-plus.png" alt="Google+" style="width: 20px; height: 20px;"></a>
+
+
+        </div>
+
+
+
+        <div class="details">
+
+            <h3 style="float: center"><a target="_blank" href="Contacts.html">Contacts</a></h3>
+            <hr>
+            <p style="color: lightskyblue; font-size: 14px"><b>E-Mail:</b></p>
+            <p style="color: antiquewhite; font-size: 14px">
+                <i>info@ecoschools.com</i></p>
+            <p style="color: lightskyblue; font-size: 14px;"><b>Tel:</b></p>
+            <p style="color: antiquewhite; font-size: 14px"><i>+1-555-7954-89</i></p>
+            <p style="color: lightskyblue; font-size: 14px;"><b>Website:</b></p>
+            <p style="color: antiquewhite; font-size: 14px"><u><i><a href="#">www.ecoschools.com</a></i></u></p>
+
+        </div>
+
+
+
+        <div class="details">
+
+            <h3 style="float: center"><a href="#">About</a></h3>
+            <hr>
+            <p style="color: antiquewhite">Our <a href="#mission"><b>Mission</b></a></p>
+            <p style="color: antiquewhite">Address:</p>
+
+            <address style="display: block; font-style: italic; text-align: center;">
+                <p style="color: antiquewhite; font-size: 12px">216 West 52nd Street</p>
+                <p style="color: antiquewhite; font-size: 12px">New York, 10019</p>
+                <p style="color: antiquewhite; font-size: 12px">United States of America</p>
+                <p style="color: antiquewhite; font-size: 12px"><a href="https://www.google.com/maps/place/216+W+52nd+St,+New+York,+NY+10019/@40.7627246,-73.9854276,685m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c25857ce8cfed5:0x682040e55f9746fc!8m2!3d40.7627246!4d-73.9832546">40.762940, -73.983213</a></p>
+            </address>
+
+
+            <!---<ul>
                     <p style="color: antiquewhite; font-size: 12px">216 West 52nd Street</p>
                     <p style="color: antiquewhite; font-size: 12px">New York, 10019</p>
                     <p style="color: antiquewhite; font-size: 12px">United States of America</p>
                     <p style="color: antiquewhite; font-size: 12px"><a href="https://www.google.com/maps/place/216+W+52nd+St,+New+York,+NY+10019/@40.7627246,-73.9854276,685m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c25857ce8cfed5:0x682040e55f9746fc!8m2!3d40.7627246!4d-73.9832546">40.762940, -73.983213</a></p>
                 </ul>-->
-            </div>
-
-
-
-        </footer>
-
-        <!-- -------------------------------FOOTER-END ---------------------------------------------------- -->
-
-
-        <div class="template" style="float:left">
-
-            Copyrights &copy; 2018 Eco School -All rights reserved.
         </div>
+
+
+
+    </footer>
+
+    <!-- -------------------------------FOOTER-END ---------------------------------------------------- -->
+
+
+    <div class="template" style="float:left">
+
+        Copyrights &copy; 2018 Eco School -All rights reserved.
+    </div>
 
 
     </div>
 
 
-<!-- -----------------------------NAV_JAVASCRIPT------------------------------------------- -->
-<script>
+    <!-- -----------------------------NAV_JAVASCRIPT------------------------------------------- -->
+    <script>
         window.onscroll = function() {
             myFunction()
         };
