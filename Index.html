@@ -84,6 +84,14 @@ window.onclick = function(event) {
   }
 }
 
+    var modal1 = document.getElementById('id02');
+    
+    window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
+
     
 </script>
 
@@ -97,13 +105,13 @@ window.onclick = function(event) {
             <div class="header">
                 <ol style="float: left">
                     <li><button onclick="document.getElementById('id01').style.display='block'" class="btn "> Log in</button> | </li>
-                    <li><button class="btn "> Sign up</button> | </li>
+                    <li><button onclick="document.getElementById('id02').style.display='block'" class="btn "> Sign up</button> | </li>
                     <li><a class="a" href="#bottom"> Bottom</a> | </li>
                     <li><a class="a" href=""> Suspendise</a></li>
                 </ol>
                 <ol style="float: right">
                     <li><button onclick="document.getElementById('id01').style.display='block'" class="btn"> Log in</button> | </li>
-                    <li><button class="btn signUp"> Sign up</button> | </li>
+                    <li><button onclick="document.getElementById('id02').style.display='block'" class="btn signUp"> Sign up</button> | </li>
                     <li><a class="a" href="#bottom"> Bottom</a> | </li>
                     <li><a class="a" href=""> Suspendise</a></li>
                 </ol>
@@ -123,10 +131,10 @@ window.onclick = function(event) {
                         </div>
 
                         <div>
-                            <label for="uname"><b>Username</b></label>
+                            <label for="uname" style="font-family: 'Helvetica', sans-serif"><b>Username</b></label>
                             <input type="text" placeholder="Enter Username" name="uname" required>
 
-                            <label for="psw"><b>Password</b></label>
+                            <label for="psw" style="font-family: 'Helvetica', sans-serif"><b>Password</b></label>
                             <input type="password" placeholder="Enter Password" name="psw" required>
 
                             <button id="logInButton" type="submit">Login</button>
@@ -140,7 +148,7 @@ window.onclick = function(event) {
                         <div class="bottom-container">
                             <div class="row">
                                 <div class="col">
-                                    <a href="#" style="color:white" class="btn-modal">Sign up</a>
+                                    <a href="#" onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'" style="color:white" class="btn-modal">Sign up</a>
                                 </div>
                                 <div class="col">
                                     <a href="#" style="color:white" class="btn-modal">Forgot password?</a>
@@ -173,7 +181,42 @@ window.onclick = function(event) {
                 <!-- ************** MODAL CONTENT END ************** -->
             </div>
             <!--********************** LOGIN MODAL END ********************* -->
+
             <hr>
+
+            <!-- ********************** SIGNUP MODAL ********************** -->
+            <div id="id02" class="modal">
+                <!-- ********************* MODAL CONTENT ******************** -->
+
+                <form class="modal-content animate">
+                    <div style="padding: 0px; margin: 5%">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        </div>
+
+                        <p style="font-size: 30px;float: left;margin: 0px;padding: 0px"><b>Sign Up</b></p>
+                        <br><br>
+                        <p>Please fill this form to create an account.</p>
+                        <br><br>
+                        <input type="text" placeholder="First Name" name="name" required>
+
+                        <input type="text" placeholder="Email" name="email" required>
+                        <br>
+                        <input type="password" placeholder="Password" name="psw" required>
+                        <br>
+                        <input type="password" placeholder="Repeat Password" name="rpsw" required>
+                        <div style="display: flex">
+                            <p style="padding: 0px;margin: 0px"><b>Gender: </b></p>
+                            <input type="radio" name="gender" value="male"> Male<br>
+                            <input type="radio" name="gender" value="female"> Female<br>
+                            <input type="radio" name="gender" value="other"> Other<br>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- ********************* MODAL CONTENT END *********************** -->
+            </div>
+            <!-- ********************** SIGNUP MODAL END ************************ -->
 
             <div id="container">
                 <div class="box1">
