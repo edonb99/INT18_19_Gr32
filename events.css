@@ -249,6 +249,7 @@ visibility: visible;
     padding: 5px;
     margin: 40px;
     background-color:#FFF5EE;
+    outline-style: dotted;
 }
 .fotocleanir {
 
@@ -345,19 +346,25 @@ visibility: visible;
 }
 
 
-/*  section eco conference*/
+
+/*  ***********************************section eco conference*****************************  */
+
 .ecoconf {
-    color: #778899;
     border: none;
     padding: 5px;
-    margin: 40px;
-  
+    margin: 40px; 
     font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
     word-spacing: normal;
     text-indent: 5px;
     clear: left;
-    background-color: #D3D3D3;
+
+  /*  background: url('Images/flag1.gif') right bottom no-repeat, url(Images/paper.gif) left top repeat; */
+
+    background-image: url('Images/flag1.gif'), url(Images/paper.gif);
+  background-repeat: no-repeat, repeat;
+ background-size: 130px, 100px;
 }
+
 /* */
 .dropdown {
   position: relative;
@@ -394,7 +401,7 @@ visibility: visible;
 #column {
   float: left;
   width: 33.33%;
-  padding: 5px;
+  padding: 50px;
 }
 
 /* Clearfix (clear floats) */
