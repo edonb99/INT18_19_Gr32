@@ -309,6 +309,14 @@ div.desc {
     padding: 0px;
 }
 
+.modal-content1 {
+    background-color: #fefefe;
+    margin: 5% auto 5% auto;
+    border: 1px solid #888;
+    width: 500px;
+    padding: 0px;
+}
+
 #logInButton {
     background-color: #4CAF50;
     color: white;
@@ -323,7 +331,40 @@ div.desc {
 
 }
 
+#signUpButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+    border-radius: 4px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 17px;
+    float: right;
+}
+
+#signUpCancel {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+    border-radius: 4px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 17px;
+    float: left;
+}
+
 .modal-content button:hover {
+    opacity: 0.8;
+    border-radius: 4px;
+}
+
+.modal-content1 button:hover {
     opacity: 0.8;
     border-radius: 4px;
 }
@@ -385,8 +426,9 @@ div.desc {
     position: relative;
 }
 
-input[type=text],
-input[type=password] {
+.modal input[type=text],
+.modal input[type=password],
+.modal input[type=email] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
