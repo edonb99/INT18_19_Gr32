@@ -14,8 +14,9 @@
         position: fixed;
         top: 0;
         width: 1024px;
-        z-index:2;
+        z-index: 2;
     }
+
     .fix1 {
         position: fixed;
         top: 40px;
@@ -84,23 +85,134 @@
     <div style="background-color: white">
         <!--**************************************************HEADER****************************************************-->
         <header>
+
             <div class="header">
-                <ol style="float: left">
-                    <li><a class="a" href="#"> Libero</a> | </li>
-                    <li><a class="a" href="#"> Maecenas</a> | </li>
-                    <li><a class="a" href="#"> Mauris</a> | </li>
-                    <li><a class="a" href="#"> Suspendise</a></li>
+                <ol style="float: left; font-weight: bold">
+                    <li><button onclick="document.getElementById('id01').style.display='block'" class="btn "> Login</button> | </li>
+                    <li><button onclick="document.getElementById('id02').style.display='block'" class="btn "> Sign up</button> | </li>
+                    <li><a class="a" href="#bottom"> Bottom</a> | </li>
+                    <li><a class="a" href=""> Suspendise</a></li>
                 </ol>
-                <ol style="float: right">
-                    <li><a class="a" href="#"> Libero</a> | </li>
-                    <li><a class="a" href="#"> Maecenas</a> | </li>
-                    <li><a class="a" href="#"> Mauris</a> | </li>
-                    <li><a class="a" href="#"> Suspendise</a></li>
+                <ol style="float: right;font-weight: bold">
+                    <li><button onclick="document.getElementById('id01').style.display='block'" class="btn"> Login</button> | </li>
+                    <li><button onclick="document.getElementById('id02').style.display='block'" class="btn signUp"> Sign up</button> | </li>
+                    <li><a class="a" href="#bottom"> Bottom</a> | </li>
+                    <li><a class="a" href=""> Suspendise</a></li>
                 </ol>
             </div>
             <br>
+            <!--********************** LOGIN MODAL ********************* -->
+            <div id="id01" class="modal">
+
+                <!-- ************ MODAL CONTENT ************* -->
+                <form class="modal-content animate">
+                    <div style="padding: 0px; margin: 5%">
+                        <p style="font-size: 30px;float: left;margin: 0px;padding: 0px"><b>Login</b></p>
+
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <br><br>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="uname" style="font-family: 'Helvetica', sans-serif"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label for="psw" style="font-family: 'Helvetica', sans-serif"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <button id="logInButton" type="submit">Login</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>
+                        <br>
+                        <div class="bottom-container">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'" style="color:white" class="btn-modal">Sign up</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" style="color:white" class="btn-modal">Forgot password?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="vl">
+                            <span class="vl-innertext">Login with Social Media</span>
+                        </div>
+                        <br><br>
+                        <div class="" style="clear: both">
+                            <a href="https://web.facebook.com/login" class="fb btn-modal" target="_blank">
+                                <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                            </a>
+                            <a href="https://twitter.com/login" class="twitter btn-modal" target="_blank">
+                                <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                            </a>
+                            <a href="https://accounts.google.com/signin" class="google btn-modal" target="_blank"><i class="fa fa-google fa-fw">
+                                </i> Login with Google+
+                            </a>
+                        </div>
+                        <br>
+                        <div style="background-color:white">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 4px">Cancel</button>
+
+                        </div>
+                    </div>
+                </form>
+                <!-- ************** MODAL CONTENT END ************** -->
+            </div>
+            <!--********************** LOGIN MODAL END ********************* -->
 
             <hr>
+
+            <!-- ********************** SIGNUP MODAL ********************** -->
+            <div id="id02" class="modal">
+                <!-- ********************* MODAL CONTENT ******************** -->
+
+                <form class="modal-content1 animate">
+                    <div style="padding: 0px; margin: 5%">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        </div>
+
+                        <p style="font-size: 30px;float: left;margin: 0px;padding: 0px"><b>Sign Up</b></p>
+                        <br><br>
+                        <p>Please fill this form to create an account.</p>
+
+                        <hr>
+                        <input style="width: 220px;float: left" type="text" placeholder="First Name" name="name" required>
+                        <input style="width: 220px;float: right" type="text" placeholder="Last Name" name="surname" required>
+                        <input type="email" placeholder="Email" name="email" required>
+                        <br>
+                        <input type="password" placeholder="Password" name="psw" required>
+                        <br>
+                        <input type="password" placeholder="Repeat Password" name="rpsw" required>
+                        <div style="display: flex">
+                            <p style="padding: 0px;margin: 0px"><b>Gender: </b></p>
+                            <input type="radio" name="gender" value="male"> Male<br>
+                            <input type="radio" name="gender" value="female"> Female<br>
+                            <input type="radio" name="gender" value="other"> Other<br>
+                        </div>
+                        <br>
+                        <div style="display: flex">
+                            <label for="bday" style="font-family: 'Helvetica', sans-serif;float: left"><b>Birthday: </b></label>
+                            <input style="margin-left: 20px" type="date" name="bday" required>
+                        </div>
+
+                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                        <p>Already have an account?<a onclick="document.getElementById('id02').style.display='none';document.getElementById('id01').style.display='block'" href="#" style="color:dodgerblue">Sign In</a> </p>
+
+                        <div style="height: 55px">
+                            <button onclick="document.getElementById('id02').style.display='none'" id="signUpCancel" type="button">Cancel</button>
+                            <button id="signUpButton" type="submit">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- ********************* MODAL CONTENT END *********************** -->
+            </div>
+            <!-- ********************** SIGNUP MODAL END ************************ -->
 
             <div id="container">
                 <div class="box1">
@@ -121,13 +233,13 @@
             <nav>
                 <br>
                 <ul id="nav">
-                    <li><a  href="index.html">Home</a></li>
-                    <li><a  href="About.html">About</a></li>
-                    
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+
                     <li><a id="active" href="Events.html">Events</a></li>
-                    
-                    <li><a  href="Gallery.html">Gallery</a></li>
-                    <li><a  href="Contacts.html">Contact</a></li>
+
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contacts.html">Contact</a></li>
 
 
                     <li style="float:right;"><input type="submit" value="Search"></li>
@@ -139,12 +251,12 @@
 
 
         </header>
- <!--***********************************************HEADER_END****************************************************-->
+        <!--***********************************************HEADER_END****************************************************-->
 
 
 
 
-<!--*********************************Body_Events********************************************************************-->
+        <!--*********************************Body_Events********************************************************************-->
 
 
 
@@ -157,30 +269,30 @@
 
                 <h5 id="greenflag" style="font-size: 22px; line-height: 26px; color: #666666; font-weight: normal; 
                 margin: 25px 0px; margin-top: 0px; text-align: center;"><b>
-                    The 1000th Green Flag</b></h5>
-<figure>
-        <div id="about-image-permbajtja">
+                        The 1000th Green Flag</b></h5>
+                <figure>
+                    <div id="about-image-permbajtja">
 
 
-    <a href="Images/ecogreen.png"><img src="Images/ecogreen.png" alt="EcoGreen" title="Eco Green" width="100%" ></a>
-        <figcaption><em>Eco-kid with the 1000th Green Flag</em></figcaption>  
-    </div>
-          
-    </figure>
+                        <a href="Images/ecogreen.png"><img src="Images/ecogreen.png" alt="EcoGreen" title="Eco Green" width="100%"></a>
+                        <figcaption><em>Eco-kid with the 1000th Green Flag</em></figcaption>
+                    </div>
+
+                </figure>
 
                 <p style="font-size: 15px; line-height: 19px; color: #999999; margin: 20px 0px; ">
 
                     <i>Eco-Schools</i> is the world's leading environmental education programme. It is a <u>pupil-led
-                    </u> initiative with the aim to make environmental awareness and practical action an intrinsic 
+                    </u> initiative with the aim to make environmental awareness and practical action an intrinsic
                     part of school life. <br />
 
                     <br />
-                    Diane Lockhart, Eco-Coordinator at  <abbr title="Walker Memorial Primary School">WMPS</abbr> 
-                    said: “The children were totally delighted that we got the 1000th Green Flag. All pupils are 
-                    very involved with the areas of the Eco-Committee’s action plan it has brought these areas of 
-                learning alive. Pupils are highly motivated, inspired and focused to partake in lessons related to 
-                Eco-Schools. The programme provides pupils with another avenue of learning, those who are more p
-                 ractical and creative thrive on being involved in identifying the needs of the school and sharing their ideas for future action.” </p>
+                    Diane Lockhart, Eco-Coordinator at <abbr title="Walker Memorial Primary School">WMPS</abbr>
+                    said: “The children were totally delighted that we got the 1000th Green Flag. All pupils are
+                    very involved with the areas of the Eco-Committee’s action plan it has brought these areas of
+                    learning alive. Pupils are highly motivated, inspired and focused to partake in lessons related to
+                    Eco-Schools. The programme provides pupils with another avenue of learning, those who are more p
+                    ractical and creative thrive on being involved in identifying the needs of the school and sharing their ideas for future action.” </p>
 
 
             </div>
@@ -215,7 +327,7 @@
 
                     </div>
 
-          <p>“In the large playground, most litter seemed to be felt pens, pencils and birthday sweet wrappers. When we went along the path to the field gate we found more sweet and crisp packets."</p>
+                    <p>“In the large playground, most litter seemed to be felt pens, pencils and birthday sweet wrappers. When we went along the path to the field gate we found more sweet and crisp packets."</p>
 
                 </div>
 
@@ -224,17 +336,17 @@
                     <div class="permbj-section-header">
 
 
-<figure class="thumbnail2">
-     <img src=" Images/Ecowarriors.png " alt="Eco warroiors Logo" style="float: left; width: 90px; height: 80px;">
-         <figcaption class="popup">
-            <span class="thumbnail2"></span>
-    <img src="Images/Ecowarriors.png  " alt="Eco warriors Logo" style="width:470px; height:350px;">
-        <p style="font-size: 30px; text-align: center;">The Eco Warriors LOGO!</p>
-        </figcaption>
- </figure>
+                        <figure class="thumbnail2">
+                            <img src=" Images/Ecowarriors.png " alt="Eco warroiors Logo" style="float: left; width: 90px; height: 80px;">
+                            <figcaption class="popup">
+                                <span class="thumbnail2"></span>
+                                <img src="Images/Ecowarriors.png  " alt="Eco warriors Logo" style="width:470px; height:350px;">
+                                <p style="font-size: 30px; text-align: center;">The Eco Warriors LOGO!</p>
+                            </figcaption>
+                        </figure>
 
 
-                        <h6 style="padding-left: 30px;">  Rubie (Y6) <span style="font-weight: normal;">- PUPIL</span></h6>
+                        <h6 style="padding-left: 30px;"> Rubie (Y6) <span style="font-weight: normal;">- PUPIL</span></h6>
 
                     </div>
 
@@ -254,87 +366,87 @@
 
 
 
-     <section class="cleanair" id="cleanairp" >
+        <section class="cleanair" id="cleanairp">
 
-        <p style="font-size: 26px; color: #666666; font-weight:600; text-align: center;"> Our children deserve better than breathing dirty air</h1>
-
-
-<div class="fotocleanir">
-
-     <figure class="case2">
-  <img src="Images/ecookids.jpg" alt="Clean Air" class="image">
-  <div class="overlay2">Clean Air</div>
-</figure>
-
-</div>
-
-  <article class="teksticleanair"><span style="font-size: 20px; color: #ff8241; font-weight:600;">Health & Eco-Schools</span><br><br> With the health effects of air pollution often hitting children the hardest, we wanted to let all our Eco-Schools know about <a href="https://act.friendsoftheearth.uk/act/order-your-clean-air-schools-pack">a new, free schools resource pack,</a> from environmental charity Friends of the Earth, and endorsed by the NUT.<br/>
-    The free pack contains three KS2 lesson plans, transforming pupils into budding scientists and campaigners, a fun active assembly plan, free resources and a testing kit to measure your own air quality.
-    Friends of the Earth want to educate the educate the next generation about air pollution. We wanted to show how it can help you along your Eco-Schools journey and towards your next Green Flag.
-
-  </article>
+            <p style="font-size: 26px; color: #666666; font-weight:600; text-align: center;"> Our children deserve better than breathing dirty air</h1>
 
 
+                <div class="fotocleanir">
 
-<br/>
+                    <figure class="case2">
+                        <img src="Images/ecookids.jpg" alt="Clean Air" class="image">
+                        <div class="overlay2">Clean Air</div>
+                    </figure>
+
+                </div>
+
+                <article class="teksticleanair"><span style="font-size: 20px; color: #ff8241; font-weight:600;">Health & Eco-Schools</span><br><br> With the health effects of air pollution often hitting children the hardest, we wanted to let all our Eco-Schools know about <a href="https://act.friendsoftheearth.uk/act/order-your-clean-air-schools-pack">a new, free schools resource pack,</a> from environmental charity Friends of the Earth, and endorsed by the NUT.<br />
+                    The free pack contains three KS2 lesson plans, transforming pupils into budding scientists and campaigners, a fun active assembly plan, free resources and a testing kit to measure your own air quality.
+                    Friends of the Earth want to educate the educate the next generation about air pollution. We wanted to show how it can help you along your Eco-Schools journey and towards your next Green Flag.
+
+                </article>
 
 
 
-
-<!-- -->
-
-<div class="fotocleanir">
-
-	 <div class="dropdown">
-
-<div class="case">
-  <img src="Images/Theprocess.jpg " alt="Clean Air" class="image">
-  <div class="overlay">
-    <div class="text">7 steps to<br/>eco school</div>
-  </div>
-</div>
-  <div class="dropdown-content">
-  	
-  <img src="Images/Theprocess.jpg " alt="Clean Air" style ="width:400px; height:400px">
-  <div class="desc">Eco-Project</div>
-  </div>
-</div>
-
-
-
-</div>
-
-<!--  -->
+                <br />
 
 
 
 
-    <article class="teksticleanair">
-        <ul style="list-style-type:square">
+                <!-- -->
 
-            <li>With air pollution being ‘out-of-sight-out-of-mind’ it may not be on your Step 3: Action Plan, but it still has important links to any Eco-School’s work.</li>
-                                
-            <li>The two free air monitoring tubes allow you to test for harmful nitrogen dioxide gas. Friends of the Earth will process your tubes and get the results back to you.</li>
-            
-            <li> With the resources, pupils have the opportunity to make their voices heard on the issue by learning campaigning tips and tricks, from how to write a persuasive letter to local politicians, to holding a poster competition in the school.</li>
-                                
-            <li>The assembly plan is a fun, active way to involve your whole school in the campaign. Whilst the posters and stickers could be a great addition to your Eco-board. </li>
-                                
-            <li>The lesson plans have clear links to the KS2 Curriculum (Step 6), but they can also be adapted for younger students, or used in out-of-school clubs.</li>
-                            
-                            </ul>
-               </article>
+                <div class="fotocleanir">
 
-         </section>
+                    <div class="dropdown">
+
+                        <div class="case">
+                            <img src="Images/Theprocess.jpg " alt="Clean Air" class="image">
+                            <div class="overlay">
+                                <div class="text">7 steps to<br />eco school</div>
+                            </div>
+                        </div>
+                        <div class="dropdown-content">
+
+                            <img src="Images/Theprocess.jpg " alt="Clean Air" style="width:400px; height:400px">
+                            <div class="desc">Eco-Project</div>
+                        </div>
+                    </div>
 
 
+
+                </div>
+
+                <!--  -->
+
+
+
+
+                <article class="teksticleanair">
+                    <ul style="list-style-type:square">
+
+                        <li>With air pollution being ‘out-of-sight-out-of-mind’ it may not be on your Step 3: Action Plan, but it still has important links to any Eco-School’s work.</li>
+
+                        <li>The two free air monitoring tubes allow you to test for harmful nitrogen dioxide gas. Friends of the Earth will process your tubes and get the results back to you.</li>
+
+                        <li> With the resources, pupils have the opportunity to make their voices heard on the issue by learning campaigning tips and tricks, from how to write a persuasive letter to local politicians, to holding a poster competition in the school.</li>
+
+                        <li>The assembly plan is a fun, active way to involve your whole school in the campaign. Whilst the posters and stickers could be a great addition to your Eco-board. </li>
+
+                        <li>The lesson plans have clear links to the KS2 Curriculum (Step 6), but they can also be adapted for younger students, or used in out-of-school clubs.</li>
+
+                    </ul>
+                </article>
+
+        </section>
 
 
 
 
 
-     <section class="ecoconf">
-         <h1 id="ecoconference" style=" font-size: 26px; color: #666666; font-weight:600; text-align: center; 
+
+
+        <section class="ecoconf">
+            <h1 id="ecoconference" style=" font-size: 26px; color: #666666; font-weight:600; text-align: center; 
          border: 3px dashed #5c5c5c;
         padding: 10px 15px;
         background: #6F6;
@@ -342,71 +454,71 @@
          width: 50%;
         border-radius:20px;
         box-shadow: 15px 15px 7px #f35300;">
-         WWF Eco-Schools Conference </h1>
+                WWF Eco-Schools Conference </h1>
 
-<div id="row">
-  <div id="column">
+            <div id="row">
+                <div id="column">
 
-    <div class="dropdown">
-  <img src="Images/ecoconf1.PNG" alt="Kids in conference" style ="width:160px; height:100px">
-  <div class="dropdown-content">
-  <img src=" Images/ecoconf1.PNG" alt="Kids in conference" style ="width:400px; height:300px">
-  <div class="desc">Kids in conference</div>
-  </div>
-</div>
-
-
-  </div>
-
-  <div id="column">
-
-       <div class="dropdown">
-  <img src="Images/ecoconf2.PNG" alt="wwf" width="150" height="100">
-  <div class="dropdown-content">
-  <img src=" Images/ecoconf2.PNG" alt="wwf" width="400" height="250">
-  <div class="desc">WWF</div>
-  </div>
-
-</div>
-
-  </div>
+                    <div class="dropdown">
+                        <img src="Images/ecoconf1.PNG" alt="Kids in conference" style="width:160px; height:100px">
+                        <div class="dropdown-content">
+                            <img src=" Images/ecoconf1.PNG" alt="Kids in conference" style="width:400px; height:300px">
+                            <div class="desc">Kids in conference</div>
+                        </div>
+                    </div>
 
 
-  <div id="column">
+                </div>
 
-<div class="dropdown">
-<img src="Images/kids3.jpg" alt="presentation" width="150" height="100">
-  <div class="dropdown-content">
-  <img src=" Images/kids3.jpg" alt="presentation" width="400" height="250">
-  <div class="desc">Presentation</div>
-  </div>
-</div>
+                <div id="column">
 
-  </div>
-</div>
+                    <div class="dropdown">
+                        <img src="Images/ecoconf2.PNG" alt="wwf" width="150" height="100">
+                        <div class="dropdown-content">
+                            <img src=" Images/ecoconf2.PNG" alt="wwf" width="400" height="250">
+                            <div class="desc">WWF</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div id="column">
+
+                    <div class="dropdown">
+                        <img src="Images/kids3.jpg" alt="presentation" width="150" height="100">
+                        <div class="dropdown-content">
+                            <img src=" Images/kids3.jpg" alt="presentation" width="400" height="250">
+                            <div class="desc">Presentation</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
 
 
 
-<p style="  border: 2px solid #a1a1a1;
+            <p style="  border: 2px solid #a1a1a1;
         padding: 10px 40px;
         background: #dddddd;
         border-radius: 15px;"> The internationally recognised Green Flag award rewards educational institutions for their environmental programme that empower students to be the change our world needs by engaging them in fun, action oriented learning experiences. <br />
-The conference also featured keynote speakers Sid Das, 
-Executive Director of <abbr title="Earth Hour Global">EHG</abbr>, 
-and Jonn Lu, Regional Director for <abbr title=" Shark Savers Asia Pacific">SHSAP</abbr>. <br/>
-  Local, regional and global experts from Earth Hour, EarthFest, Ground-up Initiative and Coral Triangle Initiative, to name a few, were the conference theme influencers, and were also present.<br/>
- They elaborated on the conference theme "YOU can be the CHANGE", urging students and educators to be the change our world needs. </p>
-<p id="demo">#bethechange</p>
+                The conference also featured keynote speakers Sid Das,
+                Executive Director of <abbr title="Earth Hour Global">EHG</abbr>,
+                and Jonn Lu, Regional Director for <abbr title=" Shark Savers Asia Pacific">SHSAP</abbr>. <br />
+                Local, regional and global experts from Earth Hour, EarthFest, Ground-up Initiative and Coral Triangle Initiative, to name a few, were the conference theme influencers, and were also present.<br />
+                They elaborated on the conference theme "YOU can be the CHANGE", urging students and educators to be the change our world needs. </p>
+            <p id="demo">#bethechange</p>
 
-<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'
+            <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'
 document.getElementById('demo').style.color='#f35300'
 document.getElementById('demo').style.background='black'
 document.getElementById('demo').style.textAlign='center'">Click Me!</button>
 
 
-           
-           </section>
+
+        </section>
 
 
 
@@ -415,67 +527,67 @@ document.getElementById('demo').style.textAlign='center'">Click Me!</button>
 
 
 
-<!-- Continue reading----- -->
+        <!-- Continue reading----- -->
 
 
-<section style="margin: 30px;
+        <section style="margin: 30px;
                 outline: 2px dashed  #666666;
                 outline-offset:10px;">
 
-<p style="text-align: center; font-size: 26px; color: #666666; font-weight:600; text-align: center;">
-Future Schools</p>
-        
-<button class="futuresch" id="futureschools">"Future Proofing Schools"</button>
-<div class="futuresch-content">
-  <p>
- Eco-Schools always has been keeping an eye on innovative solutions for schooling and education. We've covered the solar powered mobile computer classroom project and the AIRchitecture flying classrooms of the future, but now we're excited about these proposals from architects all over the world, who recently submitted their ideas for what schools of the future could look like.<br>
-  	The winners for the <abbr title="Future Proofing Schools">FPS</abbr> design competition were recently announced, where designers where invited to submit their ideas for the next generation of relocatable classrooms. The competition, sponsored by the University of Melbourne, the <abbr title="Melbourne School of Design">MSD</abbr> and the Australian Institute of Architects, seeks to<strong> "elicit innovation, creativity and blue-sky thinking"</strong> and may just give us a peek into the future.
-<br><br> The competition focuses on new ideas for relocatable classrooms, which in recent decades have commonly been used around the globe. These types of classroom facilities are generally a response to rapid growth in schools, remote community needs or a quick solution to cope with natural disasters. Although the classrooms are often described as cheap and miserable, the winners for this year's competition are anything but drab and dreary.
-<br><br>
+            <p style="text-align: center; font-size: 26px; color: #666666; font-weight:600; text-align: center;">
+                Future Schools</p>
 
-  </p>
-</div>
+            <button class="futuresch" id="futureschools">"Future Proofing Schools"</button>
+            <div class="futuresch-content">
+                <p>
+                    Eco-Schools always has been keeping an eye on innovative solutions for schooling and education. We've covered the solar powered mobile computer classroom project and the AIRchitecture flying classrooms of the future, but now we're excited about these proposals from architects all over the world, who recently submitted their ideas for what schools of the future could look like.<br>
+                    The winners for the <abbr title="Future Proofing Schools">FPS</abbr> design competition were recently announced, where designers where invited to submit their ideas for the next generation of relocatable classrooms. The competition, sponsored by the University of Melbourne, the <abbr title="Melbourne School of Design">MSD</abbr> and the Australian Institute of Architects, seeks to<strong> "elicit innovation, creativity and blue-sky thinking"</strong> and may just give us a peek into the future.
+                    <br><br> The competition focuses on new ideas for relocatable classrooms, which in recent decades have commonly been used around the globe. These types of classroom facilities are generally a response to rapid growth in schools, remote community needs or a quick solution to cope with natural disasters. Although the classrooms are often described as cheap and miserable, the winners for this year's competition are anything but drab and dreary.
+                    <br><br>
+
+                </p>
+            </div>
 
 
-<button class="futuresch" id="winner">The Winner</button>
-<div class="futuresch-content">
-  <p>
-<strong>The winning </strong> design idea from architecture firm Architectus took home <b> AU$25,000 (US$26,831) </b> for its futuristic vision of the classroom. 
-<br><br>
-Dubbed <abbr title="Educational Modular Offsite Design">eMOD</abbr>, the concept is a flexible modular design system that can be configured to create a building solution that adapts to specific requirements such as site, climate and learning outcomes. The winning entry included a clever proposition of an app to formulate the modular design, which proved to be a hit amongst the judges.
-<br><br>
-"The concept represents the essence of an idea about the link between 21st century learning and space" said the jury. "[It] is both sophisticated and simple ... and is suggestive of adaptable and transportable space."
-<br><br>
-The eMOD design encompasses a learning space in all elements of the building that goes beyond the limitations of the walls. Learning areas include the internal/external environments around the building and the internal spaces that also provide adaptability to accommodate group-based student work or individual time.
+            <button class="futuresch" id="winner">The Winner</button>
+            <div class="futuresch-content">
+                <p>
+                    <strong>The winning </strong> design idea from architecture firm Architectus took home <b> AU$25,000 (US$26,831) </b> for its futuristic vision of the classroom.
+                    <br><br>
+                    Dubbed <abbr title="Educational Modular Offsite Design">eMOD</abbr>, the concept is a flexible modular design system that can be configured to create a building solution that adapts to specific requirements such as site, climate and learning outcomes. The winning entry included a clever proposition of an app to formulate the modular design, which proved to be a hit amongst the judges.
+                    <br><br>
+                    "The concept represents the essence of an idea about the link between 21st century learning and space" said the jury. "[It] is both sophisticated and simple ... and is suggestive of adaptable and transportable space."
+                    <br><br>
+                    The eMOD design encompasses a learning space in all elements of the building that goes beyond the limitations of the walls. Learning areas include the internal/external environments around the building and the internal spaces that also provide adaptability to accommodate group-based student work or individual time.
 
-</p>
-</div>
+                </p>
+            </div>
 
-<button class="futuresch" id="second">Second Place</button>
-<div class="futuresch-content">
-  <p>  In <strong>second place</strong>, architecture firm NBRS+PARTNERS impressed the judges with its futuristic MODUPOD concept.
-  	<br> "It was the suggestive flexibility of the organic core to the building and its capacity to indicate closed, open, unwrapped or linear active space that proposed an aspiration for a learning community over and above a rational, workable arrangement of classrooms," said the jury.
-  	<br><br>
-MODUPOD is a vision for 2025 and represents a dynamic 21st century learning environment with 3D text books promoting interaction and critical thinking for students. The concept features fast assembly, smart interiors and flexible PODS that place students and teachers at the heart of the learning experience. Dynamic multi-modal clusters are built around the central permeable student resource center.
-<br><br> The active core can also function as a media platform featuring multimedia screens that encourage the presentation of school news, energy consumption, environment facts, technological innovation and student work. </p>
-</div>
+            <button class="futuresch" id="second">Second Place</button>
+            <div class="futuresch-content">
+                <p> In <strong>second place</strong>, architecture firm NBRS+PARTNERS impressed the judges with its futuristic MODUPOD concept.
+                    <br> "It was the suggestive flexibility of the organic core to the building and its capacity to indicate closed, open, unwrapped or linear active space that proposed an aspiration for a learning community over and above a rational, workable arrangement of classrooms," said the jury.
+                    <br><br>
+                    MODUPOD is a vision for 2025 and represents a dynamic 21st century learning environment with 3D text books promoting interaction and critical thinking for students. The concept features fast assembly, smart interiors and flexible PODS that place students and teachers at the heart of the learning experience. Dynamic multi-modal clusters are built around the central permeable student resource center.
+                    <br><br> The active core can also function as a media platform featuring multimedia screens that encourage the presentation of school news, energy consumption, environment facts, technological innovation and student work. </p>
+            </div>
 
-<button class="futuresch" id="third">Third Place</button>
-<div class="futuresch-content">
-  <p>
-<strong>The third place</strong> entry by <i>Oliver Ebben</i> from Studioquint in Amsterdam was praised for its architectural deliberation. 
-<br>"The rational classroom form is made both spatial and place specific by three dimensional origami-like scales that articulate the form both internally and externally," said the jury. "Externally, the scales respond to orientation, outlook, and context, while internally they become three dimensional, occupiable space. The rooftop contains a locally contextual landscape, as a part of the transportable form."
-<br><br>
-This entry also included some great sustainability functions such as using components that are fabricated from recycled polystyrene. To avoid dissipation of energy during the transportation phase, the thermal building mass is added on site by making use of local soil and plants. 
-<br>In addition, the building components can function as reservoirs for rainwater, and the three-dimensional design of all building components at an angle of 20 degrees enables efficient use of photovoltaic panels and a high rate of sun shielding.
+            <button class="futuresch" id="third">Third Place</button>
+            <div class="futuresch-content">
+                <p>
+                    <strong>The third place</strong> entry by <i>Oliver Ebben</i> from Studioquint in Amsterdam was praised for its architectural deliberation.
+                    <br>"The rational classroom form is made both spatial and place specific by three dimensional origami-like scales that articulate the form both internally and externally," said the jury. "Externally, the scales respond to orientation, outlook, and context, while internally they become three dimensional, occupiable space. The rooftop contains a locally contextual landscape, as a part of the transportable form."
+                    <br><br>
+                    This entry also included some great sustainability functions such as using components that are fabricated from recycled polystyrene. To avoid dissipation of energy during the transportation phase, the thermal building mass is added on site by making use of local soil and plants.
+                    <br>In addition, the building components can function as reservoirs for rainwater, and the three-dimensional design of all building components at an angle of 20 degrees enables efficient use of photovoltaic panels and a high rate of sun shielding.
 
-  </p>
-</div>
+                </p>
+            </div>
 
-</section>
+        </section>
 
-<script>
-var coll = document.getElementsByClassName("futuresch");
+        <script>
+            var coll = document.getElementsByClassName("futuresch");
 var i;
 
 for (i = 0; i < coll.length; i++) {
@@ -500,51 +612,50 @@ for (i = 0; i < coll.length; i++) {
 
 
 
-
-<!-- ****************Slideshow future schools****************** -->
-
-
-
-<!-- Slideshow container -->
-<div class="slideshow-permbajtja">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="Sllajdet fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="Images/ecoschool1.PNG"  style="width:1000px; height:600px;">
-    <div class="teksti">First Place</div>
-  </div>
-
-  <div class="Sllajdet fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="Images/ecoschool3.PNG" style="width:1000px; height:600px;">
-    <div class="teksti">Second Place</div>
-  </div>
-
-  <div class="Sllajdet fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="Images/ecoschool2.PNG" style="width:1000px; height:600px;">
-    <div class="teksti">Third Place</div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center; padding-bottom: 20px;" >
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div> 
+        <!-- ****************Slideshow future schools****************** -->
 
 
 
+        <!-- Slideshow container -->
+        <div class="slideshow-permbajtja">
 
-<script>
-var slideIndex = 1;
+            <!-- Full-width images with number and caption text -->
+            <div class="Sllajdet fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="Images/ecoschool1.PNG" style="width:1000px; height:600px;">
+                <div class="teksti">First Place</div>
+            </div>
+
+            <div class="Sllajdet fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="Images/ecoschool3.PNG" style="width:1000px; height:600px;">
+                <div class="teksti">Second Place</div>
+            </div>
+
+            <div class="Sllajdet fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="Images/ecoschool2.PNG" style="width:1000px; height:600px;">
+                <div class="teksti">Third Place</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center; padding-bottom: 20px;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+
+
+
+        <script>
+            var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -576,13 +687,13 @@ function showSlides(n) {
 
 
 
-         <!-- *********************************** FOOTER ****************************************** -->
+        <!-- *********************************** FOOTER ****************************************** -->
 
-<footer class="footer">
+        <footer class="footer">
 
 
 
-            <div class="details">
+            <div class="details" id="bottom">
 
                 <h3><a href="#">Stay In The Know!</a></h3>
                 <hr />
@@ -653,14 +764,14 @@ function showSlides(n) {
                 <hr>
                 <p style="color: antiquewhite">Our <a href="#mission"><b>Mission</b></a></p>
                 <p style="color: antiquewhite">Address:</p>
-                
+
                 <address style="display: block; font-style: italic; text-align: center;">
                     <p style="color: antiquewhite; font-size: 12px">216 West 52nd Street</p>
                     <p style="color: antiquewhite; font-size: 12px">New York, 10019</p>
                     <p style="color: antiquewhite; font-size: 12px">United States of America</p>
                     <p style="color: antiquewhite; font-size: 12px"><a href="https://www.google.com/maps/place/216+W+52nd+St,+New+York,+NY+10019/@40.7627246,-73.9854276,685m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c25857ce8cfed5:0x682040e55f9746fc!8m2!3d40.7627246!4d-73.9832546">40.762940, -73.983213</a></p>
                 </address>
-                
+
             </div>
 
 
@@ -676,28 +787,28 @@ function showSlides(n) {
 
 
     </div>
-                                
 
 
-<!-- --------------------------------------------------NAV_javascript---------------------------- -->
 
-                            <script>
-                                window.onscroll = function() {
-                                    myFunction()
-                                };
+    <!-- --------------------------------------------------NAV_javascript---------------------------- -->
 
-                                var nav = document.getElementById("nav");
-                                var sticky = nav.offsetTop;
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
 
-                                function myFunction() {
-                                    if (window.pageYOffset >= sticky) {
-                                        nav.classList.add("fix")
-                                    } else {
-                                        nav.classList.remove("fix");
-                                    }
-                                }
+        var nav = document.getElementById("nav");
+        var sticky = nav.offsetTop;
 
-                            </script>
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                nav.classList.add("fix")
+            } else {
+                nav.classList.remove("fix");
+            }
+        }
+
+    </script>
 
 </body>
 

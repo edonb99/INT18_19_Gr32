@@ -10,11 +10,11 @@
     }
 
 
- .fix {
+    .fix {
         position: fixed;
         top: 0px;
         width: 1024px;
-        z-index:2;
+        z-index: 2;
     }
 
     .fix1 {
@@ -42,7 +42,7 @@
         background-color: gray;
     }
 
-   .active {
+    .active {
         background-color: #f35300;
     }
 
@@ -71,7 +71,7 @@
 
 
 <head lang="en">
-   <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="contacts.css">
 
     <title>Echo School</title>
@@ -84,23 +84,134 @@
     <div style="background-color: white">
         <!--**************************************************HEADER****************************************************-->
         <header>
+
             <div class="header">
-                <ol style="float: left">
-                    <li><a class="a" href="#"> Libero</a> | </li>
-                    <li><a class="a" href="#"> Maecenas</a> | </li>
-                    <li><a class="a" href="#"> Mauris</a> | </li>
-                    <li><a class="a" href="#"> Suspendise</a></li>
+                <ol style="float: left;font-weight: bold">
+                    <li><button onclick="document.getElementById('id01').style.display='block'" class="btn "> Login</button> | </li>
+                    <li><button onclick="document.getElementById('id02').style.display='block'" class="btn "> Sign up</button> | </li>
+                    <li><a class="a" href="#bottom"> Bottom</a> | </li>
+                    <li><a class="a" href=""> Suspendise</a></li>
                 </ol>
-                <ol style="float: right">
-                    <li><a class="a" href="#"> Libero</a> | </li>
-                    <li><a class="a" href="#"> Maecenas</a> | </li>
-                    <li><a class="a" href="#"> Mauris</a> | </li>
-                    <li><a class="a" href="#"> Suspendise</a></li>
+                <ol style="float: right;font-weight: bold">
+                    <li><button onclick="document.getElementById('id01').style.display='block'" class="btn"> Login</button> | </li>
+                    <li><button onclick="document.getElementById('id02').style.display='block'" class="btn signUp"> Sign up</button> | </li>
+                    <li><a class="a" href="#bottom"> Bottom</a> | </li>
+                    <li><a class="a" href=""> Suspendise</a></li>
                 </ol>
             </div>
             <br>
+            <!--********************** LOGIN MODAL ********************* -->
+            <div id="id01" class="modal">
+
+                <!-- ************ MODAL CONTENT ************* -->
+                <form class="modal-content animate">
+                    <div style="padding: 0px; margin: 5%">
+                        <p style="font-size: 30px;float: left;margin: 0px;padding: 0px"><b>Login</b></p>
+
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <br><br>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="uname" style="font-family: 'Helvetica', sans-serif"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label for="psw" style="font-family: 'Helvetica', sans-serif"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <button id="logInButton" type="submit">Login</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>
+                        <br>
+                        <div class="bottom-container">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'" style="color:white" class="btn-modal">Sign up</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" style="color:white" class="btn-modal">Forgot password?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="vl">
+                            <span class="vl-innertext">Login with Social Media</span>
+                        </div>
+                        <br><br>
+                        <div class="" style="clear: both">
+                            <a href="https://web.facebook.com/login" class="fb btn-modal" target="_blank">
+                                <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                            </a>
+                            <a href="https://twitter.com/login" class="twitter btn-modal" target="_blank">
+                                <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                            </a>
+                            <a href="https://accounts.google.com/signin" class="google btn-modal" target="_blank"><i class="fa fa-google fa-fw">
+                                </i> Login with Google+
+                            </a>
+                        </div>
+                        <br>
+                        <div style="background-color:white">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 4px">Cancel</button>
+
+                        </div>
+                    </div>
+                </form>
+                <!-- ************** MODAL CONTENT END ************** -->
+            </div>
+            <!--********************** LOGIN MODAL END ********************* -->
 
             <hr>
+
+            <!-- ********************** SIGNUP MODAL ********************** -->
+            <div id="id02" class="modal">
+                <!-- ********************* MODAL CONTENT ******************** -->
+
+                <form class="modal-content1 animate">
+                    <div style="padding: 0px; margin: 5%">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        </div>
+
+                        <p style="font-size: 30px;float: left;margin: 0px;padding: 0px"><b>Sign Up</b></p>
+                        <br><br>
+                        <p>Please fill this form to create an account.</p>
+
+                        <hr>
+                        <input style="width: 220px;float: left" type="text" placeholder="First Name" name="name" required>
+                        <input style="width: 220px;float: right" type="text" placeholder="Last Name" name="surname" required>
+                        <input type="email" placeholder="Email" name="email" required>
+                        <br>
+                        <input type="password" placeholder="Password" name="psw" required>
+                        <br>
+                        <input type="password" placeholder="Repeat Password" name="rpsw" required>
+                        <div style="display: flex">
+                            <p style="padding: 0px;margin: 0px"><b>Gender: </b></p>
+                            <input type="radio" name="gender" value="male"> Male<br>
+                            <input type="radio" name="gender" value="female"> Female<br>
+                            <input type="radio" name="gender" value="other"> Other<br>
+                        </div>
+                        <br>
+                        <div style="display: flex">
+                            <label for="bday" style="font-family: 'Helvetica', sans-serif;float: left"><b>Birthday: </b></label>
+                            <input style="margin-left: 20px" type="date" name="bday" required>
+                        </div>
+
+                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                        <p>Already have an account?<a onclick="document.getElementById('id02').style.display='none';document.getElementById('id01').style.display='block'" href="#" style="color:dodgerblue">Sign In</a> </p>
+
+                        <div style="height: 55px">
+                            <button onclick="document.getElementById('id02').style.display='none'" id="signUpCancel" type="button">Cancel</button>
+                            <button id="signUpButton" type="submit">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- ********************* MODAL CONTENT END *********************** -->
+            </div>
+            <!-- ********************** SIGNUP MODAL END ************************ -->
 
             <div id="container">
                 <div class="box1">
@@ -121,14 +232,14 @@
             <nav>
                 <br>
                 <ul id="nav">
-                   
-                    <li><a  href="index.html">Home</a></li>
-                    <li><a  href="About.html">About</a></li>
-                    <li><a  href="Events.html">Events</a></li>
-                    <li><a  href="Gallery.html">Gallery</a></li>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
                     <li><a class="active" href="Contacts.html">Contact</a></li>
 
-                    
+
                     <li style="float:right;"><input type="submit" value="Search"></li>
                     <li style="float:right;"><input type="text" placeholder="Search Term Here..."></li>
                 </ul>
@@ -149,232 +260,223 @@
 
 
 
+        <!--    -----------------------------------------------------  CONTACTCS  -------------------------------------------------------------------- -->
 
 
+        <address style="padding-left:20px;">
+            <a href="index.html">Eco Schools</a><br>
+            Visit us at:<br>
+            216 West 52nd Street<br>
+            New York, 10019<br>
+            United States of America
+        </address>
 
 
-
-<!--    -----------------------------------------------------  CONTACTCS  -------------------------------------------------------------------- -->
-
-
-<address style="padding-left:20px;">
-<a href="index.html">Eco Schools</a><br> 
-Visit us at:<br>
-216 West 52nd Street<br>
-New York, 10019<br>
-United States of America
-</address> 
-
-
-<!-- ******************************************************  TEAM  ************************************************************* -->
-<div class="rresht">
-  <div class="shtylle">
-    <div class="karta">
-      <img src="" alt="Jane" style="width:100%">
-      <div class="vazo">
-        <h2>Jane Doe</h2>
-        <p style="color: grey">CEO &amp; Founder</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="butoni0">
-            <a href="https://accounts.google.com/ServiceLogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"  
-            target="_blank"style=" text-decoration: none; color: white;">
-        Contact</a></button></p>
-      </div>
-    </div>
-  </div>
-
-<div class="shtylle">
-    <div class="karta">
-      <a target="_blank" href="eb.html ">
-      <img src="Images/bitmojiedi.JPG" alt="Edon" style="width:100%" > </a>
-      <div class="vazo">
-        <h2>Edon Budakova</h2>
-        <p style="color: grey">CEO &amp; Founder</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="butoni0"><a href="https://accounts.google.com/ServiceLogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin" 
-            target="_blank"style=" text-decoration: none; color: white;">
-        Contact</a></button></button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="shtylle">
-    <div class="karta">
-      <img src="img2.jpg" alt="Mike" style="width:100%">
-      <div class="vazo">
-        <h2>Mike Ross</h2>
-        <p style="color: grey">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="butoni0"><a href="https://accounts.google.com/ServiceLogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"
-             target="_blank"style=" text-decoration: none; color: white;">
-        Contact</a></button></button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="shtylle">
-    <div class="karta">
-      <img src="img3.jpg" alt="John" style="width:100%">
-      <div class="vazo">
-        <h2>John Doe</h2>
-        <p style="color: grey">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><button class="butoni0"><a href="https://accounts.google.com/ServiceLogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"
-             target="_blank"style=" text-decoration: none; color: white;">
-        Contact</a></button></button></p>
-      </div>
-    </div>
-  </div>
-</div> 
-
-
-
-<!-- ************************************************* Contact GET IN TOUCH ************************************************* -->
-
-	<form method="get" action="" id="mainForm">
-
-<fieldset>
-<legend>Get In Touch</legend>
-<p style=" text-transform: uppercase; text-align: center; color:#f35300"><u>We really appreciate your feedback</u></p>
- 
-
-
-
-<table>
-          <tr>
-            <td colspan="2">
-               <p>
-               <label>First Name</label><br/>
-               <input type="text" id="text" name="firstname" placeholder="Your name..." size="80" class="required" />
-               </p>
-                  <p>
-               <label>Last Name</label><br/>
-               <input type="text" id="text" name="lastname" placeholder="Your last name..." size="80" class="required" />
-               </p>
-                  <p>
-               <label>Email</label><br/>
-               <input type="email" id="text" name="email" placeholder="Your email..." size="80" class="required" />
-               </p>
-               <p>
-               <label>Subject</label><br/>
-               <textarea name="subject" placeholder="Write something.."  rows="12" cols="61" class="required">
-               </textarea>
-               </p>            
-            </td>
-         </tr>
-    <tr>
-            <td> 
-               <p> 
-               <label>Continent</label><br/>
-               <select name="continent">
-                  <option>Choose continent</option> 
-                  <option>Africa</option>
-                  <option>Asia</option>
-                  <option>Europe</option>
-                  <option>North America</option>
-                  <option>South America</option>
-               </select>
-               </p>
-               <p> 
-               <label>Country</label><br/>
-               <select name="country">
-                  <option>Choose country</option> 
-                  <option>Albania</option>
-                  <option>Brazil</option>
-                  <option>United States</option>
-                  <option>Kosovo</option>
-                  <option>Scotland</option>
-                  <option>Canada</option>
-                  <option>Italy</option>
-               </select>
-               </p>
-               <p>	
-               <label>City</label><br/>               
-               <input type="text" id="text" name="city" list="cities"  size="40"/>
-               <datalist id="cities">
-               	  <option>Tirana</option>
-                  <option>Milan</option>                
-                  <option>Montreal</option>
-                  <option>New York</option>                  
-                  <option>Prishtina</option>
-                  <option>Pekin</option>
-               </datalist>
-               </p>
-            </td>
-            <td>
-               <div class="box">
-                  <label>Gender </label><br/>
-                  <input type="radio" name="gender" value="1">Male<br/>
-                  <input type="radio" name="gender" value="2" checked>Female<br/>
-                  <input type="radio" name="gender" value="3" checked>Unspecified<br/>
-
-               </div>
-               <div class="box">
-                  <label>Interests </label><br/>
-                  <input type="checkbox" name="cc" >Technology <br/>
-                  <input type="checkbox" name="cc" >Sport <br/>    
-                  <input type="checkbox" name="cc" >Science <br/>
-                  <input type="checkbox" name="cc" >Movies<br/> 
-                  <input type="checkbox" name="cc" >Vehicles<br/>     
-                  <input type="checkbox" name="cc" >Other
-               </div>               
-            </td>
-         </tr>
-         <tr>
-            <td colspan="2" >
-            <div class="rectangle"> 
-               <label>I accept terms and conditions for this website</label>
-               <input type="checkbox" name="accept" class="required">
+        <!-- ******************************************************  TEAM  ************************************************************* -->
+        <div class="rresht">
+            <div class="shtylle">
+                <div class="karta">
+                    <img src="" alt="Jane" style="width:100%">
+                    <div class="vazo">
+                        <h2>Jane Doe</h2>
+                        <p style="color: grey">CEO &amp; Founder</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>example@example.com</p>
+                        <p><button class="butoni0">
+                                <a href="https://accounts.google.com/ServiceLogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank" style=" text-decoration: none; color: white;">
+                                    Contact</a></button></p>
+                    </div>
+                </div>
             </div>
-            </td>
-         </tr>
-         <tr>
-            <td>
-                  <p>
-                  <label>Rate this page: <br/>
-                  <input type="number" min="1" max="5" name="rate" />  
-                  </p>                  
-                  <p>
-                  <label>Color Collection: <br/>
-                  <input type="color"  name="color" />   
-                  </p>                  
-            </td>
-            <td>
-               <div class="box">
-                  <p>
-                  <label>Date Taken: <br/>
-                  <input type="date"  name="date" />   
-                  </p>
-                  <p>
-                  <label>Time Taken: <br/>
-                  <input type="time"  name="time" />   
-                  </p>                  
-               </div>
-            </td>
-         </tr>
-         <tr>
-            <td colspan="2">
-               <div class="rectangle centered"> 
-                  <input type="submit" class="rounded"> <input type="reset"  value="Clear Form" class="rounded">     
-               </div>
-            </td>
-         </tr>
-      </table>
-      </fieldset>
-</form>
+
+            <div class="shtylle">
+                <div class="karta">
+                    <a target="_blank" href="eb.html ">
+                        <img src="Images/bitmojiedi.JPG" alt="Edon" style="width:100%"> </a>
+                    <div class="vazo">
+                        <h2>Edon Budakova</h2>
+                        <p style="color: grey">CEO &amp; Founder</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>example@example.com</p>
+                        <p><button class="butoni0"><a href="https://accounts.google.com/ServiceLogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank" style=" text-decoration: none; color: white;">
+                                    Contact</a></button></button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shtylle">
+                <div class="karta">
+                    <img src="img2.jpg" alt="Mike" style="width:100%">
+                    <div class="vazo">
+                        <h2>Mike Ross</h2>
+                        <p style="color: grey">Art Director</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>example@example.com</p>
+                        <p><button class="butoni0"><a href="https://accounts.google.com/ServiceLogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank" style=" text-decoration: none; color: white;">
+                                    Contact</a></button></button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shtylle">
+                <div class="karta">
+                    <img src="img3.jpg" alt="John" style="width:100%">
+                    <div class="vazo">
+                        <h2>John Doe</h2>
+                        <p style="color: grey">Designer</p>
+                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                        <p>example@example.com</p>
+                        <p><button class="butoni0"><a href="https://accounts.google.com/ServiceLogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank" style=" text-decoration: none; color: white;">
+                                    Contact</a></button></button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
-<br><br>
+        <!-- ************************************************* Contact GET IN TOUCH ************************************************* -->
+
+        <form method="get" action="" id="mainForm">
+
+            <fieldset>
+                <legend>Get In Touch</legend>
+                <p style=" text-transform: uppercase; text-align: center; color:#f35300"><u>We really appreciate your feedback</u></p>
 
 
 
-<script>
-	//funksioni qe validon nese fusha eshte e zbrazet
+
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <p>
+                                <label>First Name</label><br />
+                                <input type="text" id="text" name="firstname" placeholder="Your name..." size="80" class="required" />
+                            </p>
+                            <p>
+                                <label>Last Name</label><br />
+                                <input type="text" id="text" name="lastname" placeholder="Your last name..." size="80" class="required" />
+                            </p>
+                            <p>
+                                <label>Email</label><br />
+                                <input type="email" id="text" name="email" placeholder="Your email..." size="80" class="required" />
+                            </p>
+                            <p>
+                                <label>Subject</label><br />
+                                <textarea name="subject" placeholder="Write something.." rows="12" cols="61" class="required">
+               </textarea>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <label>Continent</label><br />
+                                <select name="continent">
+                                    <option>Choose continent</option>
+                                    <option>Africa</option>
+                                    <option>Asia</option>
+                                    <option>Europe</option>
+                                    <option>North America</option>
+                                    <option>South America</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label>Country</label><br />
+                                <select name="country">
+                                    <option>Choose country</option>
+                                    <option>Albania</option>
+                                    <option>Brazil</option>
+                                    <option>United States</option>
+                                    <option>Kosovo</option>
+                                    <option>Scotland</option>
+                                    <option>Canada</option>
+                                    <option>Italy</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label>City</label><br />
+                                <input type="text" id="text" name="city" list="cities" size="40" />
+                                <datalist id="cities">
+                                    <option>Tirana</option>
+                                    <option>Milan</option>
+                                    <option>Montreal</option>
+                                    <option>New York</option>
+                                    <option>Prishtina</option>
+                                    <option>Pekin</option>
+                                </datalist>
+                            </p>
+                        </td>
+                        <td>
+                            <div class="box">
+                                <label>Gender </label><br />
+                                <input type="radio" name="gender" value="1">Male<br />
+                                <input type="radio" name="gender" value="2" checked>Female<br />
+                                <input type="radio" name="gender" value="3" checked>Unspecified<br />
+
+                            </div>
+                            <div class="box">
+                                <label>Interests </label><br />
+                                <input type="checkbox" name="cc">Technology <br />
+                                <input type="checkbox" name="cc">Sport <br />
+                                <input type="checkbox" name="cc">Science <br />
+                                <input type="checkbox" name="cc">Movies<br />
+                                <input type="checkbox" name="cc">Vehicles<br />
+                                <input type="checkbox" name="cc">Other
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="rectangle">
+                                <label>I accept terms and conditions for this website</label>
+                                <input type="checkbox" name="accept" class="required">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <label>Rate this page: <br />
+                                    <input type="number" min="1" max="5" name="rate" />
+                            </p>
+                            <p>
+                                <label>Color Collection: <br />
+                                    <input type="color" name="color" />
+                            </p>
+                        </td>
+                        <td>
+                            <div class="box">
+                                <p>
+                                    <label>Date Taken: <br />
+                                        <input type="date" name="date" />
+                                </p>
+                                <p>
+                                    <label>Time Taken: <br />
+                                        <input type="time" name="time" />
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="rectangle centered">
+                                <input type="submit" class="rounded"> <input type="reset" value="Clear Form" class="rounded">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+
+
+
+        <br><br>
+
+
+
+        <script>
+            //funksioni qe validon nese fusha eshte e zbrazet
 function EshteZbrazet(inputi)
 {
     if(inputi.type=="checkbox")
@@ -457,7 +559,7 @@ window.onload=function()
 
 
 
-            <div class="details">
+            <div class="details" id="bottom">
 
                 <h3><a href="#">Stay In The Know!</a></h3>
                 <hr />
@@ -528,14 +630,14 @@ window.onload=function()
                 <hr>
                 <p style="color: antiquewhite">Our <a href="#mission"><b>Mission</b></a></p>
                 <p style="color: antiquewhite">Address:</p>
-                
+
                 <address style="display: block; font-style: italic; text-align: center;">
                     <p style="color: antiquewhite; font-size: 12px">216 West 52nd Street</p>
                     <p style="color: antiquewhite; font-size: 12px">New York, 10019</p>
                     <p style="color: antiquewhite; font-size: 12px">United States of America</p>
                     <p style="color: antiquewhite; font-size: 12px"><a href="https://www.google.com/maps/place/216+W+52nd+St,+New+York,+NY+10019/@40.7627246,-73.9854276,685m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c25857ce8cfed5:0x682040e55f9746fc!8m2!3d40.7627246!4d-73.9832546">40.762940, -73.983213</a></p>
                 </address>
-                
+
             </div>
 
 
@@ -551,14 +653,14 @@ window.onload=function()
         </div>
 
 
-        </div>
+    </div>
 
 
 
 
 
 
-<script>
+    <script>
         window.onscroll = function() {
             myFunction()
         };
@@ -577,4 +679,5 @@ window.onload=function()
     </script>
 
 </body>
+
 </html>
