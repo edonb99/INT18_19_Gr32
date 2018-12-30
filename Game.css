@@ -60,3 +60,13 @@ input {
     text-shadow: 8;
     text-transform: uppercase;
 }
+
+#div3 span {
+    font-size: 35px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 800;
+    margin-left: 330px;
+    background: #9dc183;
+    padding: 5px;
+}
