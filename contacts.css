@@ -323,138 +323,410 @@ aside li {
 
 /* ---------------------------------------------------TEAM----------------------------------------------------------------   */
 
-.rresht{
+.rresht {
     display: flex;
 }
 
 /* Three shtylles side by side */
 .shtylle {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
 }
 
 /* Display the shtylles below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {
-  .shtylle {
-    width: 100%;
-    display: block;
-  }
+    .shtylle {
+        width: 100%;
+        display: block;
+    }
 }
 
 /* Add some shadows to create a card effect */
 .karta {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Some left and right padding inside the container */
 .vazo {
-  padding: 0 16px;
+    padding: 0 16px;
 }
 
 /* Clear floats */
-.vazo::after, .rresht::after {
-  content: "";
-  clear: both;
-  display: table;
+.vazo::after,
+.rresht::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 
 .butoni0 {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
 }
 
 .butoni0:hover {
-  background-color: #555;
-} 
+    background-color: #555;
+}
 
 
 /* ------------------------------------------------Contact GET IN TOUCH----------------------------------------------------   */
-#text, select, textarea {
-  width: 100%; 
-  padding: 12px;  
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+#text,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 
 table {
-   border: collapse; 
-   border-spacing: 0;   
-   width: 90%;
-   margin: 0 auto;
+    border: collapse;
+    border-spacing: 0;
+    width: 90%;
+    margin: 0 auto;
 }
-table tbody td{
-   /* border: 1pt solid #95BEF0;   */
-   line-height: 1.5em;
-   vertical-align: top;
-   padding: 0.5em 0.75em;
+
+table tbody td {
+    /* border: 1pt solid #95BEF0;   */
+    line-height: 1.5em;
+    vertical-align: top;
+    padding: 0.5em 0.75em;
 }
 
 fieldset {
-   margin: 1em auto;
-   background-color: #f2f2f2;
-   width: 90%;
-    
+    margin: 1em auto;
+    background-color: #f2f2f2;
+    width: 90%;
+
 }
+
 legend {
-   background-color:  #5c5c5c;
-   margin: 0 auto;
-   width: 90%;
-   padding: 0.25em;
-   text-align: center;
-   font-weight: bold;
-   font-size: 100%;
-   color:#f35300;
+    background-color: #5c5c5c;
+    margin: 0 auto;
+    width: 90%;
+    padding: 0.25em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100%;
+    color: #f35300;
 }
 
 form p {
-   margin-top: 0.5em;
+    margin-top: 0.5em;
 }
 
 .box {
-   border: 1pt solid #f35300;
-   padding: 0.5em;
-   margin-bottom: 0.4em;
-   background-color: #d9d9d9;
+    border: 1pt solid #f35300;
+    padding: 0.5em;
+    margin-bottom: 0.4em;
+    background-color: #d9d9d9;
 }
 
 .rectangle {
-   background-color: #DEDEDE;
-   padding: 0.5em;
+    background-color: #DEDEDE;
+    padding: 0.5em;
 }
+
 .centered {
-   text-align: center;
+    text-align: center;
 }
 
-.rounded, .rounded:hover {
-   border: 1px solid #172d6e;
-   border-bottom: 1px solid #0e1d45;
-   border-radius: 5px;
-   text-align: center;
-   color: white;
-   background-color: #00b300;
-   padding: 0.5em 0 0.5em 0;
-   margin: 0.3em;
-   width: 7em;
-   -webkit-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 4px 0 #b3b3b3;
-   box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 4px 0 #b3b3b3; 
-   cursor: pointer;
-}
+.rounded,
 .rounded:hover {
-   background-color: #006700;
+    border: 1px solid #172d6e;
+    border-bottom: 1px solid #0e1d45;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    background-color: #00b300;
+    padding: 0.5em 0 0.5em 0;
+    margin: 0.3em;
+    width: 7em;
+    -webkit-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 4px 0 #b3b3b3;
+    box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 4px 0 #b3b3b3;
+    cursor: pointer;
 }
 
+.rounded:hover {
+    background-color: #006700;
+}
+
+/* ************************ MODAL ****************** */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: 'Helvetica', sans-serif;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 0.5% auto 0.5% auto;
+    border: 1px solid #888;
+    width: 500px;
+    padding: 0px;
+}
+
+.modal-content1 {
+    background-color: #fefefe;
+    margin: 5% auto 5% auto;
+    border: 1px solid #888;
+    width: 500px;
+    padding: 0px;
+}
+
+#logInButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 17px;
+
+}
+
+#signUpButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+    border-radius: 4px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 17px;
+    float: right;
+}
+
+#signUpCancel {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+    border-radius: 4px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 17px;
+    float: left;
+}
+
+.modal-content button:hover {
+    opacity: 0.8;
+    border-radius: 4px;
+}
+
+.modal-content1 button:hover {
+    opacity: 0.8;
+    border-radius: 4px;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #f35300;
+    cursor: pointer;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 17px;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.modal input[type=text],
+.modal input[type=password],
+.modal input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.bottom-container {
+    text-align: center;
+    background-color: #666;
+    border-radius: 4px;
+}
+
+.col {
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 10 50px;
+
+
+}
+
+.col:hover {
+    background-color: gray;
+    border-radius: 4px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.btn-modal {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* ************************ SOCIAL MEDIA ****************** */
+
+.fb {
+    background-color: #3B5998;
+    color: white;
+
+}
+
+.fb:hover {
+    opacity: 1;
+}
+
+.twitter {
+    background-color: #55ACEE;
+    color: white;
+
+}
+
+.twitter:hover {
+    opacity: 1;
+}
+
+.google {
+    background-color: #dd4b39;
+    color: white;
+
+}
+
+.google:hover {
+    opacity: 1;
+}
+
+.vl {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #ddd;
+    width: 450px;
+}
+
+.vl-innertext {
+    position: absolute;
+    top: 50%;
+    transform: translate(120px, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 8px 10px;
+}
+
+/* ********************** SOCIAL MEDIA END ***************** */
+
+/* *********************** MODAL END ***************** */
+
+.btn {
+    border: none;
+    background-color: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    color: #f35300;
+    font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.btn:hover {
+    color: #5c5c5c;
+}
