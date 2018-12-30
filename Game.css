@@ -2,12 +2,14 @@ body {
     background-image: url('Images/b12.jpg');
 }
 
+/* trash part style */
 .div1 {
     display: flex;
     margin-top: 50px;
     margin-left: 30px;
 }
 
+/* trash cans style */
 #div2 {
     margin-left: 170px;
     display: flex;
@@ -15,6 +17,7 @@ body {
     padding-bottom: 10px;
 }
 
+/* under trash cans text style */
 #div2 span {
     font-weight: 900;
     color: white;
@@ -25,31 +28,37 @@ body {
     font-family: sans-serif;
 }
 
+/* blue trash can style */
 #blueTrash {
     margin-right: 100px;
     margin-bottom: 7px;
 }
 
+/* red trash can style */
 #redTrash {
     margin-top: 8px;
     margin-left: 10px;
 }
 
+/* yellow trash can style */
 #yellowTrash {
     margin-left: 55px;
     margin-bottom: 9px;
 }
 
+/* bottle style */
 .glass1 {
     margin-top: 10px;
     margin-left: 20px;
 }
 
+/* paper style */
 .paper {
     margin-top: 45px;
     margin-left: 20px;
 }
 
+/* input style */
 input {
     padding: 5px 40px;
     font-size: 30px;
@@ -61,6 +70,7 @@ input {
     text-transform: uppercase;
 }
 
+/* the score part style */
 #div3 span {
     font-size: 35px;
     color: white;
