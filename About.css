@@ -323,7 +323,7 @@ aside li {
 
 .about3 {
     flex: 70%;
-    padding: 35px 30px 0px 190px;
+    padding: 18px 30px 0px 190px;
     font-family: 'Helvetica';
     line-height: 1.5;
     font-weight: 200;
@@ -342,13 +342,11 @@ table {
     border: 2px solid #ddd;
     margin-left: 30px;
     margin-right: 30px;
-
 }
 
 th,
 td {
     text-align: left;
-    padding: 10px;
 }
 
 tr:nth-child(even) {
