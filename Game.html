@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Game.css">
+    <title>Game-Eco School</title>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("current", ev.target.id);
+        }
+
+        function drop1(ev) {
+            ev.preventDefault();
+            var el = document.getElementById(ev.dataTransfer.getData("current"));
+            var glass = ['d1', 'd2', 'd8'];
+            for (var i = 0; i < glass.length; i++) {
+                if (el.id == glass[i]) {
+                    el.parentNode.removeChild(el);
+                    document.getElementById('blueTrash').src = "Images/bule.png";
+                }
+            }
+        }
+
+        function drop2(ev) {
+            ev.preventDefault();
+            var el = document.getElementById(ev.dataTransfer.getData("current"));
+            var plastic = ['d3', 'd5', 'd6', 'd10'];
+            for (var i = 0; i < plastic.length; i++) {
+                if (el.id == plastic[i]) {
+                    el.parentNode.removeChild(el);
+
+                    document.getElementById('redTrash').src = "Images/red.png";
+                }
+            }
+        }
+
+        function drop3(ev) {
+            ev.preventDefault();
+            var el = document.getElementById(ev.dataTransfer.getData("current"));
+            var paper = ['d4', 'd7', 'd9'];
+            for (var i = 0; i < paper.length; i++) {
+                if (el.id == paper[i]) {
+                    el.parentNode.removeChild(el);
+                    document.getElementById('yellowTrash').src = "Images/yellow.png";
+                }
+            }
+        }
+        window.onload = function() {
+            var d = new Date();
+            if (d.getHours() < 6 || d.getHours() >= 17) {
+                document.body.style.backgroundImage = "url('Images/b123.jpg')";
+            }
+        }
+
+        function reset() {
+            window.location.reload();
+            document.getElementById('blueTrash').src = "Images/bule.png";
+            document.getElementById('redTrash').src = "Images/red.png";
+            document.getElementById('yellowTrash').src = "Images/yellow.png";
+        }
+    </script>
+</head>
+
+<body>
+    <input value="Reset" type="submit" onClick="reset()">
+    <input value="Home" type="submit" onClick="window.location='index.html';" style="float: right">
+
+    <div id="div2">
+        <div><img id="blueTrash" ondrop="drop1(event)" ondragover="allowDrop(event)" src="Images/blue1.png" width="170" height="320"><span style="margin-left: 8px; background-color: #2d98d4">Glass</span></div>
+        <div><img id="redTrash" ondrop="drop2(event)" ondragover="allowDrop(event)" src="Images/red1.png" width="170" height="320"><span style="margin-left: 0px; background-color: #e7221b">Plastic</span></div>
+        <div><img id="yellowTrash" ondrop="drop3(event)" ondragover="allowDrop(event)" src="Images/yellow1.png" width="170" height="320"><span style="margin-left: 62px; background-color: #fbc900">Paper</span></div>
+    </div>
+    <div class="div1">
+        <img id="d1" draggable="true" class="glass1" src="Images/bottle1.png" width="70px" height="180px" ondragstart="drag(event)">
+        <img id="d2" draggable="true" class="glass1" src="Images/bottle1.png" width="70px" height="180px" ondragstart="drag(event)">
+        <img id="d3" draggable="true" class="glass1" src="Images/bottle2.png" width="70px" height="180px" ondragstart="drag(event)">
+        <img id="d4" class="paper" draggable="true" src="Images/paper.png" width="170px" height="120px" ondragstart="drag(event)">
+        <img id="d5" draggable="true" class="glass1" src="Images/bottle2.png" width="70px" height="180px" ondragstart="drag(event)">
+        <img id="d6" draggable="true" class="glass1" src="Images/bottle2.png" width="70px" height="180px" ondragstart="drag(event)">
+        <img id="d7" class="paper" draggable="true" src="Images/paper.png" width="170px" height="120px" ondragstart="drag(event)">
+        <img id="d8" draggable="true" class="glass1" src="Images/bottle1.png" width="70px" height="180px" ondragstart="drag(event)">
+        <img id="d9" class="paper" draggable="true" src="Images/paper.png" width="170px" height="120px" ondragstart="drag(event)">
+        <img id="d10" draggable="true" class="glass1" src="Images/bottle2.png" width="70px" height="180px" ondragstart="drag(event)">
+
+    </div>
+</body>
+
+</html>
