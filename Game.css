@@ -5,7 +5,7 @@ body {
 /* trash part style */
 .div1 {
     display: flex;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 30px;
 }
 
@@ -13,8 +13,6 @@ body {
 #div2 {
     margin-left: 170px;
     display: flex;
-    overflow: auto;
-    padding-bottom: 10px;
 }
 
 /* under trash cans text style */
@@ -66,7 +64,6 @@ input {
     color: white;
     background: #9dc183;
     border-radius: 20px;
-    text-shadow: 8;
     text-transform: uppercase;
 }
 
@@ -79,4 +76,101 @@ input {
     margin-left: 330px;
     background: #9dc183;
     padding: 5px;
+}
+
+/*rotate buttons*/
+.rot:hover {
+    -ms-transform: rotate(180deg);
+    /* IE*/
+    -webkit-transform: rotate(180deg);
+    /* Safari*/
+    transform: rotate(180deg);
+}
+
+/*zoom trash images*/
+#d1:hover {
+    -ms-transform: scale(1.5);
+    /* IE*/
+    -webkit-transform: scale(1.1);
+    /* Safari*/
+    transform: scale(1.1);
+}
+
+#d2:hover {
+    -ms-transform: scale(1.1);
+    /* IE */
+    -webkit-transform: scale(1.1);
+    /* Safari */
+    transform: scale(1.1);
+}
+
+#d3:hover {
+    -ms-transform: scale(1.1);
+    /* IE */
+    -webkit-transform: scale(1.1);
+    /* Safari */
+    transform: scale(1.1);
+}
+
+#d4:hover {
+    -ms-transform: scale(1.1);
+    /* IE */
+    -webkit-transform: scale(1.1);
+    /* Safari */
+    transform: scale(1.1);
+}
+
+#d5:hover {
+    -ms-transform: scale(1.1);
+    /* IE */
+    -webkit-transform: scale(1.1);
+    /* Safari */
+    transform: scale(1.1);
+}
+
+#d6:hover {
+    -ms-transform: scale(1.1);
+    /* IE */
+    -webkit-transform: scale(1.1);
+    /* Safari */
+    transform: scale(1.1);
+}
+
+#d7:hover {
+    -ms-transform: scale(1.1);
+    /* IE*/
+    -webkit-transform: scale(1.1);
+    /* Safari*/
+    transform: scale(1.1);
+}
+
+#d8:hover {
+    -ms-transform: scale(1.1);
+    /* IE */
+    -webkit-transform: scale(1.1);
+    /* Safari */
+    transform: scale(1.1);
+}
+
+#d9:hover {
+    -ms-transform: scale(1.1);
+    /* IE */
+    -webkit-transform: scale(1.1);
+    /* Safari */
+    transform: scale(1.1);
+}
+
+#d10:hover {
+    -ms-transform: scale(1.1);
+    /* IE */
+    -webkit-transform: scale(1.1);
+    /* Safari */
+    transform: scale(1.1);
+}
+
+#place1 {
+    width: 170px;
+    height: 46px;
+    border-radius: 20px;
+    border: 3px dotted #aaaaaa;
 }
