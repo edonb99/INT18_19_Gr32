@@ -297,7 +297,7 @@
                         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                         <p>example@example.com</p>
                         <p><button class="butoni0"><a href="https://accounts.google.com/ServiceLogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank" style=" text-decoration: none; color: white;">
-                                    Contact</a></button></button></p>
+                                    Contact</a></button></p>
                     </div>
                 </div>
             </div>
@@ -312,7 +312,7 @@
                         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                         <p>example@example.com</p>
                         <p><button class="butoni0"><a href="https://accounts.google.com/ServiceLogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank" style=" text-decoration: none; color: white;">
-                                    Contact</a></button></button></p>
+                                    Contact</a></button></p>
                     </div>
                 </div>
             </div>
@@ -327,7 +327,7 @@
                         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                         <p>example@example.com</p>
                         <p><button class="butoni0"><a href="https://accounts.google.com/ServiceLogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank" style=" text-decoration: none; color: white;">
-                                    Contact</a></button></button></p>
+                                    Contact</a></button></p>
                     </div>
                 </div>
             </div>
@@ -462,6 +462,12 @@
                         <td colspan="2">
                             <div class="rectangle centered">
                                 <input type="submit" class="rounded"> <input type="reset" value="Clear Form" class="rounded">
+
+<br/>
+
+<button class="rounded" onclick="getLocation()">Get your coordinates</button>
+<p id="demo" style="color: black; font-weight: bold; "></p>
+
                             </div>
                         </td>
                     </tr>
@@ -472,6 +478,26 @@
 
 
         <br><br>
+
+
+<!-- Geolocation -->
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+<!-- / -->
 
 
 
