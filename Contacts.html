@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="cache.appcache">
 
 <head lang="en">
     <meta charset="UTF-8">
@@ -261,7 +261,7 @@
 
 
 
- <!--    -----------------------------------------------------  CONTACTCS  -------------------------------------------------------------------- -->
+        <!--    -----------------------------------------------------  CONTACTCS  -------------------------------------------------------------------- -->
 
 
 
@@ -273,8 +273,8 @@
                 <div class="karta">
 
 
-                   <a target="_blank" href="alb.html ">
-                    <img src="Images/bitmoji.png" alt="Alba" style="width:100%"> </a>
+                    <a target="_blank" href="alb.html ">
+                        <img src="Images/bitmoji.png" alt="Alba" style="width:100%"> </a>
                     <div class="vazo">
                         <h2>Alba Lokaj</h2>
 
@@ -305,8 +305,8 @@
 
             <div class="shtylle">
                 <div class="karta">
-                     <a target="_blank" href="ar.html ">
-                    <img src="Images/bitmojiar.JPG" alt="Arian" style="width:100%"> </a>
+                    <a target="_blank" href="ar.html ">
+                        <img src="Images/bitmojiar.JPG" alt="Arian" style="width:100%"> </a>
                     <div class="vazo">
                         <h2>Arian Limani</h2>
                         <p style="color: grey">Art Director</p>
@@ -320,8 +320,8 @@
 
             <div class="shtylle">
                 <div class="karta">
-                   <a target="_blank" href="fh.html ">
-                    <img src="Images/bitmojifit.JPG" alt="fitim" style="width:100%"> </a>
+                    <a target="_blank" href="fh.html ">
+                        <img src="Images/bitmojifit.JPG" alt="fitim" style="width:100%"> </a>
                     <div class="vazo">
                         <h2>Fitim Hajredini</h2>
                         <p style="color: grey">Designer</p>
@@ -464,10 +464,10 @@
                             <div class="rectangle centered">
                                 <input type="submit" class="rounded"> <input type="reset" value="Clear Form" class="rounded">
 
-<br/>
+                                <br />
 
-<button class="rounded" onclick="getLocation()">Get your coordinates</button>
-<p id="demo" style="color: black; font-weight: bold; "></p>
+                                <button class="rounded" onclick="getLocation()">Get your coordinates</button>
+                                <p id="demo" style="color: black; font-weight: bold; "></p>
 
                             </div>
                         </td>
@@ -481,9 +481,9 @@
         <br><br>
 
 
-<!-- Geolocation -->
-<script>
-var x = document.getElementById("demo");
+        <!-- Geolocation -->
+        <script>
+            var x = document.getElementById("demo");
 
 function getLocation() {
   if (navigator.geolocation) {
@@ -498,7 +498,7 @@ function showPosition(position) {
   "<br>Longitude: " + position.coords.longitude;
 }
 </script>
-<!-- / -->
+        <!-- / -->
 
 
 

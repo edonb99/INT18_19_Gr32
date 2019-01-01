@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html manifest="cache.appcache">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
   box-sizing: border-box;
 }
 
@@ -47,36 +48,39 @@ body {
 }
 </style>
 </head>
+
 <body>
 
-<video autoplay muted loop id="myVideo">
-  <source src="Images/School-of-the-Future.mp4" type="video/mp4">
-</video>
+    <video autoplay muted loop id="myVideo">
+        <source src="Images/School-of-the-Future.mp4" type="video/mp4">
+    </video>
 
-<div class="content">
-  <h1>Eco School of the future</h1>
-  <p>What are the benefits of an Eco School and how will they look in the future.</p>
-  <p>A video made from the students</p>
-  <button id="myBtn" onclick="myFunction()">Pause</button>
+    <div class="content">
+        <h1>Eco School of the future</h1>
+        <p>What are the benefits of an Eco School and how will they look in the future.</p>
+        <p>A video made from the students</p>
+        <button id="myBtn" onclick="myFunction()">Pause</button>
 
 
-<a href="Index.html"><button id="myBtn" style="float: right">Home</button></a> 
-</div>
+        <a href="Index.html"><button id="myBtn" style="float: right">Home</button></a>
+    </div>
 
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
 
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-</script>
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+
+    </script>
 
 </body>
+
 </html>
