@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -89,14 +90,14 @@
                 <ol style="float: left">
                     <li><button onclick="document.getElementById('id01').style.display='block'" class="btn "> Login</button> | </li>
                     <li><button onclick="document.getElementById('id02').style.display='block'" class="btn "> Sign up</button> | </li>
-                    <li><a class="a" href="video.html" target="_blank"  onclick="clickCounter()"> Video</a> | </li> 
-                    
-<!-- clicked video -->
-<div id="result"></div>
+                    <li><a class="a" href="video.html" target="_blank" onclick="clickCounter()"> Video</a> | </li>
 
-<!--  The localStorage Object -->
-<script>
-function clickCounter() {
+                    <!-- clicked video -->
+                    <div id="result"></div>
+
+                    <!--  The localStorage Object -->
+                    <script>
+                        function clickCounter() {
   if (typeof(Storage) !== "undefined") {
     if (localStorage.clickcount) {
       localStorage.clickcount = Number(localStorage.clickcount)+1;
@@ -109,7 +110,7 @@ function clickCounter() {
   }
 }
 </script>
-<!-- / -->
+                    <!-- / -->
 
 
 
