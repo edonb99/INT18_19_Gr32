@@ -93,7 +93,7 @@
 
 .box2 {
     float: right;
-    width: 468;
+    width: 468px;
     box-sizing: border-box;
 }
 
@@ -119,11 +119,11 @@
     font-weight: 200;
 }
 
-#img1 {
+.img1 {
     display: none;
 }
 
-p.two:hover #img1 {
+p.two:hover .img1 {
     display: block;
 }
 
@@ -305,7 +305,7 @@ tr:nth-child(even) {
     float: left;
     width: 50%;
     margin: auto;
-    padding: 10 50px;
+    padding: 10px 50px;
 
 
 }
