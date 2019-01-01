@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 
 <head>
     <meta charset="UTF-8">
@@ -90,7 +89,30 @@
                 <ol style="float: left">
                     <li><button onclick="document.getElementById('id01').style.display='block'" class="btn "> Login</button> | </li>
                     <li><button onclick="document.getElementById('id02').style.display='block'" class="btn "> Sign up</button> | </li>
-                    <li><a class="a" href="#bottom"> Bottom</a> | </li>
+                    <li><a class="a" href="video.html" target="_blank"  onclick="clickCounter()"> Video</a> | </li> 
+                    
+<!-- clicked video -->
+<div id="result"></div>
+
+<!--  The localStorage Object -->
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have watched the video " + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+<!-- / -->
+
+
+
                     <li><a class="a" href="Game.html"> Game</a></li>
                 </ol>
                 <ol style="float: right">
@@ -221,7 +243,7 @@
                     </span>
                     <br>
                     <span style="font-size: 12px;margin: 0px;padding: 0px">
-                        Free PSD Website Template
+                        Nurture, Inspire, Flourish
                     </span>
                 </div>
                 <div class="box2">

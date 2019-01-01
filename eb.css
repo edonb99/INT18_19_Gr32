@@ -18,6 +18,20 @@ body {
   box-shadow: 0px 0px 3px 1px #12a0a0, inset 0px 0px 3px 1px #12a0a0;
 }
 
+.btn {
+  float:right;
+  max-width: 40em;
+  border: 2px solid rgb(97, 245, 245);
+  margin: 10px;
+  color: #fff;
+  padding: 1em;
+  background-color: #0A2922;
+  box-shadow: 0px 0px 3px 1px #12a0a0, inset 0px 0px 3px 1px #12a0a0;
+  cursor:pointer;
+
+}
+
+
 .profile-row {
   display: flex;
 }
@@ -97,3 +111,4 @@ body {
 .profile-row .desc h1 {
   margin: 0px;
 }
+
