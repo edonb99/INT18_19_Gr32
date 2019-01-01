@@ -48,12 +48,14 @@ body {
 .glass1 {
     margin-top: 10px;
     margin-left: 20px;
+    cursor: grab;
 }
 
 /* paper style */
 .paper {
     margin-top: 45px;
     margin-left: 20px;
+    cursor: grab;
 }
 
 /* input style */
