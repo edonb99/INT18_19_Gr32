@@ -52,7 +52,7 @@
         background-color: #f35300;
     }
 
-    nav input[type="submit"] {
+    nav button{
         border: 1px solid #262626;
         border-radius: 0;
         margin: 10px 15px;
@@ -72,8 +72,58 @@
         margin-top: 10px;
         font-size: 11px;
     }
+        /*---------------------*/
+        
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
 
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 700px;
+}
 </style>
+    <script>
+        //function of the search button
+        function search(){
+    var text = "The Eco-Schools programme is an ideal way for schools to embark on a meaningful path towards improving the environment in both the school and the local community while at the same time having a life-long positive impact on the lives of young people and their families.";
+    var word= document.getElementById('srch').value;   
+    var reg = new RegExp(word, "i");
+    var res = reg.test(text);
+            if(res)
+                {
+var obj = reg.exec(text);
+document.getElementById("demo").innerHTML =
+"Results:   The word '" + obj[0] + "' was found in position " + obj.index + " in the text: " + obj.input;
+                }
+            else{
+ document.getElementById("demo").innerHTML="No results found.";
+            }
+            var modal = document.getElementById('myModal');
+            modal.style.display = "block";
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+        }
+    </script>
 
 
 </head>
@@ -239,6 +289,16 @@
             </div>
 
             <!--******************************************NAV_BAR*************************************-->
+
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <p id="demo"></p>
+                </div>
+
+            </div>
+
             <nav>
                 <br>
                 <ul id="nav">
@@ -248,8 +308,8 @@
                     <li><a href="Gallery.html">Gallery</a></li>
                     <li><a href="Contacts.html">Contact</a></li>
 
-                    <li style="float:right;"><input type="submit" value="Search"></li>
-                    <li style="float:right;"><input type="text" placeholder="Search Term Here..."></li>
+                    <li style="float:right;"><button onclick="search()">Search</button>
+                    <li style="float:right;"><input id="srch" type="text" placeholder="Search Term Here..."></li>
                 </ul>
                 <br><br>
             </nav>
@@ -382,7 +442,7 @@
 
                 <hr />
 
-                <p>The Eco-Schools programme is an ideal way for schools to embark on a meaningful path towards improving the environment in both the school and the local community while at the same time having a life-long positive impact on the lives of young people and their families.</p>
+                <p id="search">The Eco-Schools programme is an ideal way for schools to embark on a meaningful path towards improving the environment in both the school and the local community while at the same time having a life-long positive impact on the lives of young people and their families.</p>
 
                 <p>The Eco-Schools programme provides a unique opportunity that empowers pupils to lead change within their school and have a positive impact in their wider community.</p>
 
@@ -500,55 +560,55 @@
             Copyrights &copy; 2018 Eco School -All rights reserved.
         </div>
 
-<!-- ------------------------------TIME------------------ -->
-<div class="template" style="float:right">
-<div id="txt"></div>
-    <script>
-function startTime()
-{
-var today=new Date();
-var h=today.getHours();
-var m=today.getMinutes();
-var s=today.getSeconds();
-// add a zero in front of numbers<10
-m=checkTime(m);
-s=checkTime(s);
-document.getElementById('txt').innerHTML=h+":"+m+":"+s;
-t=setTimeout(function(){startTime()},5000);
-}
+        <!-- ------------------------------TIME------------------ -->
+        <div class="template" style="float:right">
+            <div id="txt"></div>
+            <script>
+                function startTime() {
+                    var today = new Date();
+                    var h = today.getHours();
+                    var m = today.getMinutes();
+                    var s = today.getSeconds();
+                    // add a zero in front of numbers<10
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    t = setTimeout(function() {
+                        startTime()
+                    }, 5000);
+                }
 
-function checkTime(i)
-{
-if (i<10)
-  {
-  i="0" + i;
-  }
-return i;
-}
-</script>
+                function checkTime(i) {
+                    if (i < 10) {
+                        i = "0" + i;
+                    }
+                    return i;
+                }
 
-<!-- ///// -->
-    
+            </script>
 
-    <!--**************************************************Java Script****************************************************-->
-    <script>
-        window.onscroll = function() {
-            myFunction()
-        };
+            <!-- ///// -->
 
-        var nav = document.getElementById("nav");
-        var sticky = nav.offsetTop;
 
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                nav.classList.add("fix")
-            } else {
-                nav.classList.remove("fix");
-            }
-        }
+            <!--**************************************************Java Script****************************************************-->
+            <script>
+                window.onscroll = function() {
+                    myFunction()
+                };
 
-    </script>
-    <!--**************************************************End-Java Script****************************************************-->
+                var nav = document.getElementById("nav");
+                var sticky = nav.offsetTop;
+
+                function myFunction() {
+                    if (window.pageYOffset >= sticky) {
+                        nav.classList.add("fix")
+                    } else {
+                        nav.classList.remove("fix");
+                    }
+                }
+
+            </script>
+            <!--**************************************************End-Java Script****************************************************-->
 
 </body>
 
