@@ -5,7 +5,40 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="contacts.css">
     <script src="storage.js" type="text/javascript"></script>
-
+    <script src="jquery.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function() {
+            $("#hide").click(function() {
+                $("#kontaktet").hide();
+            });
+            $("#show").click(function() {
+                $("#kontaktet").show();
+            });
+            $("#fade").click(function(){
+                $("#kontaktet").fadeToggle("slow");
+            });
+            $("#slide").click(function(){
+                $("#kontaktet").slideToggle(1000);
+            });
+            $("#animate").click(function() {
+             $(".butoni0").animate({bottom: '420px'},function(){
+                 alert("You have moved the \"Contact\" button to the upper side")
+                });
+            });
+            $("#setFunk").click(function() {
+                $("#setFunk").html("<u>It means a lot for us</u>");
+            });
+            $("#getFunk").click(function(){
+            alert($("#getText").text());
+            });
+              $("#addFunk").click(function(){
+                $("#addFunk").append(" <b>Added text</b>!!");
+                });
+            $("#removeFunk").click(function(){
+                $("#removeAll").remove();
+            });
+        });
+    </script>
 
     <title>Echo School</title>
 
@@ -82,7 +115,7 @@
 </head>
 
 
-<body style="width:1024px; margin:auto; background-color: #5c5c5c">
+<body style="width:1024px; margin:auto; background-color: #5c5c5c;" onload="startTime()">
 
 
     <div style="background-color: white">
@@ -279,7 +312,7 @@
         <!-- ******************************************************  TEAM  ************************************************************* -->
         <h1 id="team" style="text-align: center; background-color: black; font-family: Arial, Helvetica, sans-serif; color:#f35300;">Team</h1>
 
-        <div class="rresht">
+        <div class="rresht" id="kontaktet">
             <div class="shtylle">
                 <div class="karta">
 
@@ -292,7 +325,7 @@
                         <p style="color: grey">CEO &amp; Founder</p>
                         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                         <p>example@example.com</p>
-                        <p><button class="butoni0">
+                        <p><button style="position: relative" class="butoni0">
                                 <a href="mailto:alba_lokaj@hotmail.com" style=" text-decoration: none; color: white;">
                                     Contact</a></button></p>
                     </div>
@@ -308,7 +341,7 @@
                         <p style="color: grey">CEO &amp; Founder</p>
                         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                         <p>example@example.com</p>
-                        <p><button class="butoni0"><a href="mailto:ebudakova99@gmail.com" style=" text-decoration: none; color: white;">
+                        <p><button style="position: relative" class="butoni0"><a href="mailto:ebudakova99@gmail.com" style=" text-decoration: none; color: white;">
                                     Contact</a></button></p>
                     </div>
                 </div>
@@ -323,7 +356,7 @@
                         <p style="color: grey">Art Director</p>
                         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                         <p>example@example.com</p>
-                        <p><button class="butoni0"><a href="mailto:arianlimanii@gmail.com" style=" text-decoration: none; color: white;">
+                        <p><button style="position: relative" class="butoni0"><a href="mailto:arianlimanii@gmail.com" style=" text-decoration: none; color: white;">
                                     Contact</a></button></p>
                     </div>
                 </div>
@@ -338,11 +371,18 @@
                         <p style="color: grey">Designer</p>
                         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                         <p>example@example.com</p>
-                        <p><button class="butoni0"><a href="fitimhajredini59@gmail.com" style=" text-decoration: none; color: white;">
+                        <p><button style="position: relative" class="butoni0"><a href="mailto:fitimhajredini59@gmail.com" style=" text-decoration: none; color: white;">
                                     Contact</a></button></p>
                     </div>
                 </div>
             </div>
+        </div>
+        <div style="width: 100%;padding: 0px;margin: 10px,0px;height: 30px">
+            <button class="fshehja" id="hide">Hide</button>
+            <button class="fshehja" id="show">Show</button>
+            <button class="fshehja" id="fade">Fade/Show</button>
+            <button class="fshehja" id="slide">Slide/Show</button>
+            <button class="fshehja" id="animate">Animate</button>
         </div>
 
 
@@ -353,7 +393,7 @@
 
             <fieldset>
                 <legend>Get In Touch</legend>
-                <p style=" text-transform: uppercase; text-align: center; color:#f35300"><u>We really appreciate your feedback</u></p>
+                <p id="setFunk" style=" text-transform: uppercase; text-align: center; color:#f35300"><u>We really appreciate your feedback</u></p>
 
 
 
@@ -489,7 +529,12 @@
 
 
 
-        <br><br>
+        <div id="removeAll" style="border-style: dotted;border-color: #5c5c5c;width: 1000px;margin-left: 12px">
+            <p id="getFunk" style="margin: 5px;text-align: left"><span style="cursor: pointer">Click me to get a contact email!</span></p>
+            <p id="addFunk" style="margin: 5px;text-align: center"><span style="cursor: pointer">Click me to add some text!</span></p>
+            <p id="removeFunk" style="margin: 5px;text-align: right"><span style="cursor: pointer">Click me to remove us all!</span></p>
+        </div>
+        <br>
 
 
         <!-- Geolocation -->
@@ -652,7 +697,7 @@ window.onload=function()
                 <hr>
                 <p style="color: lightskyblue; font-size: 14px"><b>E-Mail:</b></p>
                 <p style="color: antiquewhite; font-size: 14px">
-                    <i>info@ecoschools.com</i></p>
+                    <i id="getText">info@ecoschools.com</i></p>
                 <p style="color: lightskyblue; font-size: 14px;"><b>Tel:</b></p>
                 <p style="color: antiquewhite; font-size: 14px"><i>+1-555-7954-89</i></p>
                 <p style="color: lightskyblue; font-size: 14px;"><b>Website:</b></p>
@@ -691,30 +736,56 @@ window.onload=function()
         </div>
 
 
-    </div>
+        <!-- ------------------------------TIME------------------ -->
+        <div class="template" style="float:right">
+            <div id="txt"></div>
+            <script>
+                function startTime() {
+                    var today = new Date();
+                    var h = today.getHours();
+                    var m = today.getMinutes();
+                    var s = today.getSeconds();
+                    // add a zero in front of numbers<10
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    t = setTimeout(function() {
+                        startTime()
+                    }, 5000);
+                }
+
+                function checkTime(i) {
+                    if (i < 10) {
+                        i = "0" + i;
+                    }
+                    return i;
+                }
+
+            </script>
+
+            <!-- ///// -->
 
 
 
 
 
+            <script>
+                window.onscroll = function() {
+                    myFunction()
+                };
 
-    <script>
-        window.onscroll = function() {
-            myFunction()
-        };
+                var nav = document.getElementById("nav");
+                var sticky = nav.offsetTop;
 
-        var nav = document.getElementById("nav");
-        var sticky = nav.offsetTop;
+                function myFunction() {
+                    if (window.pageYOffset >= sticky) {
+                        nav.classList.add("fix")
+                    } else {
+                        nav.classList.remove("fix");
+                    }
+                }
 
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                nav.classList.add("fix")
-            } else {
-                nav.classList.remove("fix");
-            }
-        }
-
-    </script>
+            </script>
 
 </body>
 
