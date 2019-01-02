@@ -273,6 +273,36 @@ figure.thumbnail2:hover figcaption.popup {
     font-weight: 200;
 }
 
+.math1 {
+    display: flex; 
+    border: 1pt solid green;  
+    column-count: 4;
+    color: #778899;
+    border: 1pt;
+    padding: 5px;
+    margin: 40px;
+    
+}
+
+
+/* Math Fun */
+.mathematics {
+  margin: 1em auto;  
+  width: 95%;
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+.math {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 180px;
+}
+/* // */
+
 
 
 /* ----- table ------ */
