@@ -58,7 +58,9 @@
     color: #f35300;
 
 }
-
+.a:hover {
+    color: #5c5c5c;
+}
 .header ol {
     display: flex;
     text-decoration: none;
