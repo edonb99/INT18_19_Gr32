@@ -1,4 +1,4 @@
-CACHE:
+CACHE MANIFEST
 
 index.html
 index.css
@@ -114,3 +114,4 @@ Images/bitmojifit.JPG
 Images/bitmojiar.JPG
 Images/youtube.png
 Images/relaxation.mp3
+font-awesome-4.7.0/css/font-awesome.css
