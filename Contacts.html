@@ -5,7 +5,28 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="contacts.css">
     <script src="storage.js" type="text/javascript"></script>
-
+    <script src="jquery.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function() {
+            $("#hide").click(function() {
+                $("#kontaktet").hide();
+            });
+            $("#show").click(function() {
+                $("#kontaktet").show();
+            });
+            $("#fade").click(function(){
+                $("#kontaktet").fadeToggle("slow");
+            });
+            $("#slide").click(function(){
+                $("#kontaktet").slideToggle(1000);
+            });
+            $("#animate").click(function() {
+             $(".butoni0").animate({bottom: '420px'},function(){
+                 alert("You have moved the \"Contact\" button to the upper side")
+                });
+            });
+        });
+    </script>
 
     <title>Echo School</title>
 
@@ -279,7 +300,7 @@
         <!-- ******************************************************  TEAM  ************************************************************* -->
         <h1 id="team" style="text-align: center; background-color: black; font-family: Arial, Helvetica, sans-serif; color:#f35300;">Team</h1>
 
-        <div class="rresht">
+        <div class="rresht" id="kontaktet">
             <div class="shtylle">
                 <div class="karta">
 
@@ -292,7 +313,7 @@
                         <p style="color: grey">CEO &amp; Founder</p>
                         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                         <p>example@example.com</p>
-                        <p><button class="butoni0">
+                        <p><button style="position: relative" class="butoni0">
                                 <a href="mailto:alba_lokaj@hotmail.com" style=" text-decoration: none; color: white;">
                                     Contact</a></button></p>
                     </div>
@@ -308,7 +329,7 @@
                         <p style="color: grey">CEO &amp; Founder</p>
                         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                         <p>example@example.com</p>
-                        <p><button class="butoni0"><a href="mailto:ebudakova99@gmail.com" style=" text-decoration: none; color: white;">
+                        <p><button style="position: relative" class="butoni0"><a href="mailto:ebudakova99@gmail.com" style=" text-decoration: none; color: white;">
                                     Contact</a></button></p>
                     </div>
                 </div>
@@ -323,7 +344,7 @@
                         <p style="color: grey">Art Director</p>
                         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                         <p>example@example.com</p>
-                        <p><button class="butoni0"><a href="mailto:arianlimanii@gmail.com" style=" text-decoration: none; color: white;">
+                        <p><button style="position: relative" class="butoni0"><a href="mailto:arianlimanii@gmail.com" style=" text-decoration: none; color: white;">
                                     Contact</a></button></p>
                     </div>
                 </div>
@@ -338,11 +359,18 @@
                         <p style="color: grey">Designer</p>
                         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                         <p>example@example.com</p>
-                        <p><button class="butoni0"><a href="fitimhajredini59@gmail.com" style=" text-decoration: none; color: white;">
+                        <p><button style="position: relative" class="butoni0"><a href="mailto:fitimhajredini59@gmail.com" style=" text-decoration: none; color: white;">
                                     Contact</a></button></p>
                     </div>
                 </div>
             </div>
+        </div>
+        <div style="width: 100%;padding: 0px;margin: 10px,0px;height: 30px">
+            <button class="fshehja" id="hide">Hide</button>
+            <button class="fshehja" id="show">Show</button>
+            <button class="fshehja" id="fade">Fade/Show</button>
+            <button class="fshehja" id="slide">Slide/Show</button>
+            <button class="fshehja" id="animate">Animate</button>
         </div>
 
 
@@ -691,56 +719,56 @@ window.onload=function()
         </div>
 
 
-<!-- ------------------------------TIME------------------ -->
-<div class="template" style="float:right">
-<div id="txt"></div>
-    <script>
-function startTime()
-{
-var today=new Date();
-var h=today.getHours();
-var m=today.getMinutes();
-var s=today.getSeconds();
-// add a zero in front of numbers<10
-m=checkTime(m);
-s=checkTime(s);
-document.getElementById('txt').innerHTML=h+":"+m+":"+s;
-t=setTimeout(function(){startTime()},5000);
-}
+        <!-- ------------------------------TIME------------------ -->
+        <div class="template" style="float:right">
+            <div id="txt"></div>
+            <script>
+                function startTime() {
+                    var today = new Date();
+                    var h = today.getHours();
+                    var m = today.getMinutes();
+                    var s = today.getSeconds();
+                    // add a zero in front of numbers<10
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                    t = setTimeout(function() {
+                        startTime()
+                    }, 5000);
+                }
 
-function checkTime(i)
-{
-if (i<10)
-  {
-  i="0" + i;
-  }
-return i;
-}
-</script>
+                function checkTime(i) {
+                    if (i < 10) {
+                        i = "0" + i;
+                    }
+                    return i;
+                }
 
-<!-- ///// -->
+            </script>
 
-
+            <!-- ///// -->
 
 
 
-    <script>
-        window.onscroll = function() {
-            myFunction()
-        };
 
-        var nav = document.getElementById("nav");
-        var sticky = nav.offsetTop;
 
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                nav.classList.add("fix")
-            } else {
-                nav.classList.remove("fix");
-            }
-        }
+            <script>
+                window.onscroll = function() {
+                    myFunction()
+                };
 
-    </script>
+                var nav = document.getElementById("nav");
+                var sticky = nav.offsetTop;
+
+                function myFunction() {
+                    if (window.pageYOffset >= sticky) {
+                        nav.classList.add("fix")
+                    } else {
+                        nav.classList.remove("fix");
+                    }
+                }
+
+            </script>
 
 </body>
 
