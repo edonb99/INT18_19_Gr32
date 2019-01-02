@@ -25,6 +25,18 @@
                  alert("You have moved the \"Contact\" button to the upper side")
                 });
             });
+            $("#setFunk").click(function() {
+                $("#setFunk").html("<u>It means a lot for us</u>");
+            });
+            $("#getFunk").click(function(){
+            alert($("#getText").text());
+            });
+              $("#addFunk").click(function(){
+                $("#addFunk").append(" <b>Added text</b>!!");
+                });
+            $("#removeFunk").click(function(){
+                $("#removeAll").remove();
+            });
         });
     </script>
 
@@ -381,7 +393,7 @@
 
             <fieldset>
                 <legend>Get In Touch</legend>
-                <p style=" text-transform: uppercase; text-align: center; color:#f35300"><u>We really appreciate your feedback</u></p>
+                <p id="setFunk" style=" text-transform: uppercase; text-align: center; color:#f35300"><u>We really appreciate your feedback</u></p>
 
 
 
@@ -517,7 +529,12 @@
 
 
 
-        <br><br>
+        <div id="removeAll" style="border-style: dotted;border-color: #5c5c5c;width: 1000px;margin-left: 12px">
+            <p id="getFunk" style="margin: 5px;text-align: left"><span style="cursor: pointer">Click me to get a contact email!</span></p>
+            <p id="addFunk" style="margin: 5px;text-align: center"><span style="cursor: pointer">Click me to add some text!</span></p>
+            <p id="removeFunk" style="margin: 5px;text-align: right"><span style="cursor: pointer">Click me to remove us all!</span></p>
+        </div>
+        <br>
 
 
         <!-- Geolocation -->
@@ -680,7 +697,7 @@ window.onload=function()
                 <hr>
                 <p style="color: lightskyblue; font-size: 14px"><b>E-Mail:</b></p>
                 <p style="color: antiquewhite; font-size: 14px">
-                    <i>info@ecoschools.com</i></p>
+                    <i id="getText">info@ecoschools.com</i></p>
                 <p style="color: lightskyblue; font-size: 14px;"><b>Tel:</b></p>
                 <p style="color: antiquewhite; font-size: 14px"><i>+1-555-7954-89</i></p>
                 <p style="color: lightskyblue; font-size: 14px;"><b>Website:</b></p>
