@@ -1,6 +1,7 @@
 body {
     background-image: url('Images/b12.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* trash part style */
@@ -33,17 +34,43 @@ body {
     margin-bottom: 7px;
 }
 
+#blueTrash:hover {
+    -ms-transform: translateY(10px);
+    /* IE*/
+    -webkit-transform: translateY(10px);
+    /* Safari*/
+    transform: translateY(10px);
+}
+
 /* red trash can style */
 #redTrash {
     margin-top: 8px;
     margin-left: 10px;
 }
 
+#redTrash:hover {
+    -ms-transform: translateY(10px);
+    /* IE*/
+    -webkit-transform: translateY(10px);
+    /* Safari*/
+    transform: translateY(10px);
+}
+
+
 /* yellow trash can style */
 #yellowTrash {
     margin-left: 55px;
     margin-bottom: 9px;
 }
+
+#yellowTrash:hover {
+    -ms-transform: translateY(10px);
+    /* IE*/
+    -webkit-transform: translateY(10px);
+    /* Safari*/
+    transform: translateY(10px);
+}
+
 
 /* bottle style */
 .glass1 {
@@ -83,11 +110,11 @@ input {
 
 /*rotate buttons*/
 .rot:hover {
-    -ms-transform: rotate(180deg);
+    -ms-transform: rotateX(180deg);
     /* IE*/
-    -webkit-transform: rotate(180deg);
+    -webkit-transform: rotateX(180deg);
     /* Safari*/
-    transform: rotate(180deg);
+    transform: rotateX(180deg);
 }
 
 /*zoom trash images*/
@@ -176,4 +203,13 @@ input {
     height: 46px;
     border-radius: 20px;
     border: 3px dotted #aaaaaa;
+}
+
+#place2 {
+    width: 170px;
+    height: 46px;
+    border-radius: 20px;
+    border: 3px dotted #aaaaaa;
+    float: right;
+    display: none;
 }
