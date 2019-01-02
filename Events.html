@@ -85,7 +85,7 @@
 </head>
 
 
-<body style="width:1024px; margin:auto; background-color: #5c5c5c">
+<body style="width:1024px; margin:auto; background-color: #5c5c5c;"  onload="startTime()">
 
 
     <div style="background-color: white">
@@ -899,7 +899,37 @@ function showSlides(n) {
         </div>
 
 
-    </div>
+
+<!-- ------------------------------TIME------------------ -->
+<div class="template" style="float:right">
+<div id="txt"></div>
+    <script>
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout(function(){startTime()},5000);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+</script>
+
+<!-- ///// -->
+
+
 
 
 
