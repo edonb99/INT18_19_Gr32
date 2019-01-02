@@ -128,20 +128,20 @@ p.two:hover .img1 {
 }
 
 table {
-    width: 964px;
+    width: 704px;
     border: 2px solid #ddd;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 25px;
 }
 
 th,
 td {
-    text-align: left;
+    text-align: center;
 }
 
 tr:nth-child(even) {
     background-color: #E0FDE0;
 }
+
 
 /* ************************ MODAL ****************** */
 
