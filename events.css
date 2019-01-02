@@ -58,7 +58,9 @@
     color: #f35300;
 
 }
-
+.a:hover {
+    color: #5c5c5c;
+}
 .header ol {
     display: flex;
     text-decoration: none;
@@ -266,11 +268,38 @@ figure.thumbnail2:hover figcaption.popup {
 .teksticleanair {
     flex: 60%;
     padding: 10px;
-    font-family: 'Helvetica';
+    font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
     line-height: 1.5;
     font-weight: 200;
 }
 
+
+
+/* ----- table ------ */
+
+#sevensteps {
+  font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#sevensteps td, #sevensteps th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#sevensteps tr:nth-child(even){background-color: #f2f2f2;}
+
+#sevensteps tr:hover {background-color: #ddd;}
+
+#sevensteps th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #00ba2e;
+  color: white;
+  text-align: center;
+}
 
 
 

@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="events.css">
+    <script src="storage.js" type="text/javascript"></script>
+
 
     <title>Echo School</title>
 
@@ -93,14 +95,20 @@
                 <ol style="float: left; font-weight: bold">
                     <li><button onclick="document.getElementById('id01').style.display='block'" class="btn "> Login</button> | </li>
                     <li><button onclick="document.getElementById('id02').style.display='block'" class="btn "> Sign up</button> | </li>
-                    <li><a class="a" href="video.html"> Video</a> | </li>
-                    <li><a class="a" href="Game.html"> Game</a></li>
+                     <li><a class="a" href="video.html" target="_blank" onclick="clickCounter()"> Video </a>
+                        <!-- clicked video -->
+                        <span id="result" style="font-size: 10px"></span> <!-- / --> | </li>
+
+                    <li><a class="a" href="Game.html" target="_blank" onclick="clickCounter1()"> Game </a>
+                        <!-- clicked video -->
+                        <span id="result2" style="font-size: 10px"></span> <!-- / -->
+                    </li>
                 </ol>
                 <ol style="float: right;font-weight: bold">
                     <li><button onclick="document.getElementById('id01').style.display='block'" class="btn"> Login</button> | </li>
                     <li><button onclick="document.getElementById('id02').style.display='block'" class="btn signUp"> Sign up</button> | </li>
                     <li><a class="a" href="#bottom"> Bottom</a> | </li>
-                    <li><a class="a" href="Game.html"> Game</a></li>
+                    <li><a class="a" href="Contacts.html#team "> Team  </a></li>   
                 </ol>
             </div>
             <br>
@@ -442,7 +450,72 @@
                     </ul>
                 </section>
 
+<table id="sevensteps">
+  <tr>
+    <th>Steps</th>
+    <th>Title</th>
+    <th>Content</th>
+  </tr>
+  <tr>
+    <td>Step 1 </td>
+    <td>Eco-Committee </td>
+    <td>The heartbeat of an Eco-Schools action and learning.</td>
+  </tr>
+  <tr>
+    <td>Step 2</td>
+    <td> Environmental Review </td>
+    <td>Investigating the school’s environmental performance.</td>
+  </tr>
+  <tr>
+    <td>Step 3 </td>
+    <td>Action Plan</td>
+    <td>Decide on topic actions, based on the results of the Environmental Review.</td>
+  </tr>
+  <tr>
+    <td>Step 4 </td>
+    <td> Curriculum Links </td>
+    <td>Making the links between the school’s environmental activity and the curriculum.</td>
+  </tr>
+  <tr>
+    <td>Step 5 </td>
+    <td> Informing and Involving </td>
+    <td>Let the whole school and wider community know what the Eco-Committee is doing.</td>
+  </tr>
+  <tr>
+    <td>Step 6</td>
+    <td>Monitoring and Evaluation </td>
+    <td>Measuring change and finding out what works and what doesn’t.y</td>
+  </tr>
+  <tr>
+    <td>Step 7 </td>
+    <td> Eco-Code </td>
+    <td>Creating a call to action that the whole school can get behind.</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </article>
+
+
+
+
+
+
+
 
 
 
@@ -756,7 +829,7 @@ function showSlides(n) {
 
                 <h3 style="float: center"><a href="#">About</a></h3>
                 <hr>
-                <p style="color: antiquewhite">Our <a href="#mission"><b>Mission</b></a></p>
+                <p style="color: antiquewhite">Our <a href="Index.html#mission"><b>Mission</b></a></p>
                 <p style="color: antiquewhite">Address:</p>
 
                 <address style="display: block; font-style: italic; text-align: center;">
