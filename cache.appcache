@@ -1,13 +1,14 @@
 CACHE MANIFEST
 
-index.html
+CACHE:
+Index.html
 index.css
 About.html
 About.css
 Events.html
-Events.css
+events.css
 Gallery.html
-Gallery.css
+gallery.css
 Contacts.html
 Contacts.css
 Game.html
@@ -115,3 +116,8 @@ Images/bitmojiar.JPG
 Images/youtube.png
 Images/relaxation.mp3
 font-awesome-4.7.0/css/font-awesome.css
+
+NETWORK:
+*
+
+FALLBACK:
