@@ -109,12 +109,20 @@ input {
 }
 
 /*rotate buttons*/
-.rot:hover {
+.rot1:hover {
     -ms-transform: rotateX(180deg);
     /* IE*/
     -webkit-transform: rotateX(180deg);
     /* Safari*/
     transform: rotateX(180deg);
+}
+
+.rot2:hover {
+    -ms-transform: rotateY(180deg);
+    /* IE*/
+    -webkit-transform: rotateY(180deg);
+    /* Safari*/
+    transform: rotateY(180deg);
 }
 
 /*zoom trash images*/

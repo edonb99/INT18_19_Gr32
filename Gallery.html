@@ -265,8 +265,8 @@
                         </div>
                         <br>
                         <div>
-                            <label for="uname" style="font-family: 'Helvetica', sans-serif"><b>Username</b></label>
-                            <input type="text" placeholder="Enter Username" name="uname" required>
+                            <label for="uname" style="font-family: 'Helvetica', sans-serif"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="uname" required>
 
                             <label for="psw" style="font-family: 'Helvetica', sans-serif"><b>Password</b></label>
                             <input type="password" placeholder="Enter Password" name="psw" required>
@@ -342,7 +342,7 @@
                             <p style="padding: 0px;margin: 0px"><b>Gender: </b></p>
                             <input type="radio" name="gender" value="male"> Male<br>
                             <input type="radio" name="gender" value="female"> Female<br>
-                            <input type="radio" name="gender" value="other"> Other<br>
+                            <input type="radio" name="gender" value="Unspecified" checked> Unspecified<br>
                         </div>
                         <br>
                         <div style="display: flex">
@@ -429,21 +429,18 @@
                 <img src="Images/ecookids%20-%20Copy.jpg" style="width:100%">
                 <img src="Images/ecogreen2.PNG" style="width:100%">
                 <img src="Images/presentation2-gallery.jpg" style="width:100%">
-                <br><br/><br>
+                <br><br /><br>
                 <!----------------------------------SVG--------------------------------------------------------------------->
                 <svg height="130" width="500">
                     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%"
-                      style="stop-color:rgb(255,255,255);stop-opacity:1" />
-                      <stop offset="100%"
-                      style="stop-color:rgb(0,255,0);stop-opacity:1" />
+                        <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:rgb(0,255,0);stop-opacity:1" />
                     </linearGradient>
-                  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
-                  <text fill="navy" font-size="15" font-family="Verdana"
-                  x="50" y="76">ECO-SCHOOLS</text>
-                Sorry, your browser does not support inline SVG.
+                    <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+                    <text fill="navy" font-size="15" font-family="Verdana" x="50" y="76">ECO-SCHOOLS</text>
+                    Sorry, your browser does not support inline SVG.
                 </svg>
-             <!----------------------------------END OF SVG--------------------------------------------------------------------->
+                <!----------------------------------END OF SVG--------------------------------------------------------------------->
 
             </div>
             <div class="column">
@@ -580,8 +577,8 @@
             </div>
         </div>
 
-        <!-------------------------------- END OF PHOTO GRID ------------------------------------------------------------- -->    
-            
+        <!-------------------------------- END OF PHOTO GRID ------------------------------------------------------------- -->
+
         <br>
         <br>
         <br>
@@ -771,53 +768,53 @@
 
 
     </div>
-<!-- ------------------------------TIME------------------ -->
-<div class="template" style="float:right">
-<div id="txt"></div>
-    <script>
-function startTime()
-{
-var today=new Date();
-var h=today.getHours();
-var m=today.getMinutes();
-var s=today.getSeconds();
-// add a zero in front of numbers<10
-m=checkTime(m);
-s=checkTime(s);
-document.getElementById('txt').innerHTML=h+":"+m+":"+s;
-t=setTimeout(function(){startTime()},5000);
-}
-
-function checkTime(i)
-{
-if (i<10)
-  {
-  i="0" + i;
-  }
-return i;
-}
-</script>
-
-<!-- ///// -->
-
-    <!-- -----------------------------NAV_JAVASCRIPT------------------------------------------- -->
-    <script>
-        window.onscroll = function() {
-            myFunction()
-        };
-
-        var nav = document.getElementById("nav");
-        var sticky = nav.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                nav.classList.add("fix")
-            } else {
-                nav.classList.remove("fix");
+    <!-- ------------------------------TIME------------------ -->
+    <div class="template" style="float:right">
+        <div id="txt"></div>
+        <script>
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                // add a zero in front of numbers<10
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                t = setTimeout(function() {
+                    startTime()
+                }, 5000);
             }
-        }
 
-    </script>
+            function checkTime(i) {
+                if (i < 10) {
+                    i = "0" + i;
+                }
+                return i;
+            }
+
+        </script>
+
+        <!-- ///// -->
+
+        <!-- -----------------------------NAV_JAVASCRIPT------------------------------------------- -->
+        <script>
+            window.onscroll = function() {
+                myFunction()
+            };
+
+            var nav = document.getElementById("nav");
+            var sticky = nav.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    nav.classList.add("fix")
+                } else {
+                    nav.classList.remove("fix");
+                }
+            }
+
+        </script>
 
 
 </body>
