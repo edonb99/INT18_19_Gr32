@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" manifest="cache.manifest">
 <script>
-    alert("Game Instructions:\nDrag and drop each piece of trash to the right trash can.\n\nOptional:\nHover over RESET and HOME to rotate the buttons 180 degrees.\nDrag Drag and drop the HOME button to the marked place under the RESET button and back to its place.");
+    //alert("Game Instructions:\nDrag and drop each piece of trash to the right trash can.\n\nOptional:\nHover over RESET and HOME to rotate the buttons 180 degrees.\nDrag Drag and drop the HOME button to the marked place under the RESET button and back to its place.");
 </script>
 
 <head>
@@ -71,6 +71,7 @@
         }
         //changes the background image 
         window.onload = function(){
+            startGame();
             var d = new Date();
             if (d.getHours() < 6 || d.getHours() >= 17) {
                 document.body.style.backgroundImage = "url('Images/b123.jpg')";    
@@ -98,13 +99,92 @@
             ev.preventDefault();
           var el = ev.dataTransfer.getData("home");
   ev.target.appendChild(document.getElementById(el));
-
                 }
+
+        //******************************************************************************************************************************************************
+        var myGamePiece;
+var start;
+function startGame() {
+    myGamePiece = new component(30, 30, "red", 250, 220);
+    start = new component(100, 50, "green", 215, 10);
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 505;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.interval = setInterval(updateGameArea, 20);
+    },
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+function component(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.speedX = 0;
+    this.speedY = 0;
+    this.x = x;
+    this.y = y;    
+    this.update = function() {
+        ctx = myGameArea.context;
+        ctx.fillStyle= color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+    }
+    this.newPos = function() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+                    if(((this.x>185) && (this.x<315)) && (this.y<=60))
+    {
+        
+document.getElementById('cccc').innerHTML="Starting the game";
+        window.scrollTo({
+  top: 800,
+  behavior: 'smooth',
+});
+    }
+    }
+}
+
+function updateGameArea() {
+    myGameArea.clear();
+    myGamePiece.newPos();    
+    myGamePiece.update();
+    start.update();
+}
+
+function moveup() {
+    myGamePiece.speedY -= 1; 
+}
+
+function movedown() {
+    myGamePiece.speedY += 1; 
+}
+
+function moveleft() {
+    myGamePiece.speedX -= 1; 
+}
+
+function moveright() {
+    myGamePiece.speedX += 1; 
+}
     </script>
 </head>
 
 <body>
-    <div style="width:1265px;">
+    <div style="text-align: center;  width:1265px; height: 500px">
+        <button onclick="moveup()">UP</button><br><br>
+        <button onclick="moveleft()">LEFT</button>
+        <button onclick="moveright()">RIGHT</button><br><br>
+        <button onclick="movedown()">DOWN</button><br><br>
+        <span id="cccc">Move the red box to the green rectangle to start the game</span>
+    </div>
+    <div id="div" style="width:1265px;">
         <div id="div3">
             <input class="rot1" value="Reset" type="submit" onClick="reset()">
             <span style="padding-left: 50px;  border-radius: 15px 0px 0px 15px">SCORE: </span><span id="score" style="margin-left: 0px; padding-right: 50px; border-radius: 0px 15px 15px 0px">0</span>
@@ -113,6 +193,7 @@
         </div>
         <br>
         <br>
+        <!--************************drop target for home button***********************-->
         <div id="place1" ondrop="drop4(event)" ondragover="allowDrop(event)" ondrop="drop4(event)"></div>
         <!-- *****************************IMAGES OF TRASH CANS********************************* -->
         <div id="div2">
