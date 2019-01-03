@@ -58,7 +58,8 @@
         background-color: #f35300;
     }
 
-    nav input[type="submit"] {
+
+    nav button {
         border: 1px solid #262626;
         border-radius: 0;
         margin: 10px 15px;
@@ -78,8 +79,58 @@
         margin-top: 10px;
         font-size: 11px;
     }
+            /* The Modal (background) */
+    .modal2 {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    /* Modal Content */
+    .modal2-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 700px;
+
+    }
 
 </style>
+    <script>
+        //function of the search button
+        function search(){
+    var text = "Eco-Schools is the world's leading environmental education programme. It is a pupil-led initiative with the aim to make environmental awareness and practical action an intrinsic part of school life.";
+    var word= document.getElementById('srch').value;   
+    var reg = new RegExp(word, "g");
+    var res = reg.test(text);
+            if(res)
+                {
+var obj = reg.exec(text);
+document.getElementById("demo").innerHTML =
+"Results:   The word '" + obj[0] + "' was found in position " + obj.index + " in the text: " + obj.input;
+                }
+            else{
+ document.getElementById("demo").innerHTML="No results found.";
+            }
+            var modal = document.getElementById('myModal');
+            modal.style.display = "block";
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+        }
+    </script>
 
 
 </head>
@@ -245,6 +296,16 @@
 
 
             <!--**********************************************************  NAV_BAR  **************************************************************-->
+
+            <div id="myModal" class="modal2">
+
+                <!-- Modal content -->
+                <div class="modal2-content">
+                    <p id="demo"></p>
+                </div>
+
+            </div>
+
             <nav>
                 <br>
                 <ul id="nav">
@@ -257,8 +318,8 @@
                     <li><a href="Contacts.html">Contact</a></li>
 
 
-                    <li style="float:right;"><input type="submit" value="Search"></li>
-                    <li style="float:right;"><input type="text" placeholder="Search Term Here..."></li>
+                    <li style="float:right;"><button onclick="search()">Search</button></li>
+                    <li style="float:right;"><input id="srch" type="text" placeholder="Search Term Here..."></li>
                 </ul>
                 <br><br>
             </nav>
