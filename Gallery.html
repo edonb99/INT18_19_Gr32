@@ -266,7 +266,7 @@
                         <br>
                         <div>
                             <label for="uname" style="font-family: 'Helvetica', sans-serif"><b>Email</b></label>
-                            <input type="text" placeholder="Enter Email" name="uname" required>
+                            <input type="text" placeholder="Enter Email" name="uname" required autofocus autocomplete="on">
 
                             <label for="psw" style="font-family: 'Helvetica', sans-serif"><b>Password</b></label>
                             <input type="password" placeholder="Enter Password" name="psw" required>
@@ -331,11 +331,11 @@
                         <p>Please fill this form to create an account.</p>
 
                         <hr>
-                        <input style="width: 220px;float: left" type="text" placeholder="First Name" name="name" required>
+                        <input style="width: 220px;float: left" type="text" placeholder="First Name" name="name" required autofocus>
                         <input style="width: 220px;float: right" type="text" placeholder="Last Name" name="surname" required>
                         <input type="email" placeholder="Email" name="email" required>
                         <br>
-                        <input type="password" placeholder="Password" name="psw" required>
+                        <input type="password" placeholder="Password" name="psw" required pattern="[A-Za-z0-9].{6,}" title=" Six or more characters">
                         <br>
                         <input type="password" placeholder="Repeat Password" name="rpsw" required>
                         <div style="display: flex">
