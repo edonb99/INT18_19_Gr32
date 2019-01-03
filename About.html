@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="cache.manifest">
+<html lang="en" manifest="cache.appcache">
 
 <style>
     /**********************Navigation Bar style*********************/
@@ -121,7 +121,7 @@
                         <br>
                         <div>
                             <label for="uname" style="font-family: 'Helvetica', sans-serif"><b>Email</b></label>
-                            <input type="text" placeholder="Enter Email" name="uname" required>
+                            <input type="text" placeholder="Enter Email" name="uname" required autofocus autocomplete="on">
 
                             <label for="psw" style="font-family: 'Helvetica', sans-serif"><b>Password</b></label>
                             <input type="password" placeholder="Enter Password" name="psw" required>
@@ -186,11 +186,11 @@
                         <p>Please fill this form to create an account.</p>
 
                         <hr>
-                        <input style="width: 220px;float: left" type="text" placeholder="First Name" name="name" required>
+                        <input style="width: 220px;float: left" type="text" placeholder="First Name" name="name" required autofocus>
                         <input style="width: 220px;float: right" type="text" placeholder="Last Name" name="surname" required>
                         <input type="email" placeholder="Email" name="email" required>
                         <br>
-                        <input type="password" placeholder="Password" name="psw" required>
+                        <input type="password" placeholder="Password" name="psw" required pattern="[A-Za-z0-9].{6,}" title=" Six or more characters">
                         <br>
                         <input type="password" placeholder="Repeat Password" name="rpsw" required>
                         <div style="display: flex">
@@ -440,7 +440,7 @@
                 <h3><a href="#">Stay In The Know!</a></h3>
                 <hr />
                 <p style="color: antiquewhite">Please enter your E-Mail to join our mailing list</p>
-                <input type="text" placeholder="e-mail...">
+                <input type="email" placeholder="e-mail..." multiple>
                 <input type="submit" value="Enter">
                 <p style="color: antiquewhite">To unsubscribe please click<a href="#"><b>here</b></a></p>
                 <br>
