@@ -461,6 +461,7 @@
         <!-------------------------------- END OF PHOTO GRID ------------------------------------------------------------- -->
         
         
+        
         <!----------------------------------SVG--------------------------------------------------------------------->
         <svg height="130" width="500">
             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -474,7 +475,25 @@
           x="50" y="76">ECO-SCHOOLS</text>
         Sorry, your browser does not support inline SVG.
         </svg>
+     <!----------------------------------END OF SVG--------------------------------------------------------------------->
+    
+        
+        
+     <!----------------------------------CANVAS--------------------------------------------------------------------->
+    
+        <canvas id="canvasii" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
 
+        <script>
+        var c = document.getElementById("canvasii");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,48,0,2*Math.PI);
+        ctx.stroke();
+        </script> 
+    
+    <!----------------------------------END OF CANVAS--------------------------------------------------------------------->
+    
         <br>
         <br>
         <br>
