@@ -117,6 +117,16 @@ window.onclick = function(event) {
   }
 }
         }
+    function replace(){
+    var string123="ES";
+    var rep = string123.replace("ES","Eco-Schools");
+    document.getElementById('repl').innerHTML=rep;
+    }
+    function match(){
+        var string321="evergreen palegreen darkgreen";
+        var ma=string321.match(/green/g);
+        document.getElementById('m').innerHTML=ma;
+    }
     </script>
 
 
@@ -301,7 +311,7 @@ window.onclick = function(event) {
                 <ul id="nav">
                     <li><a href="index.html">Home</a></li>
 
-                    <li><a class="active" href="#About">About</a></li>
+                    <li><a class="active" href="About.html">About</a></li>
 
                     <li><a href="Events.html">Events</a></li>
                     <li><a href="Gallery.html">Gallery</a></li>
@@ -328,8 +338,8 @@ window.onclick = function(event) {
 
         <div class="about1">
             <h1 style="color: #f35300; font-weight:600;">It all starts in the classroom</h1>
-            <blockquote style="font-size: 14px; "><i>-In 25 years, Eco-Schools has developed from a European educational programme to a global model for environmental education and sustainability at the international level.</i></blockquote><br>
-            Eco-Schools is a growing phenomenon, which encourages young people to engage in their environment by allowing them the opportunity to actively protect it. It starts in the classroom, it expands to the school and eventually fosters change in the community at large. Through this programme, young people experience a sense of achievement at being able to have a say in the environmental management policies of their schools, ultimately steering them towards certification and the prestige which comes with being awarded a <abbr title="Green Flag">GF</abbr>. The Eco-Schools programme is an ideal way for schools to embark on a meaningful path towards improving the environment in both the school and the local community while at the same time having a life-long positive impact on the lives of young people, their families, school staff and local authorities. We have found that working with Themes can also be a great help in giving the programme even more structure.
+            <blockquote style="font-size: 14px; "><i>-In 25 years, Eco-Schools has developed from a European educational programme to a global model for environmental education and sustainability at the international level.</i></blockquote><button onclick="replace()">Show the meaning of the highlighted word</button><br>
+            Eco-Schools is a growing phenomenon, which encourages young people to engage in their environment by allowing them the opportunity to actively protect it. It starts in the classroom, it expands to the school and eventually fosters change in the community at large. Through this programme, young people experience a sense of achievement at being able to have a say in the environmental management policies of their schools, ultimately steering them towards certification and the prestige which comes with being awarded a <abbr title="Green Flag">GF</abbr>. The <mark id="repl">ES</mark> programme is an ideal way for schools to embark on a meaningful path towards improving the environment in both the school and the local community while at the same time having a life-long positive impact on the lives of young people, their families, school staff and local authorities. We have found that working with Themes can also be a great help in giving the programme even more structure.
             <br><br>For the purpose of the Environmental Review there are <u>4 main Themes.</u> These are: <br><br>
             <hr>
         </div>
@@ -360,8 +370,10 @@ window.onclick = function(event) {
                 <li>Living things in their environment</li>
             </ul>
             Pupils learn that the variety of plants and animals that exist makes it important to identify them and assign them to groups; that different plants and animals are found in different habitats; that habitats support a diversity of plants and animals that are all interdependent; that the distribution and relative abundance of organisms in habitats can be explained using ideas of interdependence, adaptation, competition and predation. Biodiversity has connections with all the different environmental strands that, drawn together, characterise a healthy and caring Eco School. An Eco-School can care for biodiversity in several ways:
-            By showing positive attitudes and values for the health and well-being of local habitats, plants and animals, as well as humans, by encouraging the use of the outdoors to teach and learn about biodiversity, by making choices that affect the use of natural resources, by aiming to reduce its global footprint on habitats and species, both locally and globally, by contacting one of our delivery partners
-        </div><br><br>
+            By showing positive attitudes and values for the health and well-being of local habitats, plants and animals, as well as humans, by encouraging the use of the outdoors to teach and learn about biodiversity, by making choices that affect the use of natural resources, by aiming to reduce its global footprint on habitats and species, both locally and globally, by contacting one of our delivery partners.<br>
+            <button onclick="match()">Eco-School Motto</button><br>
+            <span id="m"></span>
+        </div><br>
         <div class="about2"><img src="Images/climate.png" alt="Climate logo"></div>
         <div class="about3">
             <h2 style="color: #f35300; font-weight:600;">Climate Change</h2><br>
