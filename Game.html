@@ -104,36 +104,38 @@
 </head>
 
 <body>
-    <div id="div3">
-        <input class="rot1" value="Reset" type="submit" onClick="reset()">
-        <span style="padding-left: 50px;  border-radius: 15px 0px 0px 15px">SCORE: </span><span id="score" style="margin-left: 0px; padding-right: 50px; border-radius: 0px 15px 15px 0px">0</span>
-        <input id="buttonHome" draggable="true" ondragstart="drag1(event)" class="rot2" value="Home" type="submit" onClick="window.location='index.html';" style="float: right;">
-        <div id="place2" ondrop="drop5(event)" ondragover="allowDrop(event)"></div>
-    </div>
-    <br>
-    <br>
-    <div id="place1" ondrop="drop4(event)" ondragover="allowDrop(event)" ondrop="drop4(event)"></div>
-    <!-- *****************************IMAGES OF TRASH CANS********************************* -->
-    <div id="div2">
-        <div><img id="blueTrash" ondrop="drop1(event)" ondragover="allowDrop(event)" src="Images/blue1.png" width="170" height="300">
-            <span style="margin-left: 8px; background-color: #2d98d4">Glass</span>
+    <div style="width:1265px;">
+        <div id="div3">
+            <input class="rot1" value="Reset" type="submit" onClick="reset()">
+            <span style="padding-left: 50px;  border-radius: 15px 0px 0px 15px">SCORE: </span><span id="score" style="margin-left: 0px; padding-right: 50px; border-radius: 0px 15px 15px 0px">0</span>
+            <input id="buttonHome" draggable="true" ondragstart="drag1(event)" class="rot2" value="Home" type="submit" onClick="window.location='index.html';" style="float: right;">
+            <div id="place2" ondrop="drop5(event)" ondragover="allowDrop(event)"></div>
         </div>
-        <div><img id="redTrash" ondrop="drop2(event)" ondragover="allowDrop(event)" src="Images/red1.png" width="170" height="300"><span style="margin-left: 0px; background-color: #e7221b">Plastic</span></div>
-        <div><img id="yellowTrash" ondrop="drop3(event)" ondragover="allowDrop(event)" src="Images/yellow1.png" width="170" height="300"><span style="margin-left: 62px; background-color: #fbc900">Paper</span></div>
-    </div>
-    <!-- *****************************TRASH IMAGES****************************************** -->
-    <div class="div1">
-        <img id="d1" draggable="true" class="glass1" src="Images/bottle1.png" width="70px" height="180px" ondragstart="drag(event)">
-        <img id="d2" draggable="true" class="glass1" src="Images/bottle1.png" width="70px" height="180px" ondragstart="drag(event)">
-        <img id="d3" draggable="true" class="glass1" src="Images/bottle2.png" width="70px" height="180px" ondragstart="drag(event)">
-        <img id="d4" class="paper" draggable="true" src="Images/paper.png" width="170px" height="120px" ondragstart="drag(event)">
-        <img id="d5" draggable="true" class="glass1" src="Images/bottle2.png" width="70px" height="180px" ondragstart="drag(event)">
-        <img id="d6" draggable="true" class="glass1" src="Images/bottle2.png" width="70px" height="180px" ondragstart="drag(event)">
-        <img id="d7" class="paper" draggable="true" src="Images/paper.png" width="170px" height="120px" ondragstart="drag(event)">
-        <img id="d8" draggable="true" class="glass1" src="Images/bottle1.png" width="70px" height="180px" ondragstart="drag(event)">
-        <img id="d9" class="paper" draggable="true" src="Images/paper.png" width="170px" height="120px" ondragstart="drag(event)">
-        <img id="d10" draggable="true" class="glass1" src="Images/bottle2.png" width="70px" height="180px" ondragstart="drag(event)">
+        <br>
+        <br>
+        <div id="place1" ondrop="drop4(event)" ondragover="allowDrop(event)" ondrop="drop4(event)"></div>
+        <!-- *****************************IMAGES OF TRASH CANS********************************* -->
+        <div id="div2">
+            <div><img id="blueTrash" ondrop="drop1(event)" ondragover="allowDrop(event)" src="Images/blue1.png" width="170" height="300">
+                <span style="margin-left: 8px; background-color: #2d98d4">Glass</span>
+            </div>
+            <div><img id="redTrash" ondrop="drop2(event)" ondragover="allowDrop(event)" src="Images/red1.png" width="170" height="300"><span style="margin-left: 0px; background-color: #e7221b">Plastic</span></div>
+            <div><img id="yellowTrash" ondrop="drop3(event)" ondragover="allowDrop(event)" src="Images/yellow1.png" width="170" height="300"><span style="margin-left: 62px; background-color: #fbc900">Paper</span></div>
+        </div>
+        <!-- *****************************TRASH IMAGES****************************************** -->
+        <div class="div1">
+            <img id="d1" draggable="true" class="glass1" src="Images/bottle1.png" width="70px" height="180px" ondragstart="drag(event)">
+            <img id="d2" draggable="true" class="glass1" src="Images/bottle1.png" width="70px" height="180px" ondragstart="drag(event)">
+            <img id="d3" draggable="true" class="glass1" src="Images/bottle2.png" width="70px" height="180px" ondragstart="drag(event)">
+            <img id="d4" class="paper" draggable="true" src="Images/paper.png" width="170px" height="120px" ondragstart="drag(event)">
+            <img id="d5" draggable="true" class="glass1" src="Images/bottle2.png" width="70px" height="180px" ondragstart="drag(event)">
+            <img id="d6" draggable="true" class="glass1" src="Images/bottle2.png" width="70px" height="180px" ondragstart="drag(event)">
+            <img id="d7" class="paper" draggable="true" src="Images/paper.png" width="170px" height="120px" ondragstart="drag(event)">
+            <img id="d8" draggable="true" class="glass1" src="Images/bottle1.png" width="70px" height="180px" ondragstart="drag(event)">
+            <img id="d9" class="paper" draggable="true" src="Images/paper.png" width="170px" height="120px" ondragstart="drag(event)">
+            <img id="d10" draggable="true" class="glass1" src="Images/bottle2.png" width="70px" height="180px" ondragstart="drag(event)">
 
+        </div>
     </div>
 </body>
 
