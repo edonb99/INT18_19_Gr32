@@ -248,7 +248,19 @@
         //function of the search button
         function search(){
     var text = "Some of our Best Moments. The 3 main Stages of Children Eco-Education";
+             var message=document.getElementById("demo");
+            message.innerHTML="";
+            
     var word= document.getElementById('srch').value;   
+            
+                        if(word == "") {  try {
+             throw "empty";
+            }
+                catch(err){
+            message.innerHTML="Input is "+err;
+                }
+                        }
+            else{
     var reg = new RegExp(word, "i");
     var res = reg.test(text);
             if(res)
@@ -259,6 +271,7 @@ document.getElementById("demo").innerHTML =
                 }
             else{
  document.getElementById("demo").innerHTML="No results found.";
+            }
             }
             var modal = document.getElementById('myModal');
             modal.style.display = "block";
@@ -276,7 +289,7 @@ window.onclick = function(event) {
 
 
 <body style="width:1024px; margin:auto; background-color: #5c5c5c;" onload="startTime();
-      background-image: url("Images/backgroundgallery.jpg"); background-repeat:repeat; background-attachment: fixed;">
+      background-image: url(" Images/backgroundgallery.jpg"); background-repeat:repeat; background-attachment: fixed;">
 
 
     <div style="background-color: white">
@@ -469,20 +482,20 @@ window.onclick = function(event) {
 
         <!-- --------------------------------------------------------GALLERY------------------------------------------------------ -->
 
-        
+
         <!-------------------------SOME OF OUR BEST MOMENTS-------------->
-            
+
         <h1 style="text-align: center; background-color: aqua; font-family: monospace; color: #f35300;">Some of our Best Moments</h1>
-        
+
         <!-- Audio Eco Hymn -->
         <audio controls>
             <source src="Images/ecohymn.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
         <!-- // -->
-        
-        
-        
+
+
+
 
         <!-------------------------------- PHOTO GRID ------------------------------------------------------------- -->
         <br><br>
@@ -644,40 +657,40 @@ window.onclick = function(event) {
         <!-------------------------------- END OF PHOTO GRID ------------------------------------------------------------- -->
 
         <br><br><br>
-        
+
         <!-- Audio relaxation -->
         <audio controls style="float:right">
             <source src="Images/relaxation.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
         <!-- Audio relaxation end -->
-        
+
         <!----------------------------------SVG--------------------------------------------------------------------->
-            <svg width="400" height="180">
+        <svg width="400" height="180">
             <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
                 <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
             </linearGradient>
             <rect x="50" y="20" rx="20" ry="20" width="350" height="150" fill="url(#grad2)" />
             <text fill="yellow" font-size="20" font-family="fantasy" x="125" y="110">The best Choice there is </text>
-                Sorry, your browser does not support inline SVG.
+            Sorry, your browser does not support inline SVG.
         </svg>
         <!----------------------------------END OF SVG--------------------------------------------------------------------->
 
-        
-        
+
+
         <!------------------------------------GREEN CANVAS-------------------------------->
         <div style="float: left">
             <canvas id="canvasiim" width="170" height="100" style="border:1px solid red;">
                 Your browser does not support the HTML5 canvas tag.
             </canvas>
-        <!--<p style="text-align: center">
+            <!--<p style="text-align: center">
         <img id="fotocanvasi" src="Images/insideofecoschool.jpg" alt="The Modern Eco-School" width="270" height="150">
         </p>-->
 
             <script>
 
-            var c = document.getElementById("canvasiim");
+                var c = document.getElementById("canvasiim");
             var ctx = c.getContext("2d");
 
             // Create gradient
@@ -701,29 +714,28 @@ window.onclick = function(event) {
                 ctx.drawImage(img, 5, 5);
             }  
             </script>
-         </div>
+        </div>
         <!-----------------------------------END OF GREEN CANVAS------------------------------>
-        
+
         <br><br><br>
         <hr style="margin: 30px; color: slategray">
-        
-        
+
+
         <!-----------------------Canvas Figure----------------------->
         <p style="text-align: center">Modern Eco-School:
 
-        <img id="fotocanvasi" width="150" height="100"
-        src="Images/insideofecoschool.jpg" alt="The Modern Eco-school">
+            <img id="fotocanvasi" width="150" height="100" src="Images/insideofecoschool.jpg" alt="The Modern Eco-school">
         </p> <br>
-        
-        
+
+
         <pre><p style="color: forestgreen">                                          A closer veiw of it: </p></pre>
-        
+
         <canvas id="imagecanvas" width="800" height="500" style="border:1px solid #FFFFFF;">
             Your browser does not support the HTML5 canvas tag.
         </canvas>
-        
+
         <script>
-        window.onload = function() {
+            window.onload = function() {
             var canvas = document.getElementById("imagecanvas");
             var ctx = canvas.getContext("2d");
             var img = document.getElementById("fotocanvasi");
@@ -731,18 +743,18 @@ window.onclick = function(event) {
         };
         </script>
         <!-----------------------End of Canvas Figure----------------------->
-        
-        
+
+
         <hr style="margin: 30px; color: slategray">
 
-        
-        
+
+
         <br><br><br><br>
-        
+
         <h2 style="text-align: right; color: chocolate; font-size: 25px">The 3 main Stages of <em>Children Eco-Education</em></h2>
-        
+
         <div class="mbajtesiSllajdeve">
-            
+
             <div class="sllajdetefotove fade">
                 <div class="numriTekstit">1 / 3
                 </div>
@@ -766,7 +778,7 @@ window.onclick = function(event) {
                 <div class="text">Applying
                 </div>
             </div>
-            
+
         </div>
 
         <br>

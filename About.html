@@ -96,7 +96,18 @@
     //function of the search button
         function search(){
     var text = "Eco-Schools is a growing phenomenon, which encourages young people to engage in their environment by allowing them the opportunity to actively protect it. It starts in the classroom, it expands to the school and eventually fosters change in the community at large. Through this programme, young people experience a sense of achievement at being able to have a say in the environmental management policies of their schools, ultimately steering them towards certification and the prestige which comes with being awarded a GF. The Eco-Schools programme is an ideal way for schools to embark on a meaningful path towards improving the environment in both the school and the local community while at the same time having a life-long positive impact on the lives of young people, their families, school staff and local authorities. We have found that working with Themes can also be a great help in giving the programme even more structure. ";
-    var word= document.getElementById('srch').value;   
+            var message=document.getElementById("demo");
+            message.innerHTML="";
+    var word= document.getElementById('srch').value; 
+            
+             if(word == "") {  try {
+             throw "empty";
+            }
+                catch(err){
+            message.innerHTML="Input is "+err;
+                }
+                        }
+            else{
     var reg = new RegExp(word, "i");
     var res = reg.test(text);
             if(res)
@@ -107,6 +118,7 @@ document.getElementById("demo").innerHTML =
                 }
             else{
  document.getElementById("demo").innerHTML="No results found.";
+            }
             }
             var modal = document.getElementById('myModal');
             modal.style.display = "block";

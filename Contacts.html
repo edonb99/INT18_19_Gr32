@@ -139,7 +139,19 @@
         //function of the search button
         function search(){
     var text = "Team Alba Lokaj Edon Budakova Arian Limani Fitim Hajredini CEO & Founder Art Director Designer";
+              var message=document.getElementById("demo");
+            message.innerHTML="";
+            
     var word= document.getElementById('srch').value;   
+            
+                        if(word == "") {  try {
+             throw "empty";
+            }
+                catch(err){
+            message.innerHTML="Input is "+err;
+                }
+                        }
+            else{
     var reg = new RegExp(word, "i");
     var res = reg.test(text);
             if(res)
@@ -150,6 +162,7 @@ document.getElementById("demo").innerHTML =
                 }
             else{
  document.getElementById("demo").innerHTML="No results found.";
+            }
             }
             var modal = document.getElementById('myModal');
             modal.style.display = "block";

@@ -108,7 +108,18 @@
         //function of the search button
         function search(){
     var text = "Eco-Schools is the world's leading environmental education programme. It is a pupil-led initiative with the aim to make environmental awareness and practical action an intrinsic part of school life.";
+        var message=document.getElementById("demo");
+            message.innerHTML="";
     var word= document.getElementById('srch').value;   
+            
+            if(word == "") {  try {
+             throw "empty";
+            }
+                catch(err){
+            message.innerHTML="Input is "+err;
+                }
+                        }
+            else{
     var reg = new RegExp(word, "g");
     var res = reg.test(text);
             if(res)
@@ -119,6 +130,7 @@ document.getElementById("demo").innerHTML =
                 }
             else{
  document.getElementById("demo").innerHTML="No results found.";
+            }
             }
             var modal = document.getElementById('myModal');
             modal.style.display = "block";

@@ -100,11 +100,21 @@
     <script>
         //function of the search button
         function search(){
-    var text = "The Eco-Schools programme is an ideal way for schools to embark on a meaningful path towards improving the environment in both the school and the local community while at the same time having a life-long positive impact on the lives of young people and their families.";
-    var word= document.getElementById('srch').value;   
-    var reg = new RegExp(word, "i");
+    var text = "The Eco-Schools programme is an ideal way for schools to embark on a meaningful path towards improving the environment in both the school and the local community while at the same time having a life-long positive impact on the lives of young people and their families."; 
+            var message=document.getElementById("demo");
+            message.innerHTML="";
+            var word= document.getElementById('srch').value; 
+         if(word == "") {  try {
+             throw "empty";
+            }
+                catch(err){
+            message.innerHTML="Input is "+err;
+                }
+                        }
+     else{       
+var reg = new RegExp(word, "i");
     var res = reg.test(text);
-            if(res)
+        if(res)
                 {
 var obj = reg.exec(text);
 document.getElementById("demo").innerHTML =
@@ -113,6 +123,7 @@ document.getElementById("demo").innerHTML =
             else{
  document.getElementById("demo").innerHTML="No results found.";
             }
+        }
             var modal = document.getElementById('myModal');
             modal.style.display = "block";
 
