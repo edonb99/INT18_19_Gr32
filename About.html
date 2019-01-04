@@ -92,6 +92,7 @@
 
 </style>
 <script>
+
     //function of the search button
         function search(){
     var text = "Eco-Schools is a growing phenomenon, which encourages young people to engage in their environment by allowing them the opportunity to actively protect it. It starts in the classroom, it expands to the school and eventually fosters change in the community at large. Through this programme, young people experience a sense of achievement at being able to have a say in the environmental management policies of their schools, ultimately steering them towards certification and the prestige which comes with being awarded a GF. The Eco-Schools programme is an ideal way for schools to embark on a meaningful path towards improving the environment in both the school and the local community while at the same time having a life-long positive impact on the lives of young people, their families, school staff and local authorities. We have found that working with Themes can also be a great help in giving the programme even more structure. ";
@@ -124,7 +125,7 @@ window.onclick = function(event) {
     }
     function match(){
         var string321="evergreen palegreen darkgreen";
-        var ma=string321.match(/green/g);
+        var ma = string321.match(/green/g);
         document.getElementById('m').innerHTML=ma;
     }
     </script>
@@ -140,7 +141,6 @@ window.onclick = function(event) {
 
 
 <body style="width:1024px; margin:auto; background-color: #5c5c5c;" onload="startTime()">
-
 
     <div style="background-color: white">
         <!--**************************************************HEADER****************************************************-->
@@ -335,7 +335,8 @@ window.onclick = function(event) {
         <img src="Images/2193.jpg" alt="Eco Image" width="1024">
 
         <!-- *****************************First text part************************* -->
-
+        <button onclick="showErr()">Show Errors</button>
+        <p id="error"></p>
         <div class="about1">
             <h1 style="color: #f35300; font-weight:600;">It all starts in the classroom</h1>
             <blockquote style="font-size: 14px; "><i>-In 25 years, Eco-Schools has developed from a European educational programme to a global model for environmental education and sustainability at the international level.</i></blockquote><button onclick="replace()">Show the meaning of the highlighted word</button><br>
@@ -647,6 +648,17 @@ window.onclick = function(event) {
                 }
 
             </script>
+            <script>
+                try {
+                    adlert("Welcome guest!");
+                } catch (err) {
+                    function showErr() {
+                        document.getElementById("error").innerHTML = err.name + ": " + err.message;
+                    }
+                }
+
+            </script>
+
 
 
 </body>
