@@ -194,7 +194,7 @@ window.onclick = function(event) {
                         <br>
                         <div>
                             <label for="uname" style="font-family: 'Helvetica', sans-serif"><b>Email</b></label>
-                            <input type="text" placeholder="Enter Email" name="uname" required autofocus autocomplete="on">
+                            <input type="text" placeholder="Enter Email" name="uname" required autocomplete="on">
 
                             <label for="psw" style="font-family: 'Helvetica', sans-serif"><b>Password</b></label>
                             <input type="password" placeholder="Enter Password" name="psw" required>
@@ -674,6 +674,23 @@ window.onclick = function(event) {
 
             </div>
 
+
+            <div  style=" background-color: #aaa; 
+                          background-image: linear-gradient(to right, #ddd, #aaa); ">
+                <h3 style="text-align: center">Example 5</h3>
+                <section style="text-align: center; padding-bottom: 20px;">
+
+  <p>Enter any number between 0 and 100, and find out the result of that number + any other number.</p>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+            <input type="range" id="a" value="50">100
+            +<input type="number" id="b" value="50">
+            =<output name="x" for="a b"></output>
+        </form>
+
+
+                </section>
+            </div>
+
         </article>
 
         <!-- //////////////////////////////////////// -->
@@ -765,9 +782,19 @@ document.getElementById('slogan').style.textAlign='center'">Click Me!</button>
 
 
 
+<article>
+
+<h1 style="background-color: #015558;
+    margin: 0 auto;
+    width: 95%;
+    padding: 0.5em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100%;
+    border:10pt;
+    color: #f35300;">Curiosities</h1>
 
         <div class="grid-container">
-            <div class="grid-item">
 
 
                 <div class="grid-item">
@@ -808,16 +835,10 @@ The length of a string (a string object) is found in the built in property leng
 
                 <div class="grid-item">
 
-                    <!-- The toExponential() method converts a number into an exponential notation.
-=======
+                    <!-- The toExponential() method converts a number into an exponential notation. -->
 
 
-            <div class="grid-item">
-
-      <!-- The toExponential() method converts a number into an exponential notation.
->>>>>>> 82ae28477a18282f4d4a07de16ccf5405bf4e9d6
- -->
-                    <p style="font-size: 20px">Do you want to see the average budget for a single event organized from Eco-School? <br>
+                   <p style="font-size: 20px">Do you want to see the average budget for a single event organized from Eco-School? <br>
                         Click to see the exponential notation the specified number.</p>
                     <button onclick="exponential()">Try it</button>
                     <p id="toExp"></p>
@@ -864,19 +885,10 @@ nr = Math.max(nr,n3);
 </script>
                 </div>
 
-
-
-
-                <div class="grid-item">4</div>
-
-
-
-            </div>
-
-
-
+ 
         </div>
 
+</article>
 
 
 
