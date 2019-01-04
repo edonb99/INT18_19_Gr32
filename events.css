@@ -248,11 +248,8 @@ figure.thumbnail2:hover figcaption.popup {
 
 
 /* --------------------------clean air section------------------------ */
-@font-face { font-family: Delicious; font-stretch: condensed;
-    font-style: oblique;
-    font-weight: bold; 
-    src: url('http://www.font-face.com/fonts/delicious/Delicious-Roman.otf'); } 
-/*@font-face { font-family: Delicious; font-weight: bold; src: url('Delicious-Bold.otf'); }*/
+@font-face { font-family:eb; 
+	src: url('@font-face/EBGaramond08-Regular.otf'); } 
 
 
 .cleanair {
@@ -274,7 +271,7 @@ figure.thumbnail2:hover figcaption.popup {
 .teksticleanair {
     flex: 60%;
     padding: 10px;
-    font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
+    font-family:eb;     
     line-height: 1.5;
     font-weight: 200;
 }

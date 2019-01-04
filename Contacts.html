@@ -33,7 +33,7 @@
             alert($("#getText").text());
             });
               $("#addFunk").click(function(){
-                $("#addFunk").append(" <b>Added text</b>!!");
+                $("#addFunk").before("                             <p><label>Middle Name</label><br /><input type=\"text\" id=\"text\" name=\"firstname\" placeholder=\"Your middle name...\" size=\"80\" class=\"required\" /></p>");
                 });
             $("#removeFunk").click(function(){
                 $("#removeAll").remove();
@@ -41,7 +41,7 @@
         });
     </script>
 
-    <title>Echo School</title>
+    <title>Contacts-Echo School</title>
 
     <style>
         /**********************Navigation Bar style*********************/
@@ -479,6 +479,7 @@ window.onclick = function(event) {
                                 <label>First Name</label><br />
                                 <input type="text" id="text" name="firstname" placeholder="Your name..." size="80" class="required" />
                             </p>
+                            <button id="addFunk" style="cursor: pointer; margin-right: 60px">Add a middle name</button>
                             <p>
                                 <label>Last Name</label><br />
                                 <input type="text" id="text" name="lastname" placeholder="Your last name..." size="80" class="required" />
@@ -603,10 +604,10 @@ window.onclick = function(event) {
 
 
 
-        <div id="removeAll" style="border-style: dotted;border-color: #5c5c5c;width: 1000px;margin-left: 12px">
-            <p id="getFunk" style="margin: 5px;text-align: left"><span style="cursor: pointer">Click me to get a contact email!</span></p>
-            <p id="addFunk" style="margin: 5px;text-align: center"><span style="cursor: pointer">Click me to add some text!</span></p>
-            <p id="removeFunk" style="margin: 5px;text-align: right"><span style="cursor: pointer">Click me to remove us all!</span></p>
+        <div id="removeAll" style=" display: flex; width: 1000px; margin-left: 12px">
+            <p id="getFunk"><button style="cursor: pointer; margin-left: 240px; margin-right: 60px;">Click me to get a contact email!</button></p>
+            <p id="addFunk" style="">
+                <p id="removeFunk" style=""><button style="cursor: pointer">Click me to remove us all!</button></p>
         </div>
         <br>
 
