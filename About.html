@@ -146,6 +146,7 @@ window.onclick = function(event) {
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="About.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
     <script src="storage.js" type="text/javascript"></script>
 
     <title>Echo School</title>
@@ -194,10 +195,10 @@ window.onclick = function(event) {
                         <br>
                         <div>
                             <label for="uname" style="font-family: 'Helvetica', sans-serif"><b>Email</b></label>
-                            <input type="text" placeholder="Enter Email" name="uname" required autofocus autocomplete="on">
+                            <input type="text" placeholder="Enter Email" id="uname" required autofocus autocomplete="on">
 
                             <label for="psw" style="font-family: 'Helvetica', sans-serif"><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <input type="password" placeholder="Enter Password" id="psw" required>
 
                             <button id="logInButton" type="submit">Login</button>
                             <label>
@@ -220,7 +221,7 @@ window.onclick = function(event) {
                             <span class="vl-innertext">Login with Social Media</span>
                         </div>
                         <br><br>
-                        <div class="" style="clear: both">
+                        <div class="" style="clear: both;margin-right: 5%">
                             <a href="https://web.facebook.com/login" class="fb btn-modal" target="_blank">
                                 <i class="fa fa-facebook fa-fw"></i> Login with Facebook
                             </a>
@@ -670,7 +671,8 @@ window.onclick = function(event) {
                 }
 
             </script>
-
+        </div>
+    </div>
 
 
 </body>
