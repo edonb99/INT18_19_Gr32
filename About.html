@@ -11,6 +11,7 @@
         overflow: hidden;
     }
 
+    /*************************fixed on scroll**********************/
     .fix {
         position: fixed;
         top: 0px;
@@ -18,15 +19,13 @@
         z-index: 2;
     }
 
-    .fix1 {
-        position: fixed;
-    }
-
+    /*************************list elements**********************/
     nav li {
         float: left;
         height: 40px;
     }
 
+    /*************************list anchor elements on the left**********************/
     nav li a {
         padding: 13px 20px;
         text-decoration: none;
@@ -34,17 +33,20 @@
         display: block;
         font-family: sans-serif;
         font-size: 13px;
-        font-weight: 100;
+        font-weight: 200;
     }
 
+    /*************************change background color on hover**********************/
     nav li a:hover:not(.active) {
         background-color: gray;
     }
 
+    /******************orange background color of the current page*******************/
     .active {
         background-color: #f35300;
     }
 
+    /***************search button*************/
     nav button {
         border: 1px solid #262626;
         border-radius: 0;
@@ -59,6 +61,7 @@
         cursor: pointer;
     }
 
+    /***************text input*************/
     nav input[type="text"] {
         border: 1px solid #262626;
         padding: 3px 0px 3px 3px;
@@ -66,7 +69,10 @@
         font-size: 11px;
     }
 
-    /* The Modal (background) */
+    /**********************End of Navigation Bar style*********************/
+
+
+    /***************The Modal(background) style**************/
     .modal2 {
         display: none;
         position: fixed;
@@ -80,14 +86,13 @@
         background-color: rgba(0, 0, 0, 0.7);
     }
 
-    /* Modal Content */
+    /**************Modal Content******************/
     .modal2-content {
         background-color: #fefefe;
         margin: auto;
         padding: 20px;
         border: 1px solid #888;
         width: 700px;
-
     }
 
 </style>
@@ -97,30 +102,29 @@
         function search(){
     var text = "Eco-Schools is a growing phenomenon, which encourages young people to engage in their environment by allowing them the opportunity to actively protect it. It starts in the classroom, it expands to the school and eventually fosters change in the community at large. Through this programme, young people experience a sense of achievement at being able to have a say in the environmental management policies of their schools, ultimately steering them towards certification and the prestige which comes with being awarded a GF. The Eco-Schools programme is an ideal way for schools to embark on a meaningful path towards improving the environment in both the school and the local community while at the same time having a life-long positive impact on the lives of young people, their families, school staff and local authorities. We have found that working with Themes can also be a great help in giving the programme even more structure. ";
             var message=document.getElementById("demo");
-            message.innerHTML="";
-    var word= document.getElementById('srch').value; 
-            
-             if(word == "") {  try {
-             throw "empty";
+            var word= document.getElementById('srch').value; //gets the input
+         if(word == "") {  
+             try {
+             throw "empty";  //throws an error if the input is empty
             }
                 catch(err){
-            message.innerHTML="Input is "+err;
+            message.innerHTML="Input is "+err;  //displays the error
                 }
                         }
-            else{
-    var reg = new RegExp(word, "i");
-    var res = reg.test(text);
-            if(res)
+     else{       
+var reg = new RegExp(word, "i"); //creates a regular expression object for matching text with the word
+    var res = reg.test(text);  //tests whether the word exist on the text(true or false)
+        if(res)
                 {
-var obj = reg.exec(text);
+var obj = reg.exec(text);   //text for a match in the text
 document.getElementById("demo").innerHTML =
-"Results:   The word '" + obj[0] + "' was found in position " + obj.index + " in the text: " + obj.input;
+"Results:   The word '" + obj + "' was found in position " + obj.index + " in the text: " + obj.input;
                 }
             else{
  document.getElementById("demo").innerHTML="No results found.";
             }
-            }
-            var modal = document.getElementById('myModal');
+        }
+            var modal = document.getElementById('Modal2'); //displays the modal
             modal.style.display = "block";
 
 // When the user clicks anywhere outside of the modal, close it
@@ -310,7 +314,7 @@ window.onclick = function(event) {
 
             <!--******************************************NAV_BAR*************************************-->
 
-            <div id="myModal" class="modal2">
+            <div id="Modal2" class="modal2">
 
                 <!-- Modal content -->
                 <div class="modal2-content">
@@ -348,11 +352,11 @@ window.onclick = function(event) {
         <img src="Images/2193.jpg" alt="Eco Image" width="1024">
 
         <!-- *****************************First text part************************* -->
-        <button onclick="showErr()">Show Errors</button>
+        <button style="margin: 15px 20px; font-size: 13px" onclick="showErr()">Show Errors</button>
         <p id="error"></p>
         <div class="about1">
             <h1 style="color: #f35300; font-weight:600;">It all starts in the classroom</h1>
-            <blockquote style="font-size: 14px; "><i>-In 25 years, Eco-Schools has developed from a European educational programme to a global model for environmental education and sustainability at the international level.</i></blockquote><button onclick="replace()">Show the meaning of the highlighted word</button><br>
+            <blockquote style="font-size: 14px; "><i>-In 25 years, Eco-Schools has developed from a European educational programme to a global model for environmental education and sustainability at the international level.</i></blockquote><button style="margin: 10px 0; font-size: 13px" onclick="replace()">Show the meaning of the highlighted word</button><br>
             Eco-Schools is a growing phenomenon, which encourages young people to engage in their environment by allowing them the opportunity to actively protect it. It starts in the classroom, it expands to the school and eventually fosters change in the community at large. Through this programme, young people experience a sense of achievement at being able to have a say in the environmental management policies of their schools, ultimately steering them towards certification and the prestige which comes with being awarded a <abbr title="Green Flag">GF</abbr>. The <mark id="repl">ES</mark> programme is an ideal way for schools to embark on a meaningful path towards improving the environment in both the school and the local community while at the same time having a life-long positive impact on the lives of young people, their families, school staff and local authorities. We have found that working with Themes can also be a great help in giving the programme even more structure.
             <br><br>For the purpose of the Environmental Review there are <u>4 main Themes.</u> These are: <br><br>
             <hr>
@@ -385,7 +389,7 @@ window.onclick = function(event) {
             </ul>
             Pupils learn that the variety of plants and animals that exist makes it important to identify them and assign them to groups; that different plants and animals are found in different habitats; that habitats support a diversity of plants and animals that are all interdependent; that the distribution and relative abundance of organisms in habitats can be explained using ideas of interdependence, adaptation, competition and predation. Biodiversity has connections with all the different environmental strands that, drawn together, characterise a healthy and caring Eco School. An Eco-School can care for biodiversity in several ways:
             By showing positive attitudes and values for the health and well-being of local habitats, plants and animals, as well as humans, by encouraging the use of the outdoors to teach and learn about biodiversity, by making choices that affect the use of natural resources, by aiming to reduce its global footprint on habitats and species, both locally and globally, by contacting one of our delivery partners.<br>
-            <button onclick="match()">Eco-School Motto</button><br>
+            <button style="margin: 10px 0; font-size: 13px" onclick="match()">Eco-School Motto</button><br>
             <span id="m"></span>
         </div><br>
         <div class="about2"><img src="Images/climate.png" alt="Climate logo"></div>
@@ -663,10 +667,11 @@ window.onclick = function(event) {
             </script>
             <script>
                 try {
-                    adlert("Welcome guest!");
+                    alertt("Learn more about us!");
                 } catch (err) {
                     function showErr() {
-                        document.getElementById("error").innerHTML = err.name + ": " + err.message;
+                        document.getElementById("error").innerHTML = "There is a " +
+                            err.name + ": " + err.message;
                     }
                 }
 
