@@ -175,7 +175,7 @@ window.onclick = function(event) {
 </head>
 
 
-<body style="width:1024px; margin:auto; background-color: #5c5c5c;" onload="startTime()">
+<body style="width:1024px; margin:auto; background-color: #5c5c5c;">
 
 
     <div style="background-color: white">
@@ -795,7 +795,6 @@ window.onload=function()
             </div>
 
 
-
         </footer>
 
         <!-- -------------------------------FOOTER-END ---------------------------------------------------- -->
@@ -810,53 +809,55 @@ window.onload=function()
         <!-- ------------------------------TIME------------------ -->
         <div class="template" style="float:right">
             <div id="txt"></div>
-            <script>
-                function startTime() {
-                    var today = new Date();
-                    var h = today.getHours();
-                    var m = today.getMinutes();
-                    var s = today.getSeconds();
-                    // add a zero in front of numbers<10
-                    m = checkTime(m);
-                    s = checkTime(s);
-                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
-                    t = setTimeout(function() {
-                        startTime()
-                    }, 5000);
+        </div>
+        <script>
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                // add a zero in front of numbers<10
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                t = setTimeout(function() {
+                    startTime()
+                }, 1000);
+            }
+            window.onload = startTime();
+
+            function checkTime(i) {
+                if (i < 10) {
+                    i = "0" + i;
                 }
+                return i;
+            }
 
-                function checkTime(i) {
-                    if (i < 10) {
-                        i = "0" + i;
-                    }
-                    return i;
+        </script>
+
+        <!-- ///// -->
+
+
+
+        <script>
+            window.onscroll = function() {
+                myFunction()
+            };
+
+            var nav = document.getElementById("nav");
+            var sticky = nav.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    nav.classList.add("fix")
+                } else {
+                    nav.classList.remove("fix");
                 }
+            }
 
-            </script>
+        </script>
 
-            <!-- ///// -->
-
-
-
-
-
-            <script>
-                window.onscroll = function() {
-                    myFunction()
-                };
-
-                var nav = document.getElementById("nav");
-                var sticky = nav.offsetTop;
-
-                function myFunction() {
-                    if (window.pageYOffset >= sticky) {
-                        nav.classList.add("fix")
-                    } else {
-                        nav.classList.remove("fix");
-                    }
-                }
-
-            </script>
+    </div>
 
 </body>
 

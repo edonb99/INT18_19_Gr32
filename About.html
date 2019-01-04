@@ -134,11 +134,14 @@ window.onclick = function(event) {
   }
 }
         }
+    
+    // Replace function
     function replace(){
     var string123="ES";
     var rep = string123.replace("ES","Eco-Schools");
     document.getElementById('repl').innerHTML=rep;
     }
+    // Search the string for match
     function match(){
         var string321="evergreen palegreen darkgreen";
         var ma = string321.match(/green/g);
@@ -633,7 +636,7 @@ window.onclick = function(event) {
                     document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
                     t = setTimeout(function() {
                         startTime()
-                    }, 5000);
+                    }, 1000);
                 }
 
                 function checkTime(i) {
@@ -666,6 +669,7 @@ window.onclick = function(event) {
 
             </script>
             <script>
+                // test for errors and displays it
                 try {
                     alertt("Learn more about us!");
                 } catch (err) {
