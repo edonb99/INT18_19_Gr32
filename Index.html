@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="cache.manifest">
+<html lang="en" manifest="cache.appcache">
 
 <head>
     <meta charset="UTF-8">
@@ -75,7 +75,7 @@
         /*---------------------*/
         
 /* The Modal (background) */
-.modal {
+.modal2 {
   display: none;
   position: fixed;
   z-index: 1;
@@ -89,7 +89,7 @@
 }
 
 /* Modal Content */
-.modal-content {
+.modal2-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
@@ -175,7 +175,7 @@ window.onclick = function(event) {
                         <br>
                         <div>
                             <label for="uname" style="font-family: 'Helvetica', sans-serif"><b>Email</b></label>
-                            <input type="text" placeholder="Enter Email" id="uname" required>
+                            <input type="text" placeholder="Enter Email" id="uname" required autofocus autocomplete="on">
 
                             <label for="psw" style="font-family: 'Helvetica', sans-serif"><b>Password</b></label>
                             <input type="password" placeholder="Enter Password" id="psw" required>
@@ -240,11 +240,11 @@ window.onclick = function(event) {
                         <p>Please fill this form to create an account.</p>
 
                         <hr>
-                        <input style="width: 220px;float: left" type="text" placeholder="First Name" name="name" required>
+                        <input style="width: 220px;float: left" type="text" placeholder="First Name" name="name" required autofocus>
                         <input style="width: 220px;float: right" type="text" placeholder="Last Name" name="surname" required>
                         <input type="email" placeholder="Email" name="email" required>
                         <br>
-                        <input type="password" placeholder="Password" name="psw" required>
+                        <input type="password" placeholder="Password" name="psw" required pattern="[A-Za-z0-9].{6,}" title=" Six or more characters">
                         <br>
                         <input type="password" placeholder="Repeat Password" name="rpsw" required>
                         <div style="display: flex">
@@ -290,10 +290,10 @@ window.onclick = function(event) {
 
             <!--******************************************NAV_BAR*************************************-->
 
-            <div id="myModal" class="modal">
+            <div id="myModal" class="modal2">
 
                 <!-- Modal content -->
-                <div class="modal-content">
+                <div class="modal2-content">
                     <p id="demo"></p>
                 </div>
 
@@ -472,7 +472,7 @@ window.onclick = function(event) {
                 <hr />
                 <p style="color: antiquewhite">Please enter your E-Mail to join our mailing list</p>
                 <form>
-                    <input type="text" placeholder="e-mail...">
+                    <input type="email" placeholder="e-mail..." multiple>
                     <input type="submit" value="Enter"></form>
                 <p style="color: antiquewhite">To unsubscribe please click<a href="#"><b>here</b></a></p>
                 <br>

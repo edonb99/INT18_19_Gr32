@@ -221,3 +221,41 @@ input {
     float: right;
     display: none;
 }
+
+canvas {
+    border: 1px solid #d3d3d3;
+    background-color: #f1f1f1;
+    margin-left: 365px;
+
+}
+
+button {
+    padding: 5px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    background: #9dc183;
+    border-radius: 20px;
+    text-transform: uppercase;
+
+}
+
+#cccc {
+    font-size: 20px;
+    background-color: #9dc183;
+    color: white;
+    border-radius: 5px;
+    padding: 0 10px;
+    width: 600px;
+    margin-left: 310px;
+}
+
+#cccc:hover {
+    -ms-transform: rotate3d(30, 30, 30, 90deg);
+    /* IE*/
+    -webkit-transform: rotate3d(30, 30, 30, 90deg);
+    /* Safari*/
+    transform: rotate3d(0, 90, 90, 180deg);
+
+    transition-duration: 1s;
+}
