@@ -102,6 +102,11 @@
 }
 
 /*****************************about page content **********************************/
+#error {
+    margin: 0 20px;
+    color: red;
+}
+
 .about1 {
     font-family: 'Helvetica';
     padding: 30px;

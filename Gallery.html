@@ -19,24 +19,19 @@
         background-color: #5c5c5c;
         overflow: hidden;
     }
-
+    /*************************fixed on scroll**********************/
     .fix {
         position: fixed;
         top: 0px;
         width: 1024px;
         z-index: 2;
     }
-
-    .fix1 {
-        position: fixed;
-        top: 40px;
-    }
-
+    /*************************list elements**********************/
     nav li {
         float: left;
         height: 40px;
     }
-
+    /*************************list anchor elements on the left**********************/
     nav li a {
         padding: 13px 20px;
         text-decoration: none;
@@ -46,16 +41,17 @@
         font-size: 13px;
         font-weight: 200;
     }
-
-    nav li a:hover:not(.home) {
+        
+    /*************************change background color on hover**********************/
+    nav li a:hover:not(#active) {
         background-color: gray;
     }
-
+    /******************orange background color of the current page*******************/
     #active {
         background-color: #f35300;
     }
-
-    nav button {
+    /***************search button*************/
+    nav button{
         border: 1px solid #262626;
         border-radius: 0;
         margin: 10px 15px;
@@ -68,37 +64,38 @@
         text-transform: uppercase;
         cursor: pointer;
     }
-
-
+    /***************text input*************/
     nav input[type="text"] {
         border: 1px solid #262626;
         padding: 3px 0px 3px 3px;
         margin-top: 10px;
         font-size: 11px;
     }
- /* The Modal (background) */
-    .modal2 {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        padding-top: 100px;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.7);
-    }
+    /**********************End of Navigation Bar style*********************/
+        
+        
+/***************The Modal(background) style**************/
+.modal2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
 
-    /* Modal Content */
-    .modal2-content {
-        background-color: #fefefe;
-        margin: auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 700px;
-
-    }
+/**************Modal Content******************/
+.modal2-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 700px;
+}
 
 
 
@@ -248,32 +245,30 @@
         //function of the search button
         function search(){
     var text = "Some of our Best Moments. The 3 main Stages of Children Eco-Education";
-             var message=document.getElementById("demo");
-            message.innerHTML="";
-            
-    var word= document.getElementById('srch').value;   
-            
-                        if(word == "") {  try {
-             throw "empty";
+            var message=document.getElementById("demo");
+            var word= document.getElementById('srch').value; //gets the input
+         if(word == "") {  
+             try {
+             throw "empty";  //throws an error if the input is empty
             }
                 catch(err){
-            message.innerHTML="Input is "+err;
+            message.innerHTML="Input is "+err;  //displays the error
                 }
                         }
-            else{
-    var reg = new RegExp(word, "i");
-    var res = reg.test(text);
-            if(res)
+     else{       
+var reg = new RegExp(word, "i"); //creates a regular expression object for matching text with the word
+    var res = reg.test(text);  //tests whether the word exist on the text(true or false)
+        if(res)
                 {
-var obj = reg.exec(text);
+var obj = reg.exec(text);   //text for a match in the text
 document.getElementById("demo").innerHTML =
-"Results:   The word '" + obj[0] + "' was found in position " + obj.index + " in the text: " + obj.input;
+"Results:   The word '" + obj + "' was found in position " + obj.index + " in the text: " + obj.input;
                 }
             else{
  document.getElementById("demo").innerHTML="No results found.";
             }
-            }
-            var modal = document.getElementById('myModal');
+        }
+            var modal = document.getElementById('Modal2'); //displays the modal
             modal.style.display = "block";
 
 // When the user clicks anywhere outside of the modal, close it
@@ -446,7 +441,7 @@ window.onclick = function(event) {
             </div>
 
             <!--******************************************NAV_BAR*************************************-->
-            <div id="myModal" class="modal2">
+            <div id="Modal2" class="modal2">
 
                 <!-- Modal content -->
                 <div class="modal2-content">
@@ -496,6 +491,7 @@ window.onclick = function(event) {
             <source src="Images/ecohymn.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+<<<<<<< HEAD
         <!-- Audio Eco Hymn -->
         
         <!-------------------------------- PHOTO GRID ------------------------------------------------------------- -->
@@ -522,6 +518,15 @@ window.onclick = function(event) {
                 </canvas>
                 <script>
                     function clock() {
+=======
+        <!-- // -->
+        <!----------------------------------O'CLOCK--------------------------------------------------------------------->
+        <canvas id="canvasii" width="150" height="150">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+        <script>
+            function clock() {
+>>>>>>> 31c2d26c0b2786de564bd7006789da41cd18a558
                       var now = new Date();
                       var ctx = document.getElementById('canvasii').getContext('2d');
                       ctx.save();
@@ -620,7 +625,7 @@ window.onclick = function(event) {
 
                     window.requestAnimationFrame(clock);
                 </script>
-                <!----------------------------------O'CLOCK--------------------------------------------------------------------->
+        <!----------------------------------O'CLOCK--------------------------------------------------------------------->
 
             </div>
             <div class="column">
@@ -657,6 +662,7 @@ window.onclick = function(event) {
         </div>
 
         <!-------------------------------- END OF PHOTO GRID ------------------------------------------------------------- -->
+<<<<<<< HEAD
         
         
         <!----------------------------AUDIO----------------------------------------->
@@ -679,10 +685,55 @@ window.onclick = function(event) {
 
             </div>
 
+=======
+
+        <br><br><br>
+
+
+        <hr style="margin: 30px; color: slategray">
+
+
+
+
+        <div class="grid-container">
+
+
+            <div class="grid-item">
+                <!----------------------------AUDIO----------------------------------------->
+                <!-- Audio relaxation -->
+                <audio controls style="float:right">
+                    <source src="Images/relaxation.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <!-- Audio relaxation end -->
+                <!--------------------------END OF AUDIO------------------------------------->
+            </div>
+            <br><br><br><br><br>
+
+            <!----------------------------------SVG--------------------------------------------------------------------->
+            <div style="float: right">
+                <svg height="130" width="500">
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:rgb(0,255,0);stop-opacity:1" />
+                    </linearGradient>
+                    <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+                    <a href="Index.html"><text fill="navy" font-size="15" font-family="Verdana" x="50" y="76">ECO-SCHOOLS</text></a>
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+                <!----------------------------------END OF SVG--------------------------------------------------------------------->
+            </div>
+
+            <br><br>
+
+
+            <br><br><br>
+>>>>>>> 31c2d26c0b2786de564bd7006789da41cd18a558
 
             <div>
                 <p style="font-family: sans-serif">Reach our Staff per your encrypted E-Mail, by using your favourite Browser.</p>
                 <!------------------------------KEYGEN----------------------------------------->
+<<<<<<< HEAD
                <form method="get">
                       E-Mail: <input type="text" name="usr_name">
                       Encryption: <keygen name="security">
@@ -696,6 +747,75 @@ window.onclick = function(event) {
         </div>
         
 
+=======
+                <form method="get">
+                    E-Mail: <input type="text" name="usr_name">
+                    Encryption: <keygen name="security">
+                    <input type="submit">
+                </form>
+                <!------------------------------KEYGEN----------------------------------------->
+                <br>
+            </div>
+
+
+
+            <br><br><br>
+
+            <!---------------------------------OUTPUT------------------------------------------->
+            <p>Enter any number between 0 and 100, and find out the result of that number + any other number.</p>
+            <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+                <input type="range" id="a" value="50">100
+                +<input type="number" id="b" value="50">
+                =<output name="x" for="a b"></output>
+            </form>
+            <!---------------------------------OUTPUT------------------------------------------->
+
+
+            <!------------------------------------GREEN CANVAS-------------------------------->
+            <div style="float: right">
+                <canvas id="canvasiim" width="170" height="100" style="border:1px solid red;">
+                    Your browser does not support the HTML5 canvas tag.
+                </canvas>
+                <!--<p style="text-align: center">
+        <img id="fotocanvasi" src="Images/insideofecoschool.jpg" alt="The Modern Eco-School" width="270" height="150">
+        </p>-->
+
+                <script>
+
+                    var c = document.getElementById("canvasiim");
+            var ctx = c.getContext("2d");
+
+            // Create gradient
+            var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+            grd.addColorStop(0,"green");
+            grd.addColorStop(1,"white");
+
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10,10,150,80);
+
+            ctx.font="15px Comic Sans MS";
+            ctx.fillStyle = "navy";
+            ctx.textAlign = "center";
+            ctx.fillText("Hello World", canvas.width/2, canvas.height/2);
+                
+            // Image at the right
+            window.onload = function()
+            {
+                var img = document.getElementById("fotocanvasi");
+                ctx.drawImage(img, 5, 5);
+            }  
+            </script>
+            </div>
+            <!-----------------------------------END OF GREEN CANVAS------------------------------>
+
+        </div>
+
+
+
+
+        <br><br><br><br><br>
+>>>>>>> 31c2d26c0b2786de564bd7006789da41cd18a558
         <hr style="margin: 30px; color: slategray">
 
 
@@ -723,8 +843,14 @@ window.onclick = function(event) {
         <!-----------------------End of Canvas Figure----------------------->
 
         <hr style="margin: 30px; color: slategray">
+<<<<<<< HEAD
         
         
+=======
+        <br>
+
+
+>>>>>>> 31c2d26c0b2786de564bd7006789da41cd18a558
         <!------------------------------------The Bottom SLIDESHOW--------------------------------------------------->
         <h2 style="text-align: center; color: chocolate; font-size: 25px">The 3 main Stages of <em>Children Eco-Education</em></h2>
 

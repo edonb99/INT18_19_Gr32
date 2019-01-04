@@ -52,26 +52,19 @@
         background-color: #5c5c5c;
         overflow: hidden;
     }
-
-
+    /*************************fixed on scroll**********************/
     .fix {
         position: fixed;
         top: 0px;
         width: 1024px;
         z-index: 2;
     }
-
-    .fix1 {
-        position: fixed;
-        top: 40px;
-    }
-
-
+    /*************************list elements**********************/
     nav li {
         float: left;
         height: 40px;
     }
-
+    /*************************list anchor elements on the left**********************/
     nav li a {
         padding: 13px 20px;
         text-decoration: none;
@@ -81,16 +74,17 @@
         font-size: 13px;
         font-weight: 200;
     }
-
-    nav li a:hover:not(.home) {
+        
+    /*************************change background color on hover**********************/
+    nav li a:hover:not(.active) {
         background-color: gray;
     }
-
+    /******************orange background color of the current page*******************/
     .active {
         background-color: #f35300;
     }
-
-    nav button {
+    /***************search button*************/
+    nav button{
         border: 1px solid #262626;
         border-radius: 0;
         margin: 10px 15px;
@@ -103,36 +97,38 @@
         text-transform: uppercase;
         cursor: pointer;
     }
-
+    /***************text input*************/
     nav input[type="text"] {
         border: 1px solid #262626;
         padding: 3px 0px 3px 3px;
         margin-top: 10px;
         font-size: 11px;
     }
-         /* The Modal (background) */
-    .modal2 {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        padding-top: 100px;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.7);
-    }
+    /**********************End of Navigation Bar style*********************/
+        
+        
+/***************The Modal(background) style**************/
+.modal2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
 
-    /* Modal Content */
-    .modal2-content {
-        background-color: #fefefe;
-        margin: auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 700px;
-
-    }
+/**************Modal Content******************/
+.modal2-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 700px;
+}
 
 
 </style>
@@ -140,32 +136,30 @@
         //function of the search button
         function search(){
     var text = "Team Alba Lokaj Edon Budakova Arian Limani Fitim Hajredini CEO & Founder Art Director Designer";
-              var message=document.getElementById("demo");
-            message.innerHTML="";
-            
-    var word= document.getElementById('srch').value;   
-            
-                        if(word == "") {  try {
-             throw "empty";
+               var message=document.getElementById("demo");
+            var word= document.getElementById('srch').value; //gets the input
+         if(word == "") {  
+             try {
+             throw "empty";  //throws an error if the input is empty
             }
                 catch(err){
-            message.innerHTML="Input is "+err;
+            message.innerHTML="Input is "+err;  //displays the error
                 }
                         }
-            else{
-    var reg = new RegExp(word, "i");
-    var res = reg.test(text);
-            if(res)
+     else{       
+var reg = new RegExp(word, "i"); //creates a regular expression object for matching text with the word
+    var res = reg.test(text);  //tests whether the word exist on the text(true or false)
+        if(res)
                 {
-var obj = reg.exec(text);
+var obj = reg.exec(text);   //text for a match in the text
 document.getElementById("demo").innerHTML =
-"Results:   The word '" + obj[0] + "' was found in position " + obj.index + " in the text: " + obj.input;
+"Results:   The word '" + obj + "' was found in position " + obj.index + " in the text: " + obj.input;
                 }
             else{
  document.getElementById("demo").innerHTML="No results found.";
             }
-            }
-            var modal = document.getElementById('myModal');
+        }
+            var modal = document.getElementById('Modal2'); //displays the modal
             modal.style.display = "block";
 
 // When the user clicks anywhere outside of the modal, close it
@@ -339,7 +333,7 @@ window.onclick = function(event) {
             </div>
 
             <!--******************************************NAV_BAR*************************************-->
-            <div id="myModal" class="modal2">
+            <div id="Modal2" class="modal2">
 
                 <!-- Modal content -->
                 <div class="modal2-content">
