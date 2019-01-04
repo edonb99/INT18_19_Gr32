@@ -248,6 +248,12 @@ figure.thumbnail2:hover figcaption.popup {
 
 
 /* --------------------------clean air section------------------------ */
+@font-face { font-family: Delicious; font-stretch: condensed;
+    font-style: oblique;
+    font-weight: bold; 
+    src: url('http://www.font-face.com/fonts/delicious/Delicious-Roman.otf'); } 
+/*@font-face { font-family: Delicious; font-weight: bold; src: url('Delicious-Bold.otf'); }*/
+
 
 .cleanair {
     color: #778899;
@@ -427,7 +433,14 @@ figure.thumbnail2:hover figcaption.popup {
     text-indent: 5px;
     clear: left;
 
-    /*  background: url('Images/flag1.gif') right bottom no-repeat, url(Images/paper.gif) left top repeat; */
+/* outline offset */
+  outline: 5px dashed #5c5c5c;
+  outline-offset: 5px;
+
+  border: 2px solid;
+  width: 950px;
+  resize: both; /* box re-size */
+  overflow: auto;
 
     background-image: url('Images/flag1.gif'), url(Images/paper.gif);
     background-repeat: no-repeat, repeat;
@@ -483,7 +496,27 @@ figure.thumbnail2:hover figcaption.popup {
 
 
 
+/* ------------------------------------------ GRID -------------------------------------- */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto  auto;
+  background-color: #01868B;
+  padding: 10px;
+  margin:10px;
+  height:400px;
 
+
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  
+  resize: both; /* box re-size */
+  overflow: auto;
+}
 
 
 

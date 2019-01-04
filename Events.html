@@ -345,7 +345,9 @@ window.onclick = function(event) {
 
 
 
-        <!--****************************************************  EVENTS *************************************************************************-->
+
+
+<!--****************************************************  EVENTS *************************************************************************-->
 
 
 
@@ -392,8 +394,10 @@ window.onclick = function(event) {
 
                 </figure>
 
-                <p style="font-size: 15px; line-height: 19px; color: #999999; margin: 20px 0px; ">
+<section style="font-size: 15px; line-height: 19px; color: #999999; margin: 20px 0px; ">
+                
 
+                <p>
                     <i>Eco-Schools</i> is the world's leading environmental education programme. It is a <u>pupil-led
                     </u> initiative with the aim to make environmental awareness and practical action an intrinsic
                     part of school life. <br />
@@ -406,14 +410,28 @@ window.onclick = function(event) {
                     Eco-Schools. The programme provides pupils with another avenue of learning, those who are more p
                     ractical and creative thrive on being involved in identifying the needs of the school and sharing their ideas for future action.” </p>
 
+<!-- ---definition list--- -->
 
+    <dl> <!-- definition list -->
+      <dt>FEE</dt>  <!--  definition term -->
+        <dd>Foundation for Environmental Education</dd>  <!-- definition list definition -->
+    <dt>GAP</dt>
+        <dd>The Global Action Programme</dd>
+        <dd>Education for Sustainable Development</dd>
+      <dt>UNEP</dt>
+         <dd>United Nations Environment Programme</dd>
+      
+    </dl>
+<!-- // -->
+
+</section>
 
 
             </div>
             <hr style="height: auto; border-style: solid; border-width: 0.5px; border-color: #e2e2e2; margin: 40px auto;" />
 
 
-            <!-- ----------------------------------------------------- Eco Warriors ------------------------------------------------------------------ -->
+<!-- ----------------------------------------------------- Eco Warriors ------------------------------------------------------------------ -->
             <div id="permbj" class="permbajtja-section">
 
                 <h5 style="text-align: center; font-size: 22px; line-height: 26px; color: #666666; font-weight: normal; margin: 20px 0px; margin-top: 0px;" id="ecowarriors"><strong> Eco-Warriors clean up for the <br />Great Big School Clean</strong> </h5>
@@ -532,7 +550,7 @@ window.onclick = function(event) {
 
 
                 <section class="teksticleanair">
-                    <ul style="list-style-type:square">
+                    <ul style="list-style-type:square; font-family: Delicious">
 
                         <li>With air pollution being ‘out-of-sight-out-of-mind’ it may not be on your Step 3: Action Plan, but it still has important links to any Eco-School’s work.</li>
 
@@ -661,7 +679,7 @@ window.onclick = function(event) {
 
 
 
-        <!-- ------------------------------------------------------Eco Conference--------------------------------------------------------------- -->
+<!-- ------------------------------------------------------Eco Conference--------------------------------------------------------------- -->
 
 
         <article class="ecoconf">
@@ -739,7 +757,91 @@ document.getElementById('demo').style.textAlign='center'">Click Me!</button>
 
 
         </article>
-        <!-- ------------------------------------------------Continue reading/FutureSchools----------------------------------------------------------- -->
+
+
+
+
+       
+        <div class="grid-container">
+<div class="grid-item">
+
+ <!--1 String Length
+The length of a string (a string object) is found in the built in property length
+-->   
+<p style="font-size: 20px">Click the button to see the number of characters in the slogan "#bethechange".</p>
+<button onclick="bethech()">See!</button>
+<p id="bchng" ></p>
+
+<script>
+function bethech() {
+  var str = "#bethechange";
+  var n = str.length;
+  document.getElementById("bchng").innerHTML = n;
+}
+</script>
+</div>
+  
+
+  <div class="grid-item">
+
+<!-- The toExponential() method converts a number into an exponential notation.
+ -->
+    <p style="font-size: 20px">Do you want to see the average budget for a single event organized from Eco-School? <br>
+    Click to see the exponential notation the specified number.</p>
+<button onclick="exponential()">Try it</button>
+<p id="toExp"></p>
+
+<script>
+function exponential() {
+  var num = 1563.445;
+  var n = num.toExponential(3);
+  document.getElementById("toExp").innerHTML = n + ' &#36;';
+}
+</script>
+
+  </div>
+
+
+
+  <div class="grid-item">
+
+<!-- MAX_VALUE -->
+  <p style="font-size: 20px">Which class has the largest number of pupils?</p>
+<button onclick="max()">See!</button>
+<p id="maxnr"></p>
+      <script>
+        function max () {
+var nr=1,n1,n2,n3;
+while(nr<=3)
+{
+        var numri = prompt("Give pupils number per class:", "Number");
+        switch(nr)
+        {
+            case 1: n1 = parseInt(numri);
+            break;
+            case 2: n2 = parseInt(numri);
+            break;
+            case 3: n3 = parseInt(numri);
+            break;
+        }
+        nr++;
+}
+nr = Math.max(n1,n2);
+nr = Math.max(nr,n3);
+  document.getElementById("maxnr").innerHTML = "The class with " + nr + " pupils is the largest."
+}
+</script>
+  </div>  
+
+
+  <div class="grid-item">4</div>
+ 
+   
+</div>
+
+
+
+<!-- ---------------------------------------------Continue reading/FutureSchools----------------------------------------------------------- -->
 
 
         <article style="margin: 30px;
