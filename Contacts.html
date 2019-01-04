@@ -587,7 +587,7 @@ window.onclick = function(event) {
                                 <br />
 
                                 <button class="rounded" onclick="getLocation()">Get your coordinates</button>
-                                <p id="demo" style="color: black; font-weight: bold; "></p>
+                                <p id="location" style="color: black; font-weight: bold; "></p>
 
                             </div>
                         </td>
@@ -608,7 +608,7 @@ window.onclick = function(event) {
 
         <!-- Geolocation -->
         <script>
-            var x = document.getElementById("demo");
+            var x = document.getElementById("location");
 
 function getLocation() {
   if (navigator.geolocation) {
