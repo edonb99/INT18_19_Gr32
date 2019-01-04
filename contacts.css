@@ -444,12 +444,13 @@ form p {
 }
 
 .rectangle {
-    background-color: #DEDEDE;
+    /* background-color: #DEDEDE;*/
     padding: 0.5em;
 }
 
 .centered {
     text-align: center;
+    background-color: #DEDEDE;
 }
 
 .rounded,
@@ -718,6 +719,7 @@ form p {
 
 /* *********************** MODAL END ***************** */
 
+/* CSS per pjesen e header */
 .btn {
     border: none;
     background-color: inherit;
@@ -735,6 +737,7 @@ form p {
     color: #5c5c5c;
 }
 
+/* pjesa e perfshire ne jquery */
 .fshehja {
     width: 201px;
     height: 100%;
