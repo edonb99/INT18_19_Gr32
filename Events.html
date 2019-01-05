@@ -19,28 +19,25 @@
         list-style-type: none;
         padding-left: 17px;
         margin: 0;
-        overflow: hidden;
         background-color: #5c5c5c;
+        overflow: hidden;
     }
 
+    /*************************fixed on scroll**********************/
     .fix {
         position: fixed;
-        top: 0;
+        top: 0px;
         width: 1024px;
         z-index: 2;
     }
 
-    .fix1 {
-        position: fixed;
-        top: 40px;
-    }
-
-
+    /*************************list elements**********************/
     nav li {
         float: left;
         height: 40px;
     }
 
+    /*************************list anchor elements on the left**********************/
     nav li a {
         padding: 13px 20px;
         text-decoration: none;
@@ -51,15 +48,17 @@
         font-weight: 200;
     }
 
+    /*************************change background color on hover**********************/
     nav li a:hover:not(.active) {
         background-color: gray;
     }
 
-    #active {
+    /******************orange background color of the current page*******************/
+    .active {
         background-color: #f35300;
     }
 
-
+    /***************search button*************/
     nav button {
         border: 1px solid #262626;
         border-radius: 0;
@@ -74,13 +73,18 @@
         cursor: pointer;
     }
 
+    /***************text input*************/
     nav input[type="text"] {
         border: 1px solid #262626;
         padding: 3px 0px 3px 3px;
         margin-top: 10px;
         font-size: 11px;
     }
-            /* The Modal (background) */
+
+    /**********************End of Navigation Bar style*********************/
+
+
+    /***************The Modal(background) style**************/
     .modal2 {
         display: none;
         position: fixed;
@@ -94,14 +98,13 @@
         background-color: rgba(0, 0, 0, 0.7);
     }
 
-    /* Modal Content */
+    /**************Modal Content******************/
     .modal2-content {
         background-color: #fefefe;
         margin: auto;
         padding: 20px;
         border: 1px solid #888;
         width: 700px;
-
     }
 
 </style>
@@ -109,31 +112,30 @@
         //function of the search button
         function search(){
     var text = "Eco-Schools is the world's leading environmental education programme. It is a pupil-led initiative with the aim to make environmental awareness and practical action an intrinsic part of school life.";
-        var message=document.getElementById("demo");
-            message.innerHTML="";
-    var word= document.getElementById('srch').value;   
-            
-            if(word == "") {  try {
-             throw "empty";
+          var message=document.getElementById("demo");
+            var word= document.getElementById('srch').value; //gets the input
+         if(word == "") {  
+             try {
+             throw "empty";  //throws an error if the input is empty
             }
                 catch(err){
-            message.innerHTML="Input is "+err;
+            message.innerHTML="Input is "+err;  //displays the error
                 }
                         }
-            else{
-    var reg = new RegExp(word, "g");
-    var res = reg.test(text);
-            if(res)
+     else{       
+var reg = new RegExp(word, "i"); //creates a regular expression object for matching text with the word
+    var res = reg.test(text);  //tests whether the word exist on the text(true or false)
+        if(res)
                 {
-var obj = reg.exec(text);
+var obj = reg.exec(text);   //text for a match in the text
 document.getElementById("demo").innerHTML =
-"Results:   The word '" + obj[0] + "' was found in position " + obj.index + " in the text: " + obj.input;
+"Results:   The word '" + obj + "' was found in position " + obj.index + " in the text: " + obj.input;
                 }
             else{
  document.getElementById("demo").innerHTML="No results found.";
             }
-            }
-            var modal = document.getElementById('myModal');
+        }
+            var modal = document.getElementById('Modal2'); //displays the modal
             modal.style.display = "block";
 
 // When the user clicks anywhere outside of the modal, close it
@@ -143,6 +145,20 @@ window.onclick = function(event) {
   }
 }
         }
+    
+    // Replace function
+    function replace(){
+    var string123="ES";
+    var rep = string123.replace("ES","Eco-Schools");
+    document.getElementById('repl').innerHTML=rep;
+    }
+    // Search the string for match
+    function match(){
+        var string321="evergreen palegreen darkgreen";
+        var ma = string321.match(/green/g);
+        document.getElementById('m').innerHTML=ma;
+    }
+
     </script>
 
 
@@ -310,7 +326,7 @@ window.onclick = function(event) {
 
             <!--**********************************************************  NAV_BAR  **************************************************************-->
 
-            <div id="myModal" class="modal2">
+            <div id="Modal2" class="modal2">
 
                 <!-- Modal content -->
                 <div class="modal2-content">
@@ -675,17 +691,17 @@ window.onclick = function(event) {
             </div>
 
 
-            <div  style=" background-color: #aaa; 
+            <div style=" background-color: #aaa; 
                           background-image: linear-gradient(to right, #ddd, #aaa); ">
                 <h3 style="text-align: center">Example 5</h3>
                 <section style="text-align: center; padding-bottom: 20px;">
 
-  <p>Enter any number between 0 and 100, and find out the result of that number + any other number.</p>
-        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
-            <input type="range" id="a" value="50">100
-            +<input type="number" id="b" value="50">
-            =<output name="x" for="a b"></output>
-        </form>
+                    <p>Enter any number between 0 and 100, and find out the result of that number + any other number.</p>
+                    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+                        <input type="range" id="a" value="50">100
+                        +<input type="number" id="b" value="50">
+                        =<output name="x" for="a b"></output>
+                    </form>
 
 
                 </section>
@@ -782,9 +798,9 @@ document.getElementById('slogan').style.textAlign='center'">Click Me!</button>
 
 
 
-<article>
+        <article>
 
-<h1 style="background-color: #015558;
+            <h1 style="background-color: #015558;
     margin: 0 auto;
     width: 95%;
     padding: 0.5em;
@@ -794,7 +810,7 @@ document.getElementById('slogan').style.textAlign='center'">Click Me!</button>
     border:10pt;
     color: #f35300;">Curiosities</h1>
 
-        <div class="grid-container">
+            <div class="grid-container">
 
 
                 <div class="grid-item">
@@ -838,7 +854,7 @@ The length of a string (a string object) is found in the built in property leng
                     <!-- The toExponential() method converts a number into an exponential notation. -->
 
 
-                   <p style="font-size: 20px">Do you want to see the average budget for a single event organized from Eco-School? <br>
+                    <p style="font-size: 20px">Do you want to see the average budget for a single event organized from Eco-School? <br>
                         Click to see the exponential notation the specified number.</p>
                     <button onclick="exponential()">Try it</button>
                     <p id="toExp"></p>
@@ -885,10 +901,10 @@ nr = Math.max(nr,n3);
 </script>
                 </div>
 
- 
-        </div>
 
-</article>
+            </div>
+
+        </article>
 
 
 
