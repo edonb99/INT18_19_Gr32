@@ -171,7 +171,7 @@ window.onclick = function(event) {
     <div style="background-color: white">
 
 
-      <!--********************************************************************  HEADER  ***************************************************************-->
+        <!--********************************************************************  HEADER  ***************************************************************-->
         <header>
 
             <div class="header">
@@ -783,7 +783,7 @@ window.onclick = function(event) {
                 and &Euml;nd&euml;rresa Gashi, Regional Director for <abbr title=" Shark Savers Asia Pacific">SHSAP</abbr>. <br />
                 Local, regional and global experts from Earth Hour, EarthFest, Ground-up Initiative and Coral Triangle Initiative, to name a few, were the conference theme influencers, and were also present.<br />
                 They elaborated on the conference theme "YOU can be the CHANGE", urging students and educators to be the change our world needs. </p>
-            
+
             <!-- SLOGAN -->
             <p id="slogan">#bethechange</p>
 
@@ -798,9 +798,9 @@ document.getElementById('slogan').style.textAlign='center'">Click Me!</button>
 
 
 
-     <!-- ----------------------------CURIOSITIES/grid-------------------------------------------------- -->
+        <!-- ----------------------------CURIOSITIES/grid-------------------------------------------------- -->
 
-     <h1 style="background-color: #015558;
+        <h1 style="background-color: #015558;
                 margin: 0 auto;
                 width: 95%;
                 padding: 0.5em;
@@ -809,10 +809,10 @@ document.getElementById('slogan').style.textAlign='center'">Click Me!</button>
                 font-size: 100%;
                 border:10pt;
                 color: #f35300;">Curiosities</h1>
-        
+
         <article>
 
-       
+
 
             <div class="grid-container">
 
@@ -916,7 +916,7 @@ nr = Math.max(nr,n3);
 
 
 
-  <!-- ---------------------------------------------Continue reading/FutureSchools----------------------------------------------------------- -->
+        <!-- ---------------------------------------------Continue reading/FutureSchools----------------------------------------------------------- -->
 
 
         <article style="margin: 30px;
@@ -1174,59 +1174,60 @@ function showSlides(n) {
 
         <div class="template" style="float:right">
             <div id="txt"></div>
-            <script>
-                function startTime() {
-                    var today = new Date();
-                    var h = today.getHours();
-                    var m = today.getMinutes();
-                    var s = today.getSeconds();
-                    // add a zero in front of numbers<10
-                    m = checkTime(m);
-                    s = checkTime(s);
-                    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
-                    t = setTimeout(function() {
-                        startTime()
-                    }, 5000);
+        </div>
+        <script>
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                // add a zero in front of numbers<10
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                t = setTimeout(function() {
+                    startTime()
+                }, 1000);
+            }
+
+            function checkTime(i) {
+                if (i < 10) {
+                    i = "0" + i;
                 }
+                return i;
+            }
 
-                function checkTime(i) {
-                    if (i < 10) {
-                        i = "0" + i;
-                    }
-                    return i;
+        </script>
+
+        <!-- ///// -->
+
+
+
+
+
+        <!-- --------------------------------------------------NAV_javascript---------------------------- -->
+
+        <script>
+            window.onscroll = function() {
+                myFunction()
+            };
+
+            var nav = document.getElementById("nav");
+            var sticky = nav.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    nav.classList.add("fix")
+                } else {
+                    nav.classList.remove("fix");
                 }
+            }
 
-            </script>
+        </script>
 
-            <!-- ///// -->
-
-
-
+        <!-- // -->
 
 
-            <!-- --------------------------------------------------NAV_javascript---------------------------- -->
-
-            <script>
-                window.onscroll = function() {
-                    myFunction()
-                };
-
-                var nav = document.getElementById("nav");
-                var sticky = nav.offsetTop;
-
-                function myFunction() {
-                    if (window.pageYOffset >= sticky) {
-                        nav.classList.add("fix")
-                    } else {
-                        nav.classList.remove("fix");
-                    }
-                }
-
-            </script>
-
-             <!-- // -->
-
-             
 </body>
 
 </html>
