@@ -2,6 +2,7 @@ body {
     background-image: url('Images/b12.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    margin: auto
 }
 
 /* trash part style */
