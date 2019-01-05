@@ -8,7 +8,7 @@
     <script src="storage.js" type="text/javascript"></script>
 
 
-    <title>Echo School</title>
+    <title>Events-Echo School</title>
 
     <style>
         /**********************Navigation Bar style*********************/
@@ -101,7 +101,7 @@
 
 
 
-    /*<!------------------------------------ SLIDESHOW ------------------------------------->*/
+    /*<!------------------------------------ SLIDESHOW ne fund ------------------------------------->*/
 
     /* Gallery Style */
     * {
@@ -192,6 +192,7 @@
 
         
         
+        
     /*<!-------------------------------- PHOTO GRID ------------------------------------------------------------- -->*/
 
     .row {
@@ -235,52 +236,63 @@
             max-width: 100%;
         }
     }
+      
+        
+        /*<!-----------------hover efekti i photo grid-------------------->*/
+        .imgthumbnail1:hover {
+          box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
+        }
 
+        
     /*<!-------------------------------- END OF PHOTO GRID ------------------------------------------------------------- -->*/
 
+        
+        
 </style>
 
     <script>
         //function of the search button
         function search(){
-    var text = "Some of our Best Moments. The 3 main Stages of Children Eco-Education";
-            var message=document.getElementById("demo");
-            var word= document.getElementById('srch').value; //gets the input
-         if(word == "") {  
-             try {
-             throw "empty";  //throws an error if the input is empty
-            }
-                catch(err){
-            message.innerHTML="Input is "+err;  //displays the error
-                }
+            var text = "Some of our Best Moments. The 3 main Stages of Children Eco-Education";
+                    var message=document.getElementById("demo");
+                    var word= document.getElementById('srch').value; //gets the input
+                     if(word == "") {  
+                         try {
+                         throw "empty";  //throws an error if the input is empty
                         }
-     else{       
-var reg = new RegExp(word, "i"); //creates a regular expression object for matching text with the word
-    var res = reg.test(text);  //tests whether the word exist on the text(true or false)
-        if(res)
-                {
-var obj = reg.exec(text);   //text for a match in the text
-document.getElementById("demo").innerHTML =
-"Results:   The word '" + obj + "' was found in position " + obj.index + " in the text: " + obj.input;
-                }
-            else{
- document.getElementById("demo").innerHTML="No results found.";
-            }
-        }
-            var modal = document.getElementById('Modal2'); //displays the modal
-            modal.style.display = "block";
+                            catch(err){
+                        message.innerHTML="Input is "+err;  //displays the error
+                            }
+                                    }
+                     else{       
+                var reg = new RegExp(word, "i"); //creates a regular expression object for matching text with the word
+                    var res = reg.test(text);  //tests whether the word exist on the text(true or false)
+                        if(res)
+                                {
+                var obj = reg.exec(text);   //text for a match in the text
+                document.getElementById("demo").innerHTML =
+                "Results:   The word '" + obj + "' was found in position " + obj.index + " in the text: " + obj.input;
+                                }
+                            else{
+                 document.getElementById("demo").innerHTML="No results found.";
+                            }
+                        }
+                            var modal = document.getElementById('Modal2'); //displays the modal
+                            modal.style.display = "block";
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                }
         }
+        
     </script>
 
 </head>
 
+    
 
 <body style="width:1024px; margin:auto; background-color: #5c5c5c">
 
@@ -464,11 +476,6 @@ window.onclick = function(event) {
                 <br>
             </nav>
             <!--******************************************NAV_BAR_END*************************************-->
-            <style>
-                background-image: url("Images/ecogallerybackground.jpg");
-                  background-repeat: no-repeat;
-                  background-attachment: fixed;
-            </style>
 
         </header>
         <!--***********************************************HEADER_END****************************************************-->
@@ -485,21 +492,30 @@ window.onclick = function(event) {
 
         <h1 style="text-align: center; background-color: mediumspringgreen; font-family: monospace; color: #f35300;">Some of our Best Moments</h1>
 
-        <!-- Audio Eco Hymn -->
+        <!-----------------------Audio Eco Hymn------------------------------=-->
         <audio controls>
             <source src="Images/ecohymn.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <!-- Audio Eco Hymn -->
+        <!-----------------------Audio Eco Hymn end------------------------------=-->
 
 
         <!-------------------------------- PHOTO GRID ------------------------------------------------------------- -->
         <br><br>
         <div class="row">
             <div class="column">
-                <img src="Images/ecoschoolkids.jpg" alt="Kids in the class" style="width:100%">
-                <img src="Images/Green-Flag-Decade-Levana-gallery.jpg" alt="Group Photo with Eco-School's floag" style="width:100%">
-                <img src="Images/ecookids%20-%20Copy.jpg" alt="Happy jumping Kids" style="width:100%">
+                <a target="_blank" href="Images/ecoschoolkids.jpg">
+                    <img class="imgthumbnail1" src="Images/ecoschoolkids.jpg" alt="Kids in the class" style="width:100%">
+                </a>
+                
+                <a target="_blank" href="Images/Green-Flag-Decade-Levana-gallery.jpg">
+                    <img class="imgthumbnail1" src="Images/Green-Flag-Decade-Levana-gallery.jpg" alt="Group Photo with Eco-School's floag" style="width:100%">
+                </a>
+                
+                <a target="_blank" href="Images/ecookids%20-%20Copy.jpg">
+                    <img class="imgthumbnail1" src="Images/ecookids%20-%20Copy.jpg" alt="Happy jumping Kids" style="width:100%">
+                </a>
+                
                 <img src="Images/ecogreen2.PNG" alt="Group-photo at the woods" style="width:100%">
                 <img src="Images/presentation2-gallery.jpg" alt="Presentation about ENERGY" style="width:100%">
                 <img src="Images/kidsatthetree.jpg" alt="Cleaning the Environment" style="width:100%">
