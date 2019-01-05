@@ -670,8 +670,19 @@ function LargoPrapavijen(elementi)
 }
 
 // ne eventin onload te focus i elemtenteve required japim nje prapavije me ngjyre
-window.onload=function()
+window.onload=function startTime()
 {
+    var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                // add a zero in front of numbers<10
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                t = setTimeout(function() {
+                    startTime()
+                }, 1000);
     var forma = document.getElementById("mainForm");
     var elementetRequired = document.querySelectorAll(".required");
     for(var i=0;i<elementetRequired.length;i++)
@@ -824,7 +835,6 @@ window.onload=function()
                     startTime()
                 }, 1000);
             }
-            window.onload = startTime();
 
             function checkTime(i) {
                 if (i < 10) {
