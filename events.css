@@ -110,29 +110,12 @@
 
 
 
-/* ---------------------------------------------------------------  Events  ------------------------------------------------------------ */
+/* ****************************************************************  Events  ******************************************************************** */
 
 
 
 
-/*
-.tranzicion {
-    width: 200px;
-    height: 100px;
-    background: red;
-    transition: width 2s, height 2s;
-    -webkit-transition: width 2s;
-}
-
-.tranzicion:hover {
-    width: 300px;
-    height: 300px;
-    transform: rotate(360deg);
-}*/
-
-
-
-
+/*--------------------- Green Flag --------------------------- */
 
 #permbajtja {
 
@@ -171,6 +154,8 @@ figcaption {
     text-align: center;
     font-size: 15;
 }
+
+/* ------Eco Warriors------------*/
 
 #permbj .permbj-section .permbj-section-header {
 
@@ -247,9 +232,10 @@ figure.thumbnail2:hover figcaption.popup {
 
 
 
-/* --------------------------clean air section------------------------ */
+/* --------------------------  Clean Air ----------------------------------- */
+
 @font-face { font-family:eb; 
-	src: url('@font-face/EBGaramond08-Regular.otf'); } 
+	         src: url('@font-face/EBGaramond08-Regular.otf'); } 
 
 
 .cleanair {
@@ -288,7 +274,9 @@ figure.thumbnail2:hover figcaption.popup {
 }
 
 
-/* ------------------ Math Fun-------------  */
+
+/* ------------------------  Math Fun  --------------------  */
+
 .mathematics {
   margin: 1em auto;  
   width: 95%;
@@ -304,11 +292,12 @@ figure.thumbnail2:hover figcaption.popup {
   padding: 10px;
   height: 180px;
 }
+
 /* // */
 
 
 
-/* ----- table ------ */
+/* ---------------------- table --------------------------------------- */
 
 #sevensteps {
   font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
@@ -336,7 +325,8 @@ figure.thumbnail2:hover figcaption.popup {
 
 
 
-/* foto 7steps to eco school */
+/* ------------foto 7steps to eco school --------------------- */
+
 .case {
     position: relative;
     width: 50%;
@@ -379,7 +369,8 @@ figure.thumbnail2:hover figcaption.popup {
 
 
 
-/* */
+/* ---------------------  */
+
 * {
     box-sizing: border-box;
 }
@@ -419,7 +410,7 @@ figure.thumbnail2:hover figcaption.popup {
 
 
 
-/*  ***********************************section eco conference*****************************  */
+/* --------------------------- Eco conference -------------------------- */
 
 .ecoconf {
     border: none;
@@ -556,7 +547,7 @@ figure.thumbnail2:hover figcaption.popup {
 
 
 
-/* *******************************future school slideshow********************** */
+/* ******************************* future school slideshow ********************** */
 
 
 
