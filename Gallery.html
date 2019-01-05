@@ -74,28 +74,28 @@
     /**********************End of Navigation Bar style*********************/
         
         
-/***************The Modal(background) style**************/
-.modal2 {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.7);
-}
+    /***************The Modal(background) style**************/
+    .modal2 {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.7);
+    }
 
-/**************Modal Content******************/
-.modal2-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 700px;
-}
+    /**************Modal Content******************/
+    .modal2-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 700px;
+    }
 
 
 
@@ -123,6 +123,7 @@
         margin: auto;
     }
 
+        /*<!--Caption Text-->*/
     .text {
         color: white;
         font-size: 35px;
@@ -132,7 +133,8 @@
         width: 100%;
         text-align: center;
     }
-
+        
+        /*Numra ne tekste (1/3...)*/
     .numriTekstit {
         color: #f2f2f2;
         font-size: 12px;
@@ -140,7 +142,8 @@
         position: absolute;
         top: 0;
     }
-
+        
+        /*Bullets (pikat) poshte tek fotot*/
     .dot {
         height: 15px;
         width: 15px;
@@ -155,6 +158,7 @@
         background-color: #717171;
     }
 
+        /*Animacioni duke u bo fade*/
     .fade {
         -webkit-animation-name: fade;
         -webkit-animation-duration: 2.5s;
@@ -181,7 +185,8 @@
             opacity: 1
         }
     }
-
+        
+        /*Zvogelimi i tekstit ne ekrane me te vogla*/
     @media only screen and (max-width: 300px) {
         .text {
             font-size: 11px
@@ -242,6 +247,7 @@
         .imgthumbnail1:hover {
           box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
         }
+        /*<!-----------------hover efekti i photo grid-------------------->*/
 
         
     /*<!-------------------------------- END OF PHOTO GRID ------------------------------------------------------------- -->*/
@@ -573,7 +579,7 @@
                       ctx.lineWidth = 8;
                       ctx.lineCap = 'round';
 
-                      // Hour marks
+                      // Shenjat e Oreve
                       ctx.save();
                       for (var i = 0; i < 12; i++) {
                         ctx.beginPath();
@@ -584,7 +590,7 @@
                       }
                       ctx.restore();
 
-                      // Minute marks
+                      // Shenjat e minutave
                       ctx.save();
                       ctx.lineWidth = 5;
                       for (i = 0; i < 60; i++) {
@@ -605,7 +611,7 @@
 
                       ctx.fillStyle = 'black';
 
-                      // write Hours
+                      // paraqitja e oreve
                       ctx.save();
                       ctx.rotate(hr * (Math.PI / 6) + (Math.PI / 360) * min + (Math.PI / 21600) *sec);
                       ctx.lineWidth = 14;
@@ -615,7 +621,7 @@
                       ctx.stroke();
                       ctx.restore();
 
-                      // write Minutes
+                      // paraqitja e minutave
                       ctx.save();
                       ctx.rotate((Math.PI / 30) * min + (Math.PI / 1800) * sec);
                       ctx.lineWidth = 10;
@@ -625,7 +631,7 @@
                       ctx.stroke();
                       ctx.restore();
 
-                      // Write seconds
+                      // paraqitja e sekondave
                       ctx.save();
                       ctx.rotate(sec * Math.PI / 30);
                       ctx.strokeStyle = '#D40000';
@@ -662,6 +668,7 @@
                 <!----------------------------------O'CLOCK--------------------------------------------------------------------->
             </div>
             
+            
             <div class="column">
                 <a target="_blank" href="Images/flag.jpg">
                     <img class="imgthumbnail1" src="Images/flag.jpg" alt="Kids in blue with Eco flag" style="width:100%">
@@ -691,6 +698,7 @@
                     <img class="imgthumbnail1" src="Images/clean.jpg" alt="Cleaning by the bridge" style="width:100%">
                 </a>
             </div>
+            
             
             <div class="column">
                 <a target="_blank" href="Images/kids3.jpg">
@@ -742,6 +750,8 @@
             Your browser does not support the audio element.
         </audio>
         <!-- Audio relaxation end -->
+        
+        
         <!--------------------------END OF AUDIO------------------------------------->
         <p style="float: right; font-family: monospace">A delightful background music</p>
         <br><br><br>
@@ -751,7 +761,6 @@
 
         <!-----------------------Canvas Figure----------------------->
         <p style="text-align: center; font-family:cursive; font-size: 14px; color: brown">A <em>Modern</em> Eco-School:
-
             <img id="fotocanvasi" width="150" height="100" src="Images/insideofecoschool.jpg" alt="The Modern Eco-school">
         </p>
 
@@ -769,7 +778,7 @@
                     var img = document.getElementById("fotocanvasi");
                     ctx.drawImage(img, 10, 10);
                 startTime();
-                };
+            };
         </script>
         <!-----------------------End of Canvas Figure----------------------->
 
@@ -811,7 +820,6 @@
 
         <br>
 
-
         <div style="text-align:center">
             <span class="dot"></span>
             <span class="dot"></span>
@@ -820,29 +828,28 @@
 
         <script>
             var slideIndex = 0;
-    showSlides();
+            showSlides();
 
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("sllajdetefotove");
-      var dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-          slideIndex = 1
-      }    
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 2000); 
-    }
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("sllajdetefotove");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {
+                  slideIndex = 1
+              }    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); 
+            }
     </script>
-        <br> <br>
-    </div>
+    <br> <br>
     <!------------------------------------The Bottom SLIDESHOW--------------------------------------------------->
 
 
@@ -859,7 +866,7 @@
         <div class="details" id="bottom">
 
             <h3><a href="#">Stay In The Know!</a></h3>
-            <hr />
+            <hr>
             <p style="color: antiquewhite">Please enter your E-Mail to join our mailing list</p>
             <input type="email" placeholder="e-mail..." multiple>
             <input type="submit" value="Enter">
@@ -883,22 +890,28 @@
 
 
             <a href="https://web.facebook.com/?_rdc=1&_rdr" target="blank" title="Facebook">
-                <img src="Images/facebook.png" alt="Facebook" style="width: 20px; height: 20px;"> </a>
+                <img src="Images/facebook.png" alt="Facebook" style="width: 20px; height: 20px;">
+            </a>
 
             <a href="https://www.instagram.com/" target="blank" title="Instagram">
-                <img src="Images/instagram.png" alt="Instagram" style="width: 20px; height: 20px;"> </a>
+                <img src="Images/instagram.png" alt="Instagram" style="width: 20px; height: 20px;">
+            </a>
 
             <a href="https://www.pinterest.com/" target="blank" title="Pinterest">
-                <img src="Images/pinterest.png" alt="Pintesrest" style="width: 20px; height: 20px;"></a>
+                <img src="Images/pinterest.png" alt="Pintesrest" style="width: 20px; height: 20px;">
+            </a>
 
             <a href="https://twitter.com/" target="blank" title="Twitter">
-                <img src="Images/twitter.png" alt="Twitter" style="width: 20px; height: 20px;"></a>
+                <img src="Images/twitter.png" alt="Twitter" style="width: 20px; height: 20px;">
+            </a>
 
             <a href="https://www.youtube.com/" target="blank" title="Youtube">
-                <img src="Images/youtube.png" alt="Youtube" style="width: 20px; height: 20px;"></a>
+                <img src="Images/youtube.png" alt="Youtube" style="width: 20px; height: 20px;">
+            </a>
 
             <a href="https://plus.google.com/discover" target="blank" title="Google+" ;>
-                <img src="Images/google-plus.png" alt="Google+" style="width: 20px; height: 20px;"></a>
+                <img src="Images/google-plus.png" alt="Google+" style="width: 20px; height: 20px;">
+            </a>
 
         </div>
 
