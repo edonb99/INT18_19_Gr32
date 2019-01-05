@@ -686,6 +686,7 @@ window.onclick = function(event) {
                     var ctx = canvas.getContext("2d");
                     var img = document.getElementById("fotocanvasi");
                     ctx.drawImage(img, 10, 10);
+                startTime();
                 };
         </script>
         <!-----------------------End of Canvas Figure----------------------->
@@ -883,7 +884,6 @@ window.onclick = function(event) {
                 startTime()
             }, 1000);
         }
-        window.onload = startTime();
 
         function checkTime(i) {
             if (i < 10) {
