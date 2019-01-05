@@ -445,13 +445,14 @@ form p {
 }
 
 .rectangle {
-    /* background-color: #DEDEDE;*/
+    background-color: #DEDEDE;
     padding: 0.5em;
 }
 
 .centered {
     text-align: center;
-    background-color: #DEDEDE;
+    text-align: center;
+    /* background-color: #DEDEDE;*/
 }
 
 .rounded,
