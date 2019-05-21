@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="Profile.css">
+        <link rel="stylesheet" type="text/css" href="Literature.css">
     <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
     <script src="storage.js" type="text/javascript"></script>
     <title>Student Dashboard - Profile</title>
@@ -39,7 +40,7 @@
         font-size: 13px;
         font-weight: 200;
     }
-        
+
     /*************************change background color on hover**********************/
     nav li a:hover:not(.active) {
         background-color: gray;
@@ -91,6 +92,70 @@
         <!--***********************************************HEADER_END****************************************************-->
 
         <!-- **********************************************BODY********************************************************* -->
+
+
+
+
+
+        <article style="margin: 30px;
+                outline: 2px dashed  #666666;
+                outline-offset:10px;">
+
+            <h1 id="futureschools" style="text-align: center; font-size: 26px; color: #666666; font-weight:600; text-align: center;">
+                Literature</h1>
+
+            <button class="futuresch">Ecology</button>
+            <div class="futuresch-content">
+                <p>
+
+
+                </p>
+            </div>
+
+
+            <button class="futuresch" id="winner">Biology</button>
+            <div class="futuresch-content">
+                <p id="winner">
+
+                </p>
+            </div>
+
+            <button class="futuresch" id="second">Geography</button>
+            <div class="futuresch-content">
+                <p>  </p>
+            </div>
+
+            <button class="futuresch" id="third">Chemistry</button>
+            <div class="futuresch-content">
+                <p>
+
+                </p>
+            </div>
+
+        </article>
+
+        <script>
+            var coll = document.getElementsByClassName("futuresch");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+      content.style.display = "none";
+      } else {
+      content.style.display = "block";
+      }
+      });
+      }
+      </script>
+
+
+
+
+
+
 
 
         <!-- **********************************************BODY_END********************************************************* -->
