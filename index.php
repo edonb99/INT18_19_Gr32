@@ -237,8 +237,8 @@ window.onclick = function(event) {
             <div id="id02" class="modal">
                 <!-- ********************* MODAL CONTENT ******************** -->
 
-                <form class="modal-content1 animate">
-                    <div style="padding: 0px; margin: 5%">
+                <form class="modal-content1 animate" action="" method="post">
+                    <div style="padding: 0px; margin: 5%"> 
                         <div class="imgcontainer">
                             <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
                         </div>
@@ -255,7 +255,7 @@ window.onclick = function(event) {
                         <input type="password" placeholder="Password" name="psw" required pattern="[A-Za-z0-9].{6,}" title=" Six or more characters">
                         <br>
                         <input type="password" placeholder="Repeat Password" name="rpsw" required>
-                        <div style="display: flex">
+                        <!-- <div style="display: flex">
                             <p style="padding: 0px;margin: 0px"><b>Gender: </b></p>
                             <input type="radio" name="gender" value="male"> Male<br>
                             <input type="radio" name="gender" value="female"> Female<br>
@@ -265,7 +265,7 @@ window.onclick = function(event) {
                         <div style="display: flex">
                             <label for="bday" style="font-family: 'Helvetica', sans-serif;float: left"><b>Birthday: </b></label>
                             <input style="margin-left: 20px" type="date" id="bday" required>
-                        </div>
+                        </div> -->
 
                         <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
                         <p>Already have an account?<a onclick="document.getElementById('id02').style.display='none';document.getElementById('id01').style.display='block'" href="#" style="color:dodgerblue">Sign In</a> </p>
