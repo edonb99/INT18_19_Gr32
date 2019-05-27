@@ -41,7 +41,7 @@
         font-size: 13px;
         font-weight: 200;
     }
-        
+
     /*************************change background color on hover**********************/
     nav li a:hover:not(#active) {
         background-color: gray;
@@ -72,8 +72,8 @@
         font-size: 11px;
     }
     /**********************End of Navigation Bar style*********************/
-        
-        
+
+
     /***************The Modal(background) style**************/
     .modal2 {
       display: none;
@@ -133,7 +133,7 @@
         width: 100%;
         text-align: center;
     }
-        
+
         /*Numra ne tekste (1/3...)*/
     .numriTekstit {
         color: #f2f2f2;
@@ -142,7 +142,7 @@
         position: absolute;
         top: 0;
     }
-        
+
         /*Bullets (pikat) poshte tek fotot*/
     .dot {
         height: 15px;
@@ -185,7 +185,7 @@
             opacity: 1
         }
     }
-        
+
         /*Zvogelimi i tekstit ne ekrane me te vogla*/
     @media only screen and (max-width: 300px) {
         .text {
@@ -195,9 +195,9 @@
 
     /*<!----------------------------------------- THE END OF SLIDESHOW ----------------------------------------------->*/
 
-        
-        
-        
+
+
+
     /*<!-------------------------------- PHOTO GRID ------------------------------------------------------------- -->*/
 
     .row {
@@ -241,19 +241,19 @@
             max-width: 100%;
         }
     }
-      
-        
+
+
         /*<!-----------------hover efekti i photo grid-------------------->*/
         .imgthumbnail1:hover {
           box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
         }
         /*<!-----------------hover efekti i photo grid-------------------->*/
 
-        
+
     /*<!-------------------------------- END OF PHOTO GRID ------------------------------------------------------------- -->*/
 
-        
-        
+
+
 </style>
 
     <script>
@@ -262,7 +262,7 @@
             var text = "Some of our Best Moments. The 3 main Stages of Children Eco-Education";
                     var message=document.getElementById("demo");
                     var word= document.getElementById('srch').value; //gets the input
-                     if(word == "") {  
+                     if(word == "") {
                          try {
                          throw "empty";  //throws an error if the input is empty
                         }
@@ -270,7 +270,7 @@
                         message.innerHTML="Input is "+err;  //displays the error
                             }
                                     }
-                     else{       
+                     else{
                 var reg = new RegExp(word, "i"); //creates a regular expression object for matching text with the word
                     var res = reg.test(text);  //tests whether the word exist on the text(true or false)
                         if(res)
@@ -293,7 +293,7 @@
                   }
                 }
         }
-        
+
     </script>
 
 </head>
@@ -303,188 +303,11 @@
 <body style="width:1024px; margin:auto; background-color: #5c5c5c">
 
 
-    <div style="background-color: white; background-image: url('Images/ecogallerybackground6.jpg'); background-repeat: no-repeat; 
+    <div style="background-color: white; background-image: url('Images/ecogallerybackground6.jpg'); background-repeat: no-repeat;
                 background-attachment: fixed; background-position: center; ">
 
         <!--**************************************************HEADER****************************************************-->
-        <header>
-
-            <div class="header">
-                <ol style="float: left">
-                    <li><button onclick="document.getElementById('id01').style.display='block'" class="btn "> Login</button> | </li>
-                    <li><button onclick="document.getElementById('id02').style.display='block'" class="btn "> Sign up</button> | </li>
-                    <li><a class="a" href="video.html" target="_blank" onclick="clickCounter()"> Video </a>
-                        <!-- clicked video -->
-                        <span id="result" style="font-size: 10px"></span> <!-- / --> | </li>
-
-                    <li><a class="a" href="Game.html" target="_blank" onclick="clickCounter1()"> Game </a>
-                        <!-- clicked video -->
-                        <span id="result2" style="font-size: 10px"></span> <!-- / -->
-                    </li>
-                </ol>
-                <ol style="float: right">
-                    <li><button onclick="document.getElementById('id01').style.display='block'" class="btn"> Login</button> | </li>
-                    <li><button onclick="document.getElementById('id02').style.display='block'" class="btn signUp"> Sign up</button> | </li>
-                    <li><a class="a" href="#bottom"> Bottom</a> | </li>
-                    <li><a class="a" href="Contacts.html#team "> Team </a></li>
-                </ol>
-            </div>
-            <br>
-            <!--********************** LOGIN MODAL ********************* -->
-            <div id="id01" class="modal">
-
-                <!-- ************ MODAL CONTENT ************* -->
-                <form class="modal-content animate">
-                    <div style="padding: 0px; margin: 5%">
-                        <p style="font-size: 30px;float: left;margin: 0px;padding: 0px"><b>Login</b></p>
-
-                        <div class="imgcontainer">
-                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                            <br><br>
-                        </div>
-                        <br>
-                        <div>
-                            <label for="uname" style="font-family: 'Helvetica', sans-serif"><b>Email</b></label>
-                            <input type="text" placeholder="Enter Email" name="uname" required autocomplete="on">
-
-                            <label for="psw" style="font-family: 'Helvetica', sans-serif"><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" name="psw" required>
-
-                            <button id="logInButton" type="submit">Login</button>
-                            <label>
-                                <input type="checkbox" checked="checked" name="remember"> Remember me
-                            </label>
-                        </div>
-                        <br>
-                        <div class="bottom-container">
-                            <div class="row">
-                                <div class="col">
-                                    <a href="#" onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'" style="color:white" class="btn-modal">Sign up</a>
-                                </div>
-                                <div class="col">
-                                    <a href="#" style="color:white" class="btn-modal">Forgot password?</a>
-                                </div>
-                            </div>
-                        </div>
-                        <br><br>
-                        <div class="vl">
-                            <span class="vl-innertext">Login with Social Media</span>
-                        </div>
-                        <br><br>
-                        <div class="" style="clear: both">
-                            <a href="https://web.facebook.com/login" class="fb btn-modal" target="_blank">
-                                <i class="fa fa-facebook fa-fw"></i> Login with Facebook
-                            </a>
-                            <a href="https://twitter.com/login" class="twitter btn-modal" target="_blank">
-                                <i class="fa fa-twitter fa-fw"></i> Login with Twitter
-                            </a>
-                            <a href="https://accounts.google.com/signin" class="google btn-modal" target="_blank"><i class="fa fa-google fa-fw">
-                                </i> Login with Google+
-                            </a>
-                        </div>
-                        <br>
-                        <div style="background-color:white">
-                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 4px">Cancel</button>
-
-                        </div>
-                    </div>
-                </form>
-                <!-- ************** MODAL CONTENT END ************** -->
-            </div>
-            <!--********************** LOGIN MODAL END ********************* -->
-
-            <hr>
-
-            <!-- ********************** SIGNUP MODAL ********************** -->
-            <div id="id02" class="modal">
-                <!-- ********************* MODAL CONTENT ******************** -->
-
-                <form class="modal-content1 animate">
-                    <div style="padding: 0px; margin: 5%">
-                        <div class="imgcontainer">
-                            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-                        </div>
-
-                        <p style="font-size: 30px;float: left;margin: 0px;padding: 0px"><b>Sign Up</b></p>
-                        <br><br>
-                        <p>Please fill this form to create an account.</p>
-
-                        <hr>
-                        <input style="width: 220px;float: left" type="text" placeholder="First Name" name="name" required autofocus>
-                        <input style="width: 220px;float: right" type="text" placeholder="Last Name" name="surname" required>
-                        <input type="email" placeholder="Email" name="email" required>
-                        <br>
-                        <input type="password" placeholder="Password" name="psw" required pattern="[A-Za-z0-9].{6,}" title=" Six or more characters">
-                        <br>
-                        <input type="password" placeholder="Repeat Password" name="rpsw" required>
-                        <div style="display: flex">
-                            <p style="padding: 0px;margin: 0px"><b>Gender: </b></p>
-                            <input type="radio" name="gender" value="male"> Male<br>
-                            <input type="radio" name="gender" value="female"> Female<br>
-                            <input type="radio" name="gender" value="Unspecified" checked> Unspecified<br>
-                        </div>
-                        <br>
-                        <div style="display: flex">
-                            <label for="bday" style="font-family: 'Helvetica', sans-serif;float: left"><b>Birthday: </b></label>
-                            <input style="margin-left: 20px" type="date" name="bday" required>
-                        </div>
-
-                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-                        <p>Already have an account?<a onclick="document.getElementById('id02').style.display='none';document.getElementById('id01').style.display='block'" href="#" style="color:dodgerblue">Sign In</a> </p>
-
-                        <div style="height: 55px">
-                            <button onclick="document.getElementById('id02').style.display='none'" id="signUpCancel" type="button">Cancel</button>
-                            <button id="signUpButton" type="submit">Sign Up</button>
-                        </div>
-                    </div>
-                </form>
-
-                <!-- ********************* MODAL CONTENT END *********************** -->
-            </div>
-            <!-- ********************** SIGNUP MODAL END ************************ -->
-
-            <div id="container">
-                <div class="box1">
-                    <span style="font-size: 32px;margin: 0px;padding: 0px">
-                        Education
-                    </span>
-                    <br>
-                    <span style="font-size: 12px;margin: 0px;padding: 0px">
-                        Nurture, Inspire, Flourish
-                    </span>
-                </div>
-                <div class="box2">
-                    <img src="Images/eco_schools_logo.jpg" width="468px" height="60px" alt="Llogo" style="float: right;overflow: auto">
-                </div>
-            </div>
-
-            <!--******************************************NAV_BAR*************************************-->
-            <div id="Modal2" class="modal2">
-
-                <!-- Modal content -->
-                <div class="modal2-content">
-                    <p id="demo"></p>
-                </div>
-
-            </div>
-
-            <nav>
-                <br>
-                <ul id="nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Events.html">Events</a></li>
-                    <li><a id="active" href="Gallery.html">Gallery</a></li>
-                    <li><a href="Contacts.html">Contact</a></li>
-
-                    <li style="float:right;"><button onclick="search()">Search</button></li>
-                    <li style="float:right;"><input id="srch" type="text" placeholder="Search Term Here..."></li>
-                </ul>
-                <br>
-            </nav>
-            <!--******************************************NAV_BAR_END*************************************-->
-
-        </header>
+        <?php include("header.php");?>
         <!--***********************************************HEADER_END****************************************************-->
 
 
@@ -522,42 +345,42 @@
                 <a target="_blank" href="Images/ecookids%20-%20Copy.jpg">
                     <img class="imgthumbnail1" src="Images/ecookids%20-%20Copy.jpg" alt="Happy jumping Kids" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/ecogreen2.PNG">
                     <img class="imgthumbnail1" src="Images/ecogreen2.PNG" alt="Group-photo at the woods" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/presentation2-gallery.jpg">
                     <img class="imgthumbnail1" src="Images/presentation2-gallery.jpg" alt="Presentation about ENERGY" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/kidsatthetree.jpg">
                     <img class="imgthumbnail1" src="Images/kidsatthetree.jpg" alt="Cleaning the Environment" style="width:100%">
                 </a>
             </div>
-            
-            
+
+
             <div class="column">
                 <a target="_blank" href="Images/eco1.jpg">
                     <img class="imgthumbnail1" src="Images/eco1.jpg" alt="Eco-Scholl's students" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/studentsclean.jpg">
                     <img class="imgthumbnail1" src="Images/studentsclean.jpg" alt="Kids picking up the trash" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/eco03.jpg">
                     <img class="imgthumbnail1" src="Images/eco03.jpg" alt="Pose after a big achievment" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/ecoconf2.PNG">
                     <img class="imgthumbnail1" src="Images/ecoconf2.PNG" alt="2 students presenting" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/ecogreen.PNG">
                     <img class="imgthumbnail1" src="Images/ecogreen.PNG" alt="Eco friendly Kids" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/ecoconf1.PNG">
                     <img class="imgthumbnail1" src="Images/ecoconf1.PNG" alt="Eco-School's staff and students" style="width:100%" height="200">
                 </a>
@@ -667,60 +490,60 @@
                 </script>
                 <!----------------------------------O'CLOCK--------------------------------------------------------------------->
             </div>
-            
-            
+
+
             <div class="column">
                 <a target="_blank" href="Images/flag.jpg">
                     <img class="imgthumbnail1" src="Images/flag.jpg" alt="Kids in blue with Eco flag" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/graduation.jpg">
                     <img class="imgthumbnail1" src="Images/graduation.jpg" alt="Kids inside a Eco-School" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/kids4-gallery.jpg">
                     <img class="imgthumbnail1" src="Images/kids4-gallery.jpg" alt="Staff at the enterance of the school" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/kids7-gallery.JPG">
                     <img class="imgthumbnail1" src="Images/kids7-gallery.JPG" alt="Kids at the Sport's Hall" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/eco2.jpg">
                     <img class="imgthumbnail1" src="Images/eco2.jpg" alt="Eco photo" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/treeprotection.jpg">
                     <img class="imgthumbnail1" src="Images/treeprotection.jpg" alt="Measuring the size of a tree" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/clean.jpg">
                     <img class="imgthumbnail1" src="Images/clean.jpg" alt="Cleaning by the bridge" style="width:100%">
                 </a>
             </div>
-            
-            
+
+
             <div class="column">
                 <a target="_blank" href="Images/kids3.jpg">
                     <img class="imgthumbnail1" src="Images/kids3.jpg" alt="Eco-School notice board" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/atthepark.jpg">
                     <img class="imgthumbnail1" src="Images/atthepark.jpg" alt="Kids and adults at the park" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/flagpole.jpg">
                     <img class="imgthumbnail1" src="Images/flagpole.jpg" alt="Raising the flag" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/planting.jpg">
                     <img class="imgthumbnail1" src="Images/planting.jpg" alt="Planting trees" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/award.jpg">
                     <img class="imgthumbnail1" src="Images/award.jpg" alt="Award winners" style="width:100%">
                 </a>
-                
+
                 <a target="_blank" href="Images/kindergarten.jpg">
                     <img class="imgthumbnail1" src="Images/kindergarten.jpg" alt="At the kindergarten" style="width:100%">
                 </a>
@@ -750,8 +573,8 @@
             Your browser does not support the audio element.
         </audio>
         <!-- Audio relaxation end -->
-        
-        
+
+
         <!--------------------------END OF AUDIO------------------------------------->
         <p style="float: right; font-family: monospace">A delightful background music</p>
         <br><br><br>
@@ -835,18 +658,18 @@
               var slides = document.getElementsByClassName("sllajdetefotove");
               var dots = document.getElementsByClassName("dot");
               for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
+                slides[i].style.display = "none";
               }
               slideIndex++;
               if (slideIndex > slides.length) {
                   slideIndex = 1
-              }    
+              }
               for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
               }
-              slides[slideIndex-1].style.display = "block";  
+              slides[slideIndex-1].style.display = "block";
               dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 2000); 
+              setTimeout(showSlides, 2000);
             }
     </script>
     <br> <br>
