@@ -143,7 +143,11 @@ window.onclick = function(event) {
 
     <div style="background-color: white">
         <!--**************************************************HEADER****************************************************-->
-       <?php include("header.php");?>
+       <?php include("header.php");
+       include("signup.php");
+       include("login.php");
+        
+       ?>
         <!--***********************************************HEADER_END****************************************************-->
 
 
