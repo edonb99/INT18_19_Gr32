@@ -16,7 +16,7 @@
 <!--  **reviews** -->
 <?php
   date_default_timezone_set('Europe/Tirane');
-  include 'dbh.inc.php';  
+  include 'reviewsdb.inc.php';  
   include 'comments.inc.php';
 
 ?>
