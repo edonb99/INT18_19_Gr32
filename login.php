@@ -24,20 +24,13 @@
     <div style="padding: 0px; margin: 5%">
         <p style="font-size: 30px;float: left;margin: 0px;padding: 0px"><b>Login</b></p>
 
-<!--
-        <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <br><br>
-        </div>
--->
+
         <br>
         <div>
-            <!-- <label for="uname" style="font-family: 'Helvetica', sans-serif"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" id="uname"> -->
+           
             <input type="text" placeholder="Username" name="username" >
 
-            <!-- <label for="password" style="font-family: 'Helvetica', sans-serif"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" id="password" > -->
+          
             <input type="password" placeholder="Password" name="password"  >
 
             <button id="logInButton" type="submit" name="login_user">Login</button>
@@ -57,30 +50,6 @@
             </div>
         </div>
         
-<!--
-        <div class="vl">
-            <span class="vl-innertext">Login with Social Media</span>
-        </div>
-        <br><br>
-        <div class="" style="clear: both">
-            <a href="https://web.facebook.com/login" class="fb btn-modal" target="_blank">
-                <i class="fa fa-facebook fa-fw"></i> Login with Facebook
-            </a>
-            <a href="https://twitter.com/login" class="twitter btn-modal" target="_blank">
-                <i class="fa fa-twitter fa-fw"></i> Login with Twitter
-            </a>
-            <a href="https://accounts.google.com/signin" class="google btn-modal" target="_blank"><i class="fa fa-google fa-fw">
-                </i> Login with Google+
-            </a>
-        </div>
-        <br>
--->
-<!--
-        <div style="background-color:white">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 4px">Cancel</button>
-
-        </div>
--->
     </div>
 </form>
 <!-- ************** MODAL CONTENT END ************** -->
