@@ -11,6 +11,18 @@
   	header("location: login.php");
   }
 ?>
+
+
+<!--  **reviews** -->
+<?php
+  date_default_timezone_set('Europe/Tirane');
+  include 'dbh.inc.php';  
+  include 'comments.inc.php';
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +30,29 @@
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="footer.css"/>
     <link rel="stylesheet" type="text/css" href="books.css"/>
+<!-- -->
+    <link rel="stylesheet" type="text/css" href="reviews.css">
+
+      <!-- **********reviews ******-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  
+<script>
+
+  $(document).ready(function() {
+    var commentCount = 2;
+    $("button").click(function(){
+      commentCount = commentCount + 2;
+      $("#comments").load("load-comments.php", {
+        commentNewCount: commentCount
+      });
+
+    });
+  });
+
+
+</script>
+  <!-- -->
+
 </head>
 
 <body>
@@ -137,6 +172,54 @@
       <h2>The Coin</h2>
       <p class="author">by Sandeep Sharma</p>
     </figure>
+
+
+
+<!-- *******************************REVIEWS*************************** -->
+
+    <?php
+echo "<form method='POST' action='".setComments($conn)."'>
+    <input type='hidden' name='uid' value='Anonymous'>
+    <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
+    <textarea name='message'>
+    </textarea><br>
+    <button type='submit' name='commentSubmit'>Comment</button>
+    </form>";
+  ?>
+
+
+
+  <!-- -->
+
+<div id="comments" style= "border-style: solid; border-color:orange; border-width: 5px; 
+                border-collapse: separate;
+              padding: 2px; margin: 10px; ">
+    <?php
+      $sql = "SELECT * FROM comments LIMIT 2";
+      $result = mysqli_query($conn, $sql);
+      if(mysqli_num_rows($result) > 0){
+
+        while ($row = mysqli_fetch_assoc($result)) {
+          echo "<p>";
+          echo $row['uid'];
+          echo "<br>";
+          echo $row['message'];
+          echo "</p>";
+        }
+
+
+      } else {
+        echo " No more comments!";
+      }
+
+    ?>
+  </div>
+
+  <button>Show more comments</button>
+
+
+<!-- *******************************END_REVIEWS*************************** -->
+
 
 <?php
     echo "<br/><br/><br/><br/><br/>";
