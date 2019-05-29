@@ -1,0 +1,131 @@
+/**************************************** Header******************** */
+.a {
+    text-decoration: none;
+    color: #f35300;
+}
+
+.a:hover {
+    color: #5c5c5c;
+}
+
+.header ol {
+    display: flex;
+    text-decoration: none;
+    color: #f35300;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.header {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.header li {
+    padding-left: 2px;
+    font-weight: bold;
+}
+
+#container {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 60px;
+
+}
+
+.box1 {
+    box-sizing: border-box;
+    float: left;
+    padding-left: 5px;
+    width: 500px;
+}
+
+.box2 {
+    float: right;
+    width: 468;
+    box-sizing: border-box;
+}
+
+.btn {
+    border: none;
+    background-color: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    color: #f35300;
+    font-family: "Hoefler Text", Cambria, "Times New Roman", serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.btn:hover {
+    color: #5c5c5c;
+}
+
+
+
+    /**********************Navigation Bar style*********************/
+    nav ul {
+        list-style-type: none;
+        padding-left: 17px;
+        margin: 0;
+        background-color: #5c5c5c;
+        overflow: hidden;
+    }
+    /*************************fixed on scroll**********************/
+    .fix {
+        position: fixed;
+        top: 0px;
+        width: 1024px;
+        z-index: 2;
+    }
+    /*************************list elements**********************/
+    nav li {
+        float: left;
+        height: 40px;
+    }
+    /*************************list anchor elements on the left**********************/
+    nav li a {
+        padding: 13px 20px;
+        text-decoration: none;
+        color: white;
+        display: block;
+        font-family: sans-serif;
+        font-size: 13px;
+        font-weight: 200;
+    }
+        
+    /*************************change background color on hover**********************/
+    nav li a:hover:not(.active) {
+        background-color: gray;
+    }
+    /******************orange background color of the current page*******************/
+    .active {
+        background-color: #f35300;
+    }
+    /***************search button*************/
+    nav button{
+        border: 1px solid #262626;
+        border-radius: 0;
+        margin: 10px 15px;
+        margin-left: 10px;
+        padding: 2px 10px;
+        font-size: 12px;
+        background: #f35300;
+        font-weight: 500;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    /***************text input*************/
+    nav input[type="text"] {
+        border: 1px solid #262626;
+        padding: 3px 0px 3px 3px;
+        margin-top: 10px;
+        font-size: 11px;
+    }
+    /**********************End of Navigation Bar style*********************/

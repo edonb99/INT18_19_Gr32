@@ -1,18 +1,28 @@
 <?php include('server.php') ?>
 <!DOCTYPE html>
-<head>    
+<html>
+<head>   
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" type="text/css" href="forms.css">
 </head>
-<body>
+<body style="width:1024px; margin:auto; background-color: #5c5c5c;">
+    
+    <div style="background-color: white">
+    <header><?php include("header.php");?></header>
+    
      <!-- ********************** SIGNUP MODAL ********************** -->
-            <div id="id02" class="modal">
+           <div id="id02" class="modal"> 
                 <!-- ********************* MODAL CONTENT ******************** -->
 
                 <form class="modal-content1 animate" method="post" action="signup.php">
                 <?php include('errors.php'); ?>
                     <div style="padding: 0px; margin: 5%"> 
+<!--
                         <div class="imgcontainer">
                             <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
                         </div>
+-->
 
                         <p style="font-size: 30px;float: left;margin: 0px;padding: 0px"><b>Sign Up</b></p>
                         <br><br>
@@ -40,17 +50,20 @@
                         </div> -->
 
                         <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-                        <p>Already have an account?<a onclick="document.getElementById('id02').style.display='none';document.getElementById('id01').style.display='block'" href="#" style="color:dodgerblue">Sign In</a> </p>
+                        <p>Already have an account?<a  href="login.php" style="color:dodgerblue">Sign In</a> </p>
 
                         <div style="height: 55px">
-                            <button onclick="document.getElementById('id02').style.display='none'" id="signUpCancel" type="button">Cancel</button>
+<!--                            <button onclick="document.getElementById('id02').style.display='none'" id="signUpCancel" type="button">Cancel</button>-->
                             <button id="signUpButton" type="submit" name="reg_user">Sign Up</button>
                         </div>
                     </div>
                 </form>
 
                 <!-- ********************* MODAL CONTENT END *********************** -->
-            </div>
+            </div> 
             <!-- ********************** SIGNUP MODAL END ************************ -->
+    
+    <footer><?php include("footer.php");?></footer>
+        </div>
 </body>
 </html>

@@ -1,16 +1,16 @@
         <header>
 
-            <div class="header">
+          <!--  <div class="header">
                 <ol style="float: left">
                     <li><button onclick="document.getElementById('id01').style.display='block'" class="btn "> Login</button> | </li>
                     <li><button onclick="document.getElementById('id02').style.display='block'" class="btn "> Sign up</button> | </li>
                     <li><a class="a" href="video.html" target="_blank" onclick="clickCounter()"> Video </a>
-                        <!-- clicked video -->
-                        <span id="result" style="font-size: 10px"></span> <!-- / --> | </li>
+                        
+                        <span id="result" style="font-size: 10px"></span>  | </li>
 
                     <li><a class="a" href="Game.html" target="_blank" onclick="clickCounter1()"> Game </a>
-                        <!-- clicked video -->
-                        <span id="result2" style="font-size: 10px"></span> <!-- / -->
+                        
+                        <span id="result2" style="font-size: 10px"></span> 
                     </li>
                 </ol>
 
@@ -25,7 +25,7 @@
             <br>
            
 
-            <hr>
+            <hr> -->
 
            
 
@@ -63,6 +63,10 @@
                     <li><a href="Events.php">Events</a></li>
                     <li><a href="Gallery.php">Gallery</a></li>
                     <li><a href="Contacts.php">Contact</a></li>
+                    <li><a href="signup.php">Sign Up</a></li>
+                    <li><a href="login.php">Log In</a></li>
+                    <li><a href="books.php">Books</a></li>
+                    
 
                     <li style="float:right;"><button onclick="search()">Search</button>
                     <li style="float:right;"><input id="srch" type="text" placeholder="Search Term Here..."></li>

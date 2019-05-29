@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
     <script src="storage.js" type="text/javascript"></script>
     <title>Home-Echo School</title>
 
@@ -144,9 +145,7 @@ window.onclick = function(event) {
     <div style="background-color: white">
         <!--**************************************************HEADER****************************************************-->
        <?php include("header.php");
-       include("signup.php");
-       include("login.php");
-        
+             
        ?>
         <!--***********************************************HEADER_END****************************************************-->
 
