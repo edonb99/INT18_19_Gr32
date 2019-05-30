@@ -28,15 +28,14 @@
         <br>
         <div>
            
-            <input type="text" placeholder="Username" name="username" >
-
+            <input type="text" placeholder="Username" name="username" value="<?php if (isset($_COOKIE["username"])) {echo $_COOKIE["username"];} ?>" >
           
-            <input type="password" placeholder="Password" name="password"  >
-
+            <input type="password" placeholder="Password" name="password" value="<?php if (isset($_COOKIE["password"])) {echo $_COOKIE["password"];} ?>" >
+            <label>
+                <input type="checkbox" checked="checked" name="remember" <?php if(isset($_COOKIE["username"])) { ?> checked <?php } ?>> Remember me
+            </label> 
             <button id="logInButton" type="submit" name="login_user">Login</button>
-            <!-- <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label> -->
+             
         </div>
         <br>
         <div class="bottom-container">

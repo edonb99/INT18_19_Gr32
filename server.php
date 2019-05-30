@@ -92,6 +92,22 @@ if (isset($_POST['login_user'])) {
         $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
         $results = mysqli_query($db, $query);
         if (mysqli_num_rows($results) == 1) {
+            if(!empty($_POST["remember"]))
+            {
+                setcookie("username",$_POST["username"],time()+(86400*30));
+                setcookie("password",$_POST["password"],time()+(86400*30));
+            }
+            else{
+                if(isset($_COOKIE['username']))
+                {
+                    setcookie("username","");
+                }
+                if(isset($_COOKIE['password']))
+                {
+                    setcookie("password","");
+                }
+                
+            }
           $_SESSION['username'] = $username;
           $_SESSION['success'] = "You are now logged in";
           header('location: books.php');
