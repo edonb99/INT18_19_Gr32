@@ -186,7 +186,7 @@
 
     <?php
 echo "<form method='POST' action='".setComments($conn)."'>
-    <input type='hidden' name='uid' value='Anonymous'>
+    <input type='hidden' name='username' value='".$_SESSION['username']."'>
     <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
     <textarea name='message'>
     </textarea><br>
@@ -208,7 +208,7 @@ echo "<form method='POST' action='".setComments($conn)."'>
 
         while ($row = mysqli_fetch_assoc($result)) {
           echo "<p>";
-          echo $row['uid'];
+          echo $row['username'];
           echo "<br>";
           echo $row['message'];
           echo "</p>";

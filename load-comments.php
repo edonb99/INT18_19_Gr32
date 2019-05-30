@@ -13,7 +13,7 @@
 
 		while ($row = mysqli_fetch_assoc($result)) {
 			echo "<p>";
-			echo $row['uid'];
+			echo $row['username'];
 			echo "<br>";
 			echo $row['message'];
 			echo "</p>";
