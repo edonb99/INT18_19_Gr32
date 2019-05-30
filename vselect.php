@@ -1,5 +1,5 @@
 <?php  
- $connect = mysqli_connect("localhost", "root", "1234", "ajax3");  
+ $connect = mysqli_connect("localhost", "root", "1234", "ecoschools");  
  $output = '';  
  $sql = "SELECT * FROM volunteers ORDER BY id DESC";  
  $result = mysqli_query($connect, $sql);  

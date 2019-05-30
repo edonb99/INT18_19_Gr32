@@ -26,7 +26,10 @@
                 <br />  
                 <br />  
                 <div class="table-responsive">  
-                     <h2 align="center">Be a volunteer LIVE</h2><br />  
+                     <h2 align="center">Be a volunteer <br><strong>LIVE</strong><br><i><small>
+                      Help the community</i></small>
+                     </h2><br /> 
+                     <h5 align="center"></h5> 
                      <div id="live_data"></div>                 
                 </div>  
            </div>  

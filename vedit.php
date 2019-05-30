@@ -1,6 +1,6 @@
 <?php  
 
- $connect = mysqli_connect("localhost", "root", "1234", "ajax3");
+ $connect = mysqli_connect("localhost", "root", "1234", "ecoschools");
 
  $id = $_POST["id"];  
  $text = $_POST["text"];  
