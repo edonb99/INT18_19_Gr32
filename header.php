@@ -63,6 +63,7 @@
                     <li><a href="Events.php">Events</a></li>
                     <li><a href="Gallery.php">Gallery</a></li>
                     <li><a href="Contacts.php">Contact</a></li>
+                    <li><a href="volunteers.php">Volunteers</a></li>
                     <li><a href="signup.php">Sign Up</a></li>
                     <li><a href="login.php">Log In</a></li>
                     <li><a href="books.php">Books</a></li>

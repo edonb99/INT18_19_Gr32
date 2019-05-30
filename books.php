@@ -71,11 +71,14 @@
 
     <!-- logged in user information -->
     <?php  if (isset($_SESSION['username'])) : ?>
-    	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-    	<p> <a href="books.php?logout='1'" style="color: red;">logout</a> </p>
+    	<h2 style="margin-left: 50px; padding-top: 20px;">Welcome <strong><em><?php echo $_SESSION['username']; ?></em></strong>
+        </h2>
+    	<button style="float: right; margin-right: 50px; background-color: lightgreen;">
+            <a href="books.php?logout='1'" style="color: #f35300; text-decoration: none;">Log out</a>
+        </button>
     <?php endif ?>
 
-  <br><br>
+  <br><br><br><br>
 
     <figure class="thumb">
       <div class="cover">
@@ -173,7 +176,11 @@
       <p class="author">by Sandeep Sharma</p>
     </figure>
 
-
+    <br><br><br>
+    
+    <button id="butoni1" type="button" style="margin-left: 700px; width: 190px; background-color: lightblue;"><a href="Files.php" style="text-decoration: none;">Read more about Books</a></button>
+    
+    <br><br><br>
 
 <!-- *******************************REVIEWS*************************** -->
 
@@ -224,7 +231,7 @@ echo "<form method='POST' action='".setComments($conn)."'>
 <?php
     echo "<br/><br/><br/><br/><br/>";
 
-    include 'footer.php';
+    include ('footer.php');
 ?>
 </div>
 </body>
