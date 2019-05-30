@@ -30,26 +30,26 @@
 
                 <br>
 
-                <p style="color: antiquewhite"><i><small>Follow us on social networks:</small></i></p>
+                <p style="color: antiquewhite"><i><small>Follow us on social network:</small></i></p>
 
 
-                <a href="https://web.facebook.com/?_rdc=1&_rdr" target="blank" title="Facebook">
+<!--                 <a href="https://web.facebook.com/?_rdc=1&_rdr" target="blank" title="Facebook">
                     <img src="Images/facebook.png" alt="Facebook" style="width: 20px; height: 20px;"> </a>
 
                 <a href="https://www.instagram.com/" target="blank" title="Instagram">
                     <img src="Images/instagram.png" alt="Instagram" style="width: 20px; height: 20px;"> </a>
 
                 <a href="https://www.pinterest.com/" target="blank" title="Pinterest">
-                    <img src="Images/pinterest.png" alt="Pintesrest" style="width: 20px; height: 20px;"></a>
+                    <img src="Images/pinterest.png" alt="Pintesrest" style="width: 20px; height: 20px;"></a> -->
 
-                <a href="https://twitter.com/" target="blank" title="Twitter">
+                <a href="twitter.php" target="blank" title="Twitter">
                     <img src="Images/twitter.png" alt="Twitter" style="width: 20px; height: 20px;"></a>
 
-                <a href="https://www.youtube.com/" target="blank" title="Youtube">
+<!--                 <a href="https://www.youtube.com/" target="blank" title="Youtube">
                     <img src="Images/youtube.png" alt="Youtube" style="width: 20px; height: 20px;"></a>
 
                 <a href="https://plus.google.com/discover" target="blank" title="Google+" ;>
-                    <img src="Images/google-plus.png" alt="Google+" style="width: 20px; height: 20px;"></a>
+                    <img src="Images/google-plus.png" alt="Google+" style="width: 20px; height: 20px;"></a> -->
 
 
             </div>
