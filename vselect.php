@@ -2,6 +2,7 @@
  $connect = mysqli_connect("localhost", "root", "1234", "ecoschools");  
  $output = '';  
  $sql = "SELECT * FROM volunteers ORDER BY id DESC";  
+
  $result = mysqli_query($connect, $sql);  
  $output .= '  
       <div class="table-responsive">  
@@ -13,10 +14,16 @@
                      <th width="11%">Delete</th>  
                 </tr>';  
 
+//  fetch_data () funksion jquery dërgon kërkesë në këtë faqe, dhe në këtë faqe ajo do të shkoj të marr të dhëna nga tabela dhe pastaj konvertojë ato të dhëna në formatin e tabelës HTML dhe ktheje në funksion fetch_data ().
+
  if(mysqli_num_rows($result) > 0)  
  {  
       while($row = mysqli_fetch_array($result))  
       {  
+
+
+
+// Nen WHILE loop kemi të ruajtura te dhënat në formatin e tabelës, në tagun e parë <td> do të ruajë id, në atributin e tagut së dytë dhe të tretë <td> ne kemi përcaktuar klasën, në të dytën class = "first_name" dhe  e treta class = "last_name". Do te perdorim kete klasë atributesh ne kodin jquery per editim live ose update te te dhenave te tabeles.
            $output .= '  
                 <tr>  
                      <td>'.$row["id"].'</td>  
