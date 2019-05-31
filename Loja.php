@@ -4,7 +4,7 @@
 
 <head>
     <title>sadf</title>
-    <link rel="stylesheet" type="text/css" href="Game1.css">
+    <link rel="stylesheet" type="text/css" href="Loja.css">
     <script>
         var waterX = 5;
         var seedX = 1;
@@ -94,7 +94,7 @@
         function clsModal(){
             var input = document.getElementById("inp").value;
             if(input=="")
-                {
+                {   
                     document.getElementById("err").style.display="block";
                 }
             else{
@@ -137,7 +137,7 @@ window.onload = function() {
 
         <div class="modal2-content">
             <br>
-            <form action="GameFinished.php" method="POST">
+            <form id="form" action="LojaFinished.php" method="POST">
                 <label style="color: white; font-weight: 600; font-size: 30px; font-family: arial; ">Nickname:</label>
                 <input name="nickname" id="inp" style="width: 200px; height: 30px; font-size: 25px; margin-left: 15px;" type="text">
                 <span style="margin-left: 195px;position: absolute; display: none; color:red" id="err">Enter your nickname!</span>
