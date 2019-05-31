@@ -13,7 +13,9 @@
 
 		while ($row = mysqli_fetch_assoc($result)) {
 			echo "<p>";
-			echo $row['username'];
+			 echo "<small>".$row['date']."</small>";
+			echo "<br>"; 
+			echo "<strong>".$row['username'].":"."</strong>";
 			echo "<br>";
 			echo $row['message'];
 			echo "</p>";
