@@ -29,3 +29,58 @@
     echo "<br/><br/>";
     
 ?>
+
+
+
+<!-- ****************** OOP ************************* -->
+<?php
+
+
+class Book{
+
+const BR = '<br />';
+
+    var $price;
+    var $name;
+    var $photo;
+    var $dir = 'Images/';
+
+    public function print_book(){
+
+        echo "<div style='float: left; margin-right:400px; '>";
+        echo "<font size='5px' > {$this->name}</font>".self::BR;
+        echo "<img src='{$this->dir}{$this->photo}'>".self::BR; 
+        echo '$'.$this->price;
+        echo "<br />";
+        echo"</div>";
+        
+
+    }
+
+    public function set_book($name, $price, $photo){
+        $this->name=$name;
+        $this->price=$price;
+        $this->photo=$photo;
+    }
+}
+
+$book = new Book; // $book is the object type of book class
+
+$book->name = ' Measure what matters';
+$book->price = 17.99;
+$book->photo = 'Booka.jpg';
+
+$book->print_book();
+
+
+$book->name = 'Criminal law';
+$book->price = 27.90;
+$book->photo = 'Bookb.png';
+
+$book->print_book();
+
+
+
+$book->set_book('The Tattooist', 55.90, 'Book4.jpg');
+$book->print_book();
+    ?>
