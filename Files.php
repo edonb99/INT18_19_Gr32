@@ -32,6 +32,48 @@
 
 
 
+
+<!-- ****************** OOP ************************* -->
+<?php
+    //  parent class
+class Library {
+  //The $type eshte protected , keshtu qe mundet me u qas 
+  // prej klases dhe child classes
+  protected $type;
+   
+  //Public setter method
+  public function setType($type)
+  {
+    $this -> type = $type;
+  }
+}
+  
+// The child class
+class BooksType extends Library {
+ 
+// Nuk ka problem për të marrë diqka të mbrojtur që i takon parent class
+
+  public function njeFunksion()
+  {
+    return "This is a <i>" . $this -> type . "</i><br />";
+  }
+}
+  
+//Create an instance from the child class
+$booksType1 = new BooksType();
+  
+//Set the class name
+$booksType1 -> setType('NOVEL');
+  
+//Get the class name
+echo $booksType1 -> njeFunksion();
+echo "<br /><br /><br />"
+
+?>
+
+
+
+
 <!-- ****************** OOP ************************* -->
 <?php
 
@@ -84,3 +126,4 @@ $book->print_book();
 $book->set_book('The Tattooist', 55.90, 'Book4.jpg');
 $book->print_book();
     ?>
+
