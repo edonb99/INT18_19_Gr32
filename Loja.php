@@ -93,13 +93,9 @@
         }
         function clsModal(){
             var input = document.getElementById("inp").value;
-            if(input=="")
-                {   
-                    document.getElementById("err").style.display="block";
-                }
-            else{
+
         document.getElementById('Modal2').style.display="none";
-            }
+        
         }
         
         
