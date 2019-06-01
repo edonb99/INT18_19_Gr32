@@ -3,6 +3,7 @@ textarea{
 	height: 100px;
 	background-color: #fff;
 	resize:none;
+	margin: 10px;
 }
 
 button {

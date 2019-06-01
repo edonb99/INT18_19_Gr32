@@ -26,8 +26,14 @@
                 <br />  
                 <br />  
                 <div class="table-responsive">  
-                     <h2 align="center">Be a volunteer LIVE</h2><br />  
-                     <div id="live_data"></div>                 
+                     <h2 align="center">Be a volunteer <br><strong>LIVE</strong><br><i><small>
+                      Help the community</i></small>
+                     </h2><br /> 
+                     <h5 align="center"></h5> 
+
+                    <!-- we will load data nën këtë tag duke përdorur kodin Ajax Jquery dhe do të përdorim atributin id si selektor në Jquery. -->
+                     <div id="live_data"></div>
+
                 </div>  
            </div>  
            
@@ -35,7 +41,10 @@
  </html>
 
  <script>  
- $(document).ready(function(){  
+ $(document).ready(function(){ 
+
+  /* Pastaj, pas kryerjes së këtij funksioni jquery, i cili merr të dhënat (fetch data) nga tabela dhe konvertohet në formatin e tabelës dhe pastaj pas shfaqjes nën tagun div me atributin "id = live_data", nën këtë funksion përdor metodën Ajax për të marrë(fetch) të dhëna nga serveri dhe shfaqet në faqe. 
+  Ky funksion dërgon kërkesë në vselect.php. */
       function fetch_data()  
       {  
            $.ajax({  

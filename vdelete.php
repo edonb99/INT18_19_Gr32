@@ -1,6 +1,6 @@
 <?php  
 
- $connect = mysqli_connect("localhost", "root", "1234", "ajax3"); 
+ $connect = mysqli_connect("localhost", "root", "1234", "ecoschools"); 
 
  $sql = "DELETE FROM volunteers WHERE id = '".$_POST["id"]."'"; 
   

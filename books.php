@@ -190,19 +190,21 @@
 
     <?php
 echo "<form method='POST' action='".setComments($conn)."'>
-    <input type='hidden' name='uid' value='Anonymous'>
+    <input type='hidden' name='username' value='".$_SESSION['username']."'>
     <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
-    <textarea name='message'>
+
+    <textarea style= 'margin:10px;  border:solid; border-color:#5c5c5c; width:700px; '  name='message'>
     </textarea><br>
-    <button type='submit' name='commentSubmit'>Comment</button>
+    <button type='submit' style= 'margin:10px; border:solid; background-color:#f35300; width:350px;'    name='commentSubmit'>Comment</button>
     </form>";
+    echo "<br><br><br>"
   ?>
 
 
 
   <!-- -->
 
-<div id="comments" style= "border-style: solid; border-color:orange; border-width: 5px; 
+<div id="comments" style= "border-style: solid; border-color:#5c5c5c;  border-width: 5px; 
                 border-collapse: separate;
               padding: 2px; margin: 10px; ">
     <?php
@@ -212,8 +214,10 @@ echo "<form method='POST' action='".setComments($conn)."'>
 
         while ($row = mysqli_fetch_assoc($result)) {
           echo "<p>";
-          echo $row['uid'];
+          echo "<small>".$row['date']."</small>";
           echo "<br>";
+          echo "<strong>".$row['username'].":"."</strong>";
+          echo "<br>";         
           echo $row['message'];
           echo "</p>";
         }
@@ -226,7 +230,7 @@ echo "<form method='POST' action='".setComments($conn)."'>
     ?>
   </div>
 
-  <button>Show more comments</button>
+  <button style= 'margin:10px; border:solid; background-color:#f35300; width:150px;' >Show more comments</button>
 
 
 <!-- *******************************END_REVIEWS*************************** -->
