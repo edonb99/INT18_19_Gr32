@@ -178,7 +178,11 @@
 
     <br><br><br>
     
-    <button id="butoni1" type="button" style="margin-left: 700px; width: 190px; background-color: lightblue;"><a href="Files.php" style="text-decoration: none;">Read more about Books</a></button>
+    <p style="margin-left: 720px; display: inline; width: 400px; height:90px; background-color: navy;">
+        <a href="Files.php" style="color: yellow; text-decoration: none;">
+            Read more about Books
+        </a>
+    </p>
     
     <br><br><br>
 

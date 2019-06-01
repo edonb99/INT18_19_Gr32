@@ -9,7 +9,9 @@
         echo $line . "<br />";
     }
     
-    $txt = "\n\n\nUpcoming supplies: 21/03/2015";
+    echo "<a href='books.php' style='margin-left: 700px; background-color: red; color: yellow; text-decoration: none; border: 0px solid lightgreen;'>Back to Books site</a>";
+    
+    $txt = "\n\n\nUpcoming supplies: 21/03/2019";
     fwrite($a, $txt);
 
     fclose($a);
