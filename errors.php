@@ -15,6 +15,7 @@
 <body>
 <?php  if (count($errors) > 0) : ?>
   <div class="error">
+  <!-- foreach eshte unaz qe e shqyrton secilin antar tvargut dmth secilin error  -->
   	<?php foreach ($errors as $error) : ?>
   	  <p><?php echo $error ?></p>
   	<?php endforeach ?>

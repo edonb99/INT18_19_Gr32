@@ -57,7 +57,7 @@
 
 <body>
 <div style="background-color: white">
-<!-- notification message -->
+<!-- pasi ska gabime useri eshte logged in edhe shfaqe mesazhi success -->
 <?php if (isset($_SESSION['success'])) : ?>
       <div class="error success" >
       	<h3>
@@ -69,7 +69,7 @@
       </div>
   	<?php endif ?>
 
-    <!-- logged in user information -->
+    <!-- informatat e userit qe eshte logged in -->
     <?php  if (isset($_SESSION['username'])) : ?>
     	<h2 style="margin-left: 50px; padding-top: 20px;">Welcome <strong><em><?php echo $_SESSION['username']; ?></em></strong>
         </h2>
