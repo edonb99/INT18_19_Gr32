@@ -40,12 +40,10 @@
         <br>
         <div class="bottom-container">
             <div class="row">
-                <div class="col">
+                <!-- <div class="col"> -->
                     <a href="signup.php" style="color:white" class="btn-modal">Sign up</a>
-                </div>
-                <div class="col">
-                    <a href="#" style="color:white" class="btn-modal">Forgot password?</a>
-                </div>
+                <!-- </div> -->
+                 
             </div>
         </div>
         
