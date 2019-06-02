@@ -98,7 +98,7 @@ class BooksType extends Library {
 
   public function njeFunksion()
   {
-    return "This is a <i>" . $this -> type . "</i><br />";
+    return "These are  <i>" . $this -> type . "</i><br />";
   }
 }
   
@@ -106,14 +106,14 @@ class BooksType extends Library {
 $booksType1 = new BooksType();
   
 //Set the class name
-$booksType1 -> setType('NOVEL');
+$booksType1 -> setType('NOVELS');
   
 //Get the class name
 echo $booksType1 -> njeFunksion();
 echo "<br /><br /><br />"
 
 ?>
-
+<!-- ************************************************************ -->
 
 
 
@@ -169,5 +169,8 @@ $book->print_book();
 $book->set_book('The Tattooist', 55.90, 'Book4.jpg');
 $book->print_book();
     ?>
+
+<!-- ************************************************* -->
+
 </body>
 </html>
