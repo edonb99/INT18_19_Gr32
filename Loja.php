@@ -13,10 +13,11 @@
         var plantHeight = 150;
         var plantWidth = 50;
 
+        //funksioni per ta ristartuar faqen
         function reset() {
             window.location.reload();
         }
-
+            
         function allowDrop(ev) {
             ev.preventDefault();
         }
