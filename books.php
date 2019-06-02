@@ -23,6 +23,27 @@
 
 
 
+<!--  *********************** KERKO KOMENTIN ************************************ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+            $('#btnKerko').click(function () {
+              
+                var varusername = $("#txtUseri").val();
+                $.post("shfaqKomentin.php", { username: varusername }, function (data) {
+                    $("#rez").html(data);
+                })
+
+            });
+           
+        });
+
+    </script>
+<!-- -->
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -235,6 +256,25 @@ echo "<form method='POST' action='".setComments($conn)."'>
 
 
 <!-- *******************************END_REVIEWS*************************** -->
+
+
+
+<!-- ****************** Kerko Komentin *************************************************** -->
+<br />
+<br />
+<br />
+<div style= "border-style: solid; border-color:#5c5c5c;  border-width: 5px; 
+                border-collapse: separate;
+              padding: 2px; margin: 10px; ">
+    <label style="align-content: center;" >Search for comments (write username)</label>
+    <input type="text" id="txtUseri" placeholder="Write name..." />    <br />
+    <p style= 'margin:10px; border:solid; background-color:yellow; width:60px; cursor: pointer; align-content: center;    ' id="btnKerko">SEARCH</p>
+    <label style=" font-weight: bold;"><u>Results:</u></label>
+    <div id="rez" style="width:95%;min-height:250px;border:outset 1px black ;background-color:#D3D3D3;color:black;font-size:18px;"></div>
+
+</div>
+<!-- **************END_ Kerko Komentin ************* -->
+
 
 
 <?php
